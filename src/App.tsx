@@ -1,4 +1,4 @@
-import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import {
   ArrowDownWideNarrow,
   Building2,
@@ -16,9 +16,13 @@ import {
   X,
 } from 'lucide-react';
 import GameCard from './components/GameCard';
-import GameModal from './components/GameModal';
+import ErrorBoundary from './components/ErrorBoundary';
+import { formatLabel } from './lib/labels';
 import { useLibrary } from './hooks/useLibrary';
 import type { Game, PlatformFilter, PlayedFilter, SortKey, StoreFilter } from './types/game';
+
+// El modal solo se necesita al hacer clic: fuera del bundle inicial.
+const GameModal = lazy(() => import('./components/GameModal'));
 
 const PAGE_SIZE = 48;
 
@@ -98,7 +102,7 @@ function TagPill({
           : 'bg-white/5 text-[#c7d5e0] ring-white/10 hover:ring-[#66c0f4]/50'
       }`}
     >
-      {tag}
+      {formatLabel(tag)}
       {count !== undefined && <span className="opacity-60"> {count}</span>}
     </button>
   );
@@ -514,6 +518,7 @@ export default function App() {
         </section>
 
         {/* Resultados */}
+        <ErrorBoundary>
         <section>
           <div className="mb-3 flex items-center justify-between gap-2">
             <p className="text-sm text-[#8f98a0]">
@@ -602,13 +607,16 @@ export default function App() {
             </>
           )}
         </section>
+        </ErrorBoundary>
       </main>
 
       <footer className="border-t border-white/5 py-5 text-center text-xs text-[#8f98a0]">
         MySteamLibrary · datos locales de tus CSV/JSON · imágenes de Steam y GOG CDN
       </footer>
 
-      <GameModal game={selected} onClose={() => setSelected(null)} />
+      <Suspense fallback={null}>
+        <GameModal game={selected} onClose={() => setSelected(null)} />
+      </Suspense>
     </div>
   );
 }

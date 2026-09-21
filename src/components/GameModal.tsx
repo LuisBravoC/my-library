@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Building2, Calendar, Clock3, ExternalLink, Star, Trophy, X } from 'lucide-react';
 import { formatHours, gameImageUrl, gameStoreUrl, scoreColor } from '../lib/steam';
+import { formatLabel } from '../lib/labels';
 import type { Game } from '../types/game';
 
 interface Props {
@@ -9,8 +10,12 @@ interface Props {
 }
 
 export default function GameModal({ game, onClose }: Props) {
+  const dialogRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (!game) return;
+    const prevFocused = document.activeElement as HTMLElement | null;
+    dialogRef.current?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };
@@ -19,6 +24,7 @@ export default function GameModal({ game, onClose }: Props) {
     return () => {
       window.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
+      prevFocused?.focus?.();
     };
   }, [game, onClose]);
 
@@ -36,7 +42,9 @@ export default function GameModal({ game, onClose }: Props) {
       aria-label={game.title}
     >
       <div
-        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-[#1b2838] ring-1 ring-white/10 sm:rounded-2xl"
+        ref={dialogRef}
+        tabIndex={-1}
+        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-[#1b2838] ring-1 ring-white/10 outline-none sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
@@ -135,7 +143,7 @@ export default function GameModal({ game, onClose }: Props) {
               <div className="flex flex-wrap gap-1.5">
                 {game.tags.map((t) => (
                   <span key={t} className="rounded-full bg-[#66c0f4]/10 px-2.5 py-1 text-xs text-[#66c0f4] ring-1 ring-[#66c0f4]/20">
-                    {t}
+                    {formatLabel(t)}
                   </span>
                 ))}
               </div>
@@ -148,7 +156,7 @@ export default function GameModal({ game, onClose }: Props) {
               <div className="flex flex-wrap gap-1.5">
                 {game.features.slice(0, 24).map((f) => (
                   <span key={f} className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-[#c7d5e0] ring-1 ring-white/10">
-                    {f}
+                    {formatLabel(f)}
                   </span>
                 ))}
               </div>

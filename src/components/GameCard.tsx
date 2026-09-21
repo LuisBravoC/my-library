@@ -1,11 +1,22 @@
 import { memo, useState } from 'react';
 import { Clock3, Star } from 'lucide-react';
-import { formatHours, gameImageUrl, scoreColor } from '../lib/steam';
+import { formatHours, gameImageUrl, scoreColor, steamImageUrl } from '../lib/steam';
+import { formatLabel } from '../lib/labels';
 import type { Game } from '../types/game';
 
 interface Props {
   game: Game;
   onSelect: (game: Game) => void;
+}
+
+/** Precarga la imagen grande del modal para que abra al instante. */
+function preloadModalImage(game: Game): void {
+  const src = game.store === 'steam' ? steamImageUrl(game.id, 'capsule') : gameImageUrl(game);
+  if (src) {
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = src;
+  }
 }
 
 function GameCardInner({ game, onSelect }: Props) {
@@ -16,6 +27,8 @@ function GameCardInner({ game, onSelect }: Props) {
     <button
       type="button"
       onClick={() => onSelect(game)}
+      onMouseEnter={() => preloadModalImage(game)}
+      onFocus={() => preloadModalImage(game)}
       className="card-in group overflow-hidden rounded-xl bg-[#1b2838]/80 text-left ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:ring-[#66c0f4]/50 hover:shadow-[0_8px_30px_rgba(102,192,244,0.15)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#66c0f4]"
     >
       <div className="relative aspect-[460/215] w-full overflow-hidden bg-gradient-to-br from-[#2a475e] to-[#171a21]">
@@ -76,7 +89,7 @@ function GameCardInner({ game, onSelect }: Props) {
           </span>
         </div>
         {game.tags.length > 0 && (
-          <p className="line-clamp-1 text-[11px] text-[#66c0f4]/80">{game.tags.slice(0, 3).join(' · ')}</p>
+          <p className="line-clamp-1 text-[11px] text-[#66c0f4]/80">{game.tags.slice(0, 3).map(formatLabel).join(' · ')}</p>
         )}
       </div>
     </button>

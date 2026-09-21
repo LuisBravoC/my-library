@@ -1,4 +1,5 @@
 import Papa from 'papaparse';
+import { canonicalRaw } from './labels';
 import type { Game } from '../types/game';
 
 export const CSV_URL = `${import.meta.env.BASE_URL}data/steam-library.csv`;
@@ -144,8 +145,9 @@ export function parseLibrary(csvText: string): ParseResult {
       const key = fields[i];
       if (CORE_FIELDS.has(key) || PLATFORM_FIELDS.has(key)) continue;
       if (row[key] !== 'x') continue;
-      // Papa renombra cabeceras duplicadas como "co-op_1": mostramos el nombre base
-      const label = key.replace(/_\d+$/, '');
+      // Papa renombra cabeceras duplicadas como "co-op_1": mostramos el nombre base.
+      // Además unificamos variantes del mismo concepto ("single-player" -> "singleplayer").
+      const label = canonicalRaw(key.replace(/_\d+$/, ''));
       if (i >= genreStart) {
         if (VR_FIELDS.has(key)) vrSet.add(label);
         else if (tagSet.size < 500) tagSet.add(label);
@@ -235,8 +237,8 @@ export async function loadGogLibrary(signal?: AbortSignal): Promise<Game[]> {
     win: !!e.win,
     mac: !!e.mac,
     linux: !!e.linux,
-    tags: e.genres || [],
-    features: e.features || [],
+    tags: (e.genres || []).map(canonicalRaw),
+    features: (e.features || []).map(canonicalRaw),
     vr: [],
     accessibility: [],
     languages: [],
