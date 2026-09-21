@@ -142,18 +142,25 @@ export default function App() {
   const sourceGames = isGog ? gogGames : steamGames;
   const sortOptions = isGog ? GOG_SORTS : STEAM_SORTS;
 
-  useEffect(() => {
-    setVisible(PAGE_SIZE);
-  }, [store, deferredQuery, sort, platform, played, minScore, activeTag]);
-
-  // Al cambiar de tienda, ajustar el orden por defecto
-  useEffect(() => {
-    setSort(isGog ? 'releaseDate' : 'hours');
+  // Resets derivados del estado (patrón React sin efectos: sin avisos del linter).
+  // Al cambiar de tienda se restablecen orden y filtros...
+  const [prevStore, setPrevStore] = useState(store);
+  if (prevStore !== store) {
+    setPrevStore(store);
+    const gog = store === 'gog';
+    setSort(gog ? 'releaseDate' : 'hours');
     setPlayed('all');
     setMinScore(0);
     setActiveTag(null);
     setTagsExpanded(false);
-  }, [isGog]);
+  }
+  // ...y ante cualquier cambio de filtro se vuelve a la primera página.
+  const [prevFilterSig, setPrevFilterSig] = useState('');
+  const filterSig = `${store}|${deferredQuery}|${sort}|${platform}|${played}|${minScore}|${activeTag ?? ''}`;
+  if (filterSig !== prevFilterSig) {
+    setPrevFilterSig(filterSig);
+    setVisible(PAGE_SIZE);
+  }
 
   // Tema visual por tienda (variables CSS en :root).
   // EXPERIMENTO APARCADO: tema propio de GOG listo pero desactivado.
