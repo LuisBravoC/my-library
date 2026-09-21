@@ -40,7 +40,8 @@
   "releaseDate": "2025-10-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 2099051765,
@@ -86,7 +87,11 @@
   "releaseDate": "2023-03-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1402120,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1402120/header.jpg",
+  "steamName": "9 Years of Shadows",
+  "steamMethod": "exact"
  },
  {
   "id": 1901367087,
@@ -134,7 +139,11 @@
   "releaseDate": "2019-05-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 752590,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/752590/header.jpg",
+  "steamName": "A Plague Tale: Innocence",
+  "steamMethod": "exact"
  },
  {
   "id": 1136126792,
@@ -176,7 +185,11 @@
   "releaseDate": "2015-07-25",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 320140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/320140/header.jpg",
+  "steamName": "Absolute Drift",
+  "steamMethod": "exact"
  },
  {
   "id": 1084437038,
@@ -222,7 +235,11 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1493430,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1493430/header.jpg",
+  "steamName": "Agony: Lords of Hell",
+  "steamMethod": "exact"
  },
  {
   "id": 1213448387,
@@ -260,7 +277,11 @@
   "releaseDate": "2018-10-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 879420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/879420/header.jpg",
+  "steamName": "Agony UNRATED",
+  "steamMethod": "exact"
  },
  {
   "id": 1207666073,
@@ -299,7 +320,8 @@
   "releaseDate": "1980-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1441096843,
@@ -337,7 +359,11 @@
   "releaseDate": "1994-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904640/header.jpg",
+  "steamName": "Al-Qadim: The Genie's Curse",
+  "steamMethod": "exact"
  },
  {
   "id": 2018305509,
@@ -379,7 +405,8 @@
   "releaseDate": "2020-02-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207660923,
@@ -417,7 +444,11 @@
   "releaseDate": "1992-01-02",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 548090,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/548090/header.jpg",
+  "steamName": "Alone in the Dark 1",
+  "steamMethod": "exact"
  },
  {
   "id": 1207660963,
@@ -455,7 +486,11 @@
   "releaseDate": "1992-01-02",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 548890,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/548890/header.jpg",
+  "steamName": "Alone in the Dark 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1207660973,
@@ -493,7 +528,11 @@
   "releaseDate": "1992-01-02",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 548900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/548900/header.jpg",
+  "steamName": "Alone in the Dark 3",
+  "steamMethod": "exact"
  },
  {
   "id": 1748947415,
@@ -538,7 +577,11 @@
   "releaseDate": "2021-08-18",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 949200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/949200/header.jpg",
+  "steamName": "Ambition: A Minuet in Power",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658847,
@@ -578,7 +621,11 @@
   "releaseDate": "1999-10-18",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 302190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/302190/header.jpg",
+  "steamName": "Amerzone: The Explorer’s Legacy (1999)",
+  "steamMethod": "first-result"
  },
  {
   "id": 1207659443,
@@ -628,7 +675,11 @@
   "releaseDate": "2013-09-10",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 239200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/239200/header.jpg",
+  "steamName": "Amnesia: A Machine for Pigs",
+  "steamMethod": "exact"
  },
  {
   "id": 1751965389,
@@ -673,7 +724,11 @@
   "releaseDate": "2020-04-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 993790,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/993790/header.jpg",
+  "steamName": "Ancient Enemy",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658845,
@@ -718,7 +773,11 @@
   "releaseDate": "2013-04-04",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 233550,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/233550/header.jpg",
+  "steamName": "Another World – 20th Anniversary Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1645177204,
@@ -762,7 +821,11 @@
   "releaseDate": "2022-08-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1388870,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1388870/header.jpg",
+  "steamName": "Arcade Paradise",
+  "steamMethod": "exact"
  },
  {
   "id": 1207664543,
@@ -806,7 +869,8 @@
   "releaseDate": "2014-05-13",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1485834662,
@@ -856,7 +920,11 @@
   "releaseDate": "2017-09-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 580320,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/580320/header.jpg",
+  "steamName": "Ashworld",
+  "steamMethod": "exact"
  },
  {
   "id": 2090876025,
@@ -901,7 +969,11 @@
   "releaseDate": "2023-09-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1755830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1755830/header.jpg",
+  "steamName": "Astrea: Six-Sided Oracles",
+  "steamMethod": "exact"
  },
  {
   "id": 1207666373,
@@ -947,7 +1019,11 @@
   "releaseDate": "2013-11-15",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 257350,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/257350/header.jpg",
+  "steamName": "Baldur's Gate II: Enhanced Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1207666353,
@@ -991,7 +1067,11 @@
   "releaseDate": "2013-01-16",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 228280,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/228280/header.jpg",
+  "steamName": "Baldur's Gate: Enhanced Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1207660783,
@@ -1041,7 +1121,11 @@
   "releaseDate": "2014-02-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 242920,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/242920/header.jpg",
+  "steamName": "Banished",
+  "steamMethod": "exact"
  },
  {
   "id": 1584866499,
@@ -1090,22 +1174,26 @@
   "releaseDate": "2017-03-30",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 461950,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/461950/header.jpg",
+  "steamName": "Beat Cop",
+  "steamMethod": "exact"
  },
  {
-  "id": 1349442004,
-  "title": "BEAUTIFUL DESOLATION Demo",
+  "id": 1295420179,
+  "title": "BEAUTIFUL DESOLATION",
   "userTitle": "BEAUTIFUL DESOLATION",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/beautiful_desolation_demo",
+  "storeUrl": "https://www.gog.com/en/game/beautiful_desolation",
   "images": {
-   "cover": "https://images.gog-statics.com/b3f9b62abb3fd9e98f31de50f49021a09529594e0aff0bf2efc6bf69dce90721.jpg",
-   "background": "https://images.gog-statics.com/d6f3d312658aa30c74917e33fd7ca9b5f06d52f8042871dc3d8bf997e1b1bbec.jpg",
-   "logo": "https://images.gog-statics.com/bcb437e51eaa0d7ef1a22e638fdd705f60ce44e653d766274791766ade997938.png",
-   "icon": "https://images.gog-statics.com/ed3624b6ddc2bd4f04839c92704575c0ac470d8553e943936a36fb49603e4b6c.png",
-   "tile": "https://images.gog-statics.com/0f42baab50d59c0568cdf9d2da1dd8494cdec24f67985a896d0412557fb08809_196.webp"
+   "cover": "https://images.gog-statics.com/8cdc97edae0f9f6a05603f8bfb698774e5282acafee13c685b3119c46145948e.jpg",
+   "background": "https://images.gog-statics.com/5daeff982a8064febfd798f5458df13d359f4ac53977e27f28b1f2bddf9f16a3.jpg",
+   "logo": "https://images.gog-statics.com/da6cf909a861f0fb1037c2c27c87df30632d22d59d913eeddc3f3fae8a30773d.png",
+   "icon": "https://images.gog-statics.com/34a8734507c2504ba63812b59ec2675b943ffd447a106c90719116168e374a39.png",
+   "tile": "https://images.gog-statics.com/210014299cb6bed3267ebcc9aae47da888806468e3f6fcefb4d5f3cd21fb544f_196.webp"
   },
   "genres": [
    "Sci-fi",
@@ -1118,17 +1206,7 @@
    "Sci-fi",
    "Puzzle",
    "Science",
-   "Dark",
-   "Mystery",
-   "Point&Click",
-   "Multiple Endings",
-   "Isometric",
-   "Top-Down",
-   "Logic",
-   "Post-apocalyptic",
-   "Choose Your Own Adventure",
-   "Demo",
-   "Puzzle Platformer"
+   "Logic"
   ],
   "developers": [
    "The Brotherhood"
@@ -1136,10 +1214,14 @@
   "publishers": [
    "The Brotherhood"
   ],
-  "releaseDate": "2020-08-17",
+  "releaseDate": "2020-02-26",
   "win": true,
-  "mac": false,
-  "linux": false
+  "mac": true,
+  "linux": true,
+  "steamId": 912570,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/912570/header.jpg",
+  "steamName": "BEAUTIFUL DESOLATION",
+  "steamMethod": "exact"
  },
  {
   "id": 1451215361,
@@ -1187,7 +1269,11 @@
   "releaseDate": "2018-12-05",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 761620,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/761620/header.jpg",
+  "steamName": "Beholder 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1181224050,
@@ -1228,7 +1314,8 @@
   "releaseDate": "2020-02-14",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1207658695,
@@ -1273,7 +1360,11 @@
   "releaseDate": "1994-04-11",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1368340,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1368340/header.jpg",
+  "steamName": "Beneath a Steel Sky (1994)",
+  "steamMethod": "exact"
  },
  {
   "id": 1372090895,
@@ -1314,7 +1405,11 @@
   "releaseDate": "2024-03-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1561340,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1561340/header.jpg",
+  "steamName": "Berserk Boy",
+  "steamMethod": "exact"
  },
  {
   "id": 1090734724,
@@ -1365,7 +1460,8 @@
   "releaseDate": "2014-03-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1981112510,
@@ -1407,7 +1503,11 @@
   "releaseDate": "2021-09-15",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1580150,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1580150/header.jpg",
+  "steamName": "Between Time: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 1959845271,
@@ -1453,7 +1553,8 @@
   "releaseDate": "1995-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1449569170,
@@ -1494,7 +1595,8 @@
   "releaseDate": "1993-08-03",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1752654506,
@@ -1536,7 +1638,11 @@
   "releaseDate": "2013-03-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 8870,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg",
+  "steamName": "BioShock Infinite",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1806891286,
@@ -1577,7 +1683,11 @@
   "releaseDate": "2010-02-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 8850,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/8850/header.jpg",
+  "steamName": "BioShock® 2",
+  "steamMethod": "exact"
  },
  {
   "id": 2022341186,
@@ -1616,7 +1726,11 @@
   "releaseDate": "2007-08-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 7670,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/7670/header.jpg",
+  "steamName": "BioShock™",
+  "steamMethod": "exact"
  },
  {
   "id": 1482265668,
@@ -1658,7 +1772,11 @@
   "releaseDate": "2016-09-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 409720,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/409720/header.jpg",
+  "steamName": "BioShock™ 2 Remastered",
+  "steamMethod": "exact"
  },
  {
   "id": 1439656515,
@@ -1699,7 +1817,11 @@
   "releaseDate": "2016-09-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 409710,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/409710/header.jpg",
+  "steamName": "BioShock™ Remastered",
+  "steamMethod": "exact"
  },
  {
   "id": 1176525525,
@@ -1737,7 +1859,11 @@
   "releaseDate": "2021-10-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1710170,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1710170/header.jpg",
+  "steamName": "Blade of Darkness",
+  "steamMethod": "exact"
  },
  {
   "id": 1504894622,
@@ -1779,7 +1905,11 @@
   "releaseDate": "2022-04-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1550760,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1550760/header.jpg",
+  "steamName": "Blast Brigade vs. the Evil Legion of Dr. Cread",
+  "steamMethod": "exact"
  },
  {
   "id": 1837805079,
@@ -1819,7 +1949,8 @@
   "releaseDate": "1996-11-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1901494026,
@@ -1864,7 +1995,11 @@
   "releaseDate": "2022-02-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1587130,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1587130/header.jpg",
+  "steamName": "Blood West",
+  "steamMethod": "exact"
  },
  {
   "id": 1356485086,
@@ -1911,7 +2046,11 @@
   "releaseDate": "2017-06-02",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 274500,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/274500/header.jpg",
+  "steamName": "Brigador: Up-Armored Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658900,
@@ -1959,7 +2098,8 @@
   "releaseDate": "2008-08-26",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1212177362,
@@ -2007,7 +2147,11 @@
   "releaseDate": "2020-03-02",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1207590,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1207590/header.jpg",
+  "steamName": "Builders of Egypt: Prologue",
+  "steamMethod": "exact"
  },
  {
   "id": 1882554410,
@@ -2051,7 +2195,11 @@
   "releaseDate": "2024-07-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1614440,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1614440/header.jpg",
+  "steamName": "Bō: Path of the Teal Lotus",
+  "steamMethod": "exact"
  },
  {
   "id": 1909524379,
@@ -2097,7 +2245,11 @@
   "releaseDate": "2006-09-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 3020,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/3020/header.jpg",
+  "steamName": "Call of Juarez",
+  "steamMethod": "exact"
  },
  {
   "id": 1770556474,
@@ -2142,7 +2294,11 @@
   "releaseDate": "2009-01-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 21980,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/21980/header.jpg",
+  "steamName": "Call of Juarez: Bound in Blood",
+  "steamMethod": "exact"
  },
  {
   "id": 2015389384,
@@ -2187,7 +2343,11 @@
   "releaseDate": "2013-05-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 204450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/204450/header.jpg",
+  "steamName": "Call of Juarez: Gunslinger",
+  "steamMethod": "exact"
  },
  {
   "id": 1293807013,
@@ -2231,7 +2391,11 @@
   "releaseDate": "2025-05-06",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 3040220,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/3040220/header.jpg",
+  "steamName": "Captain Blood",
+  "steamMethod": "exact"
  },
  {
   "id": 1146738698,
@@ -2270,7 +2434,11 @@
   "releaseDate": "2000-12-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 331650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/331650/header.jpg",
+  "steamName": "Carmageddon TDR 2000",
+  "steamMethod": "exact"
  },
  {
   "id": 1086484900,
@@ -2308,7 +2476,8 @@
   "releaseDate": "",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1958338581,
@@ -2355,7 +2524,11 @@
   "releaseDate": "2019-09-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 914710,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/914710/header.jpg",
+  "steamName": "Cat Quest II",
+  "steamMethod": "exact"
  },
  {
   "id": 2016844216,
@@ -2400,7 +2573,11 @@
   "releaseDate": "2017-01-24",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 532840,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/532840/header.jpg",
+  "steamName": "CAYNE",
+  "steamMethod": "exact"
  },
  {
   "id": 1432722131,
@@ -2437,7 +2614,11 @@
   "releaseDate": "1990-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904620,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904620/header.jpg",
+  "steamName": "Champions of Krynn",
+  "steamMethod": "exact"
  },
  {
   "id": 1114021228,
@@ -2479,7 +2660,11 @@
   "releaseDate": "2018-07-31",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 312200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/312200/header.jpg",
+  "steamName": "Chasm",
+  "steamMethod": "exact"
  },
  {
   "id": 1302753134,
@@ -2524,7 +2709,11 @@
   "releaseDate": "2022-10-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2061230,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2061230/header.jpg",
+  "steamName": "Chasm: The Rift",
+  "steamMethod": "exact"
  },
  {
   "id": 1316203883,
@@ -2567,7 +2756,11 @@
   "releaseDate": "2016-06-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 489610,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/489610/header.jpg",
+  "steamName": "Chicken Assassin: Reloaded",
+  "steamMethod": "exact"
  },
  {
   "id": 1785804341,
@@ -2611,7 +2804,11 @@
   "releaseDate": "2020-05-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 968870,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/968870/header.jpg",
+  "steamName": "Close To The Sun",
+  "steamMethod": "exact"
  },
  {
   "id": 1964712512,
@@ -2656,7 +2853,11 @@
   "releaseDate": "2020-06-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 940710,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/940710/header.jpg",
+  "steamName": "Colt Canyon",
+  "steamMethod": "exact"
  },
  {
   "id": 2049187585,
@@ -2701,7 +2902,11 @@
   "releaseDate": "2020-09-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 870780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/870780/header.jpg",
+  "steamName": "CONTROL Ultimate Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1950069341,
@@ -2744,7 +2949,11 @@
   "releaseDate": "2022-03-31",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1218210,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1218210/header.jpg",
+  "steamName": "Coromon",
+  "steamMethod": "exact"
  },
  {
   "id": 1635710211,
@@ -2765,7 +2974,8 @@
   "win": false,
   "mac": false,
   "linux": false,
-  "noMetadata": true
+  "noMetadata": true,
+  "steamChecked": true
  },
  {
   "id": 1809223221,
@@ -2818,7 +3028,8 @@
   "releaseDate": "2007-11-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1432642138,
@@ -2854,7 +3065,11 @@
   "releaseDate": "1989-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904520,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904520/header.jpg",
+  "steamName": "Curse of the Azure Bonds",
+  "steamMethod": "exact"
  },
  {
   "id": 1930721905,
@@ -2899,7 +3114,11 @@
   "releaseDate": "2022-08-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1726120,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1726120/header.jpg",
+  "steamName": "Cursed to Golf",
+  "steamMethod": "exact"
  },
  {
   "id": 1548764757,
@@ -2927,7 +3146,8 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1486144755,
@@ -2964,7 +3184,8 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1659763953,
@@ -3007,7 +3228,11 @@
   "releaseDate": "1994-11-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2464690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2464690/header.jpg",
+  "steamName": "CyClones",
+  "steamMethod": "exact"
  },
  {
   "id": 1782995089,
@@ -3028,7 +3253,8 @@
   "win": false,
   "mac": false,
   "linux": false,
-  "noMetadata": true
+  "noMetadata": true,
+  "steamChecked": true
  },
  {
   "id": 1132748633,
@@ -3076,7 +3302,11 @@
   "releaseDate": "2021-09-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1481400,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1481400/header.jpg",
+  "steamName": "Dagon: by H. P. Lovecraft",
+  "steamMethod": "exact"
  },
  {
   "id": 1084829247,
@@ -3117,7 +3347,11 @@
   "releaseDate": "2021-06-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1374840,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1374840/header.jpg",
+  "steamName": "Dark Deity",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1459769749,
@@ -3161,7 +3395,11 @@
   "releaseDate": "2023-10-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 945770,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/945770/header.jpg",
+  "steamName": "Dark Envoy",
+  "steamMethod": "exact"
  },
  {
   "id": 2033569195,
@@ -3209,7 +3447,11 @@
   "releaseDate": "2024-09-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1454960,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1454960/header.jpg",
+  "steamName": "Dark Sky",
+  "steamMethod": "exact"
  },
  {
   "id": 1432723859,
@@ -3245,7 +3487,11 @@
   "releaseDate": "1993-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904600,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904600/header.jpg",
+  "steamName": "Dark Sun: Shattered Lands",
+  "steamMethod": "exact"
  },
  {
   "id": 1432903719,
@@ -3281,7 +3527,11 @@
   "releaseDate": "1994-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904601,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904601/header.jpg",
+  "steamName": "Dark Sun: Wake of the Ravager",
+  "steamMethod": "exact"
  },
  {
   "id": 1544460195,
@@ -3325,7 +3575,11 @@
   "releaseDate": "2019-09-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 842100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/842100/header.jpg",
+  "steamName": "Daymare: 1998",
+  "steamMethod": "exact"
  },
  {
   "id": 1230412827,
@@ -3373,7 +3627,11 @@
   "releaseDate": "2016-06-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 423950,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/423950/header.jpg",
+  "steamName": "Deadlight: Director's Cut",
+  "steamMethod": "exact"
  },
  {
   "id": 1432722599,
@@ -3410,7 +3668,11 @@
   "releaseDate": "1991-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904621,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904621/header.jpg",
+  "steamName": "Death Knights of Krynn",
+  "steamMethod": "exact"
  },
  {
   "id": 1566969207,
@@ -3452,7 +3714,11 @@
   "releaseDate": "2017-03-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 471810,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/471810/header.jpg",
+  "steamName": "Death Squared",
+  "steamMethod": "exact"
  },
  {
   "id": 1263855454,
@@ -3493,7 +3759,11 @@
   "releaseDate": "1995-11-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350540,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350540/header.jpg",
+  "steamName": "DeathKeep",
+  "steamMethod": "exact"
  },
  {
   "id": 1629258827,
@@ -3541,7 +3811,11 @@
   "releaseDate": "2018-09-26",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 698640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/698640/header.jpg",
+  "steamName": "Deep Sky Derelicts",
+  "steamMethod": "exact"
  },
  {
   "id": 1250071528,
@@ -3581,7 +3855,11 @@
   "releaseDate": "2020-05-09",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1305720,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1305720/header.jpg",
+  "steamName": "Delores: A Thimbleweed Park Mini-Adventure",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659068,
@@ -3626,7 +3904,8 @@
   "releaseDate": "2003-12-02",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1370227705,
@@ -3672,7 +3951,11 @@
   "releaseDate": "2013-10-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 238010,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/238010/header.jpg",
+  "steamName": "Deus Ex: Human Revolution - Director's Cut",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1296690054,
@@ -3718,7 +4001,11 @@
   "releaseDate": "2016-08-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 337000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/337000/header.jpg",
+  "steamName": "Deus Ex: Mankind Divided",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658995,
@@ -3764,7 +4051,8 @@
   "releaseDate": "2000-06-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1807052519,
@@ -3804,7 +4092,11 @@
   "releaseDate": "2020-02-21",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1213550,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1213550/header.jpg",
+  "steamName": "Devil's Kiss",
+  "steamMethod": "exact"
  },
  {
   "id": 1929434313,
@@ -3854,7 +4146,11 @@
   "releaseDate": "2015-05-07",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 269650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/269650/header.jpg",
+  "steamName": "Dex",
+  "steamMethod": "exact"
  },
  {
   "id": 2095461205,
@@ -3897,7 +4193,11 @@
   "releaseDate": "2001-09-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1478650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1478650/header.jpg",
+  "steamName": "Diggles: The Myth of Fenris",
+  "steamMethod": "exact"
  },
  {
   "id": 1640863824,
@@ -3937,7 +4237,8 @@
   "releaseDate": "1997-01-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1701063787,
@@ -3985,7 +4286,11 @@
   "releaseDate": "2012-10-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 205100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/205100/header.jpg",
+  "steamName": "Dishonored",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1431426311,
@@ -4035,7 +4340,11 @@
   "releaseDate": "2016-11-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 403640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/403640/header.jpg",
+  "steamName": "Dishonored 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1180040534,
@@ -4084,7 +4393,11 @@
   "releaseDate": "2015-10-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 395170,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/395170/header.jpg",
+  "steamName": "DISTRAINT: Deluxe Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1413291984,
@@ -4120,22 +4433,26 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2280,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2280/header.jpg",
+  "steamName": "DOOM + DOOM II",
+  "steamMethod": "variant-exact"
  },
  {
-  "id": 2040766783,
-  "title": "DOOM 3: Phobos",
+  "id": 1492054092,
+  "title": "DOOM 3",
   "userTitle": "DOOM 3",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/doom_3_phobos",
+  "storeUrl": "https://www.gog.com/en/game/doom_3",
   "images": {
-   "cover": "https://images.gog-statics.com/90314b66c14eeaa2f101c0c7fc840dc245073fa7f8b9a51b22ab579feff0b053.jpg",
-   "background": "https://images.gog-statics.com/b8f50644f2a6cbfdf7bc05429a92cd127afb59ae1beeb22d3960c19583531a3e.jpg",
-   "logo": "https://images.gog-statics.com/55811fa3ff5506e7799568899103dc67ef60fe55743e9ee080c470511794112a.png",
-   "icon": "https://images.gog-statics.com/f227221f28bf60f058bbc93cbacad73b33c64051128ffb0bb31b8fc1479327af.png",
-   "tile": "https://images.gog-statics.com/94b4cf9adaa09d2358d539cacdd253dc1a4b931ceb4ee5cb97600ee998abb9d4_196.webp"
+   "cover": "https://images.gog-statics.com/c85550f91959eb11ffa41c505641122ace3577a6ac0da0afe4078e19d1be84fc.jpg",
+   "background": "https://images.gog-statics.com/fe2dc54941fb734237654c3b910f238ab7775c6a6f139f27ec1e50d9423a2721.jpg",
+   "logo": "https://images.gog-statics.com/bd8a745568e3bf29218e7f2b59c3569663d3a300941c674e2d4c59b5096ebc3b.png",
+   "icon": "https://images.gog-statics.com/b8d5bb67f857a3edb02406c50cc3f6a026f0ede54534059547de5b9a7af20509.png",
+   "tile": "https://images.gog-statics.com/e52cc157b419e2a3b21a4e4d54420cedd5dd3b7514cc231850a52c87d894577c_196.webp"
   },
   "genres": [
    "Shooter",
@@ -4143,33 +4460,33 @@
    "Horror"
   ],
   "features": [
-   "Story Rich",
    "Atmospheric",
-   "Sci-fi",
-   "Classic",
    "First-Person",
+   "Dark",
    "Great Soundtrack",
    "Horror",
+   "Survival",
+   "Gore",
    "FPS",
    "Space",
    "Shooter",
-   "Narrative",
-   "Combat",
-   "Walking Simulator",
-   "Zombies",
-   "Mod",
-   "Coming of age"
+   "Survival Horror",
+   "Zombies"
   ],
   "developers": [
-   "Team Future"
+   "id Software"
   ],
   "publishers": [
-   "Team Future"
+   "Bethesda Softworks LLC"
   ],
-  "releaseDate": "2018-12-03",
+  "releaseDate": "2012-10-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 208200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/208200/header.jpg",
+  "steamName": "DOOM 3",
+  "steamMethod": "exact"
  },
  {
   "id": 1135892318,
@@ -4207,7 +4524,11 @@
   "releaseDate": "2012-10-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 208200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/208200/header.jpg",
+  "steamName": "DOOM 3",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 2015545325,
@@ -4235,7 +4556,8 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1435848814,
@@ -4273,7 +4595,8 @@
   "releaseDate": "1994-05-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1426071866,
@@ -4301,7 +4624,8 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207660693,
@@ -4346,7 +4670,8 @@
   "releaseDate": "2014-02-17",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1321890219,
@@ -4382,7 +4707,11 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350512,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350512/header.jpg",
+  "steamName": "Dragons of Flame",
+  "steamMethod": "exact"
  },
  {
   "id": 2085685147,
@@ -4423,7 +4752,11 @@
   "releaseDate": "1990-01-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350520,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350520/header.jpg",
+  "steamName": "DragonStrike",
+  "steamMethod": "exact"
  },
  {
   "id": 1381541022,
@@ -4468,7 +4801,11 @@
   "releaseDate": "2024-04-15",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1897650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1897650/header.jpg",
+  "steamName": "Dream Tactics",
+  "steamMethod": "exact"
  },
  {
   "id": 1744110647,
@@ -4513,7 +4850,11 @@
   "releaseDate": "2023-03-30",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1562430,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562430/header.jpg",
+  "steamName": "DREDGE",
+  "steamMethod": "exact"
  },
  {
   "id": 1728229487,
@@ -4560,7 +4901,8 @@
   "releaseDate": "2020-06-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1816031813,
@@ -4609,7 +4951,11 @@
   "releaseDate": "2022-07-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2058150,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2058150/header.jpg",
+  "steamName": "Duck Paradox",
+  "steamMethod": "exact"
  },
  {
   "id": 1432579019,
@@ -4646,7 +4992,11 @@
   "releaseDate": "1993-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904551,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904551/header.jpg",
+  "steamName": "Dungeon Hack",
+  "steamMethod": "exact"
  },
  {
   "id": 1436885138,
@@ -4692,7 +5042,11 @@
   "releaseDate": "2015-04-24",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 262280,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/262280/header.jpg",
+  "steamName": "Dungeons 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1732383191,
@@ -4741,7 +5095,11 @@
   "releaseDate": "2020-01-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 727850,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/727850/header.jpg",
+  "steamName": "ELDERBORN",
+  "steamMethod": "exact"
  },
  {
   "id": 1832934376,
@@ -4777,7 +5135,11 @@
   "releaseDate": "2023-10-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2243110,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2243110/header.jpg",
+  "steamName": "EMPTY SHELL",
+  "steamMethod": "exact"
  },
  {
   "id": 1589319779,
@@ -4823,7 +5185,11 @@
   "releaseDate": "2023-08-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1654660,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1654660/header.jpg",
+  "steamName": "En Garde!",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659221,
@@ -4863,7 +5229,11 @@
   "releaseDate": "2006-11-17",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 25600,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/25600/header.jpg",
+  "steamName": "Eschalon: Book I",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659220,
@@ -4904,7 +5274,11 @@
   "releaseDate": "2010-05-12",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 25620,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/25620/header.jpg",
+  "steamName": "Eschalon: Book II",
+  "steamMethod": "exact"
  },
  {
   "id": 1428922775,
@@ -4951,7 +5325,8 @@
   "releaseDate": "2001-12-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1432575012,
@@ -4987,7 +5362,11 @@
   "releaseDate": "1991-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1425330,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1425330/header.jpg",
+  "steamName": "Eye of the Beholder",
+  "steamMethod": "exact"
  },
  {
   "id": 1432576039,
@@ -5023,7 +5402,11 @@
   "releaseDate": "1991-12-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1882261,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1882261/header.jpg",
+  "steamName": "Eye of the Beholder II: The Legend of Darkmoon",
+  "steamMethod": "exact"
  },
  {
   "id": 1432576327,
@@ -5059,55 +5442,64 @@
   "releaseDate": "1993-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1882262,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1882262/header.jpg",
+  "steamName": "Eye of the Beholder III: Assault on Myth Drannor",
+  "steamMethod": "exact"
  },
  {
-  "id": 1491728574,
-  "title": "Fallout: London",
+  "id": 1440148836,
+  "title": "Fallout",
   "userTitle": "Fallout",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/fallout_london",
+  "storeUrl": "https://www.gog.com/en/game/fallout",
   "images": {
-   "cover": "https://images.gog-statics.com/b9a00e7d9a9d8cb5d17ec67aa41dc8d392358e0340d679f855fa113c444c11ee.jpg",
-   "background": "https://images.gog-statics.com/f43f294e4129815ba6ae86e23ced9074fb36a49af8e614277e7be1f410cca18e.jpg",
-   "logo": "https://images.gog-statics.com/c5c92ae12f9e7f51a49f3fe81b5f535c95a2a5b470a2af631740aeb06f9c6691.png",
-   "icon": "https://images.gog-statics.com/f507d617e4dcc6d369d103b0ffde6f7699225f0b8109208d786e6bd1266dd349.png",
-   "tile": "https://images.gog-statics.com/40a45333c40f66a48c507c23590ade8c64e64c7786e135e2e2ab9933e373b9d9_196.webp"
+   "cover": "https://images.gog-statics.com/ca0680fc652b402a0755ad5cc12a55ade2813c7dc1d54ac6cfee71378cdd0bd4.jpg",
+   "background": "https://images.gog-statics.com/1c55eac5084dd54f1dec2081380a8d0a86bbe60e9b73b75923b8db2a1b3aaca5.jpg",
+   "logo": "https://images.gog-statics.com/d47d6d56e357b332aff217826f98792bdc788e24fcbf2e1ce4074bf7f083acbb.png",
+   "icon": "https://images.gog-statics.com/ae69da1b87236bc73d17e8d33fc8e81eb50fdde92f48fbb51566b88a045f9a08.png",
+   "tile": "https://images.gog-statics.com/0584f7fbcb480d39f317067ba81e78c76f6735d41c3d281b8db8b1bbe8d715d4_196.webp"
   },
   "genres": [
    "Role-playing",
-   "Action",
-   "Open World"
+   "Turn-based",
+   "Sci-fi"
   ],
   "features": [
-   "Action",
    "Story Rich",
    "Atmospheric",
    "Role-playing",
    "Exploration",
    "Sci-fi",
-   "First-Person",
-   "Great Soundtrack",
-   "Third Person",
+   "Classic",
+   "Turn-Based",
+   "Science",
+   "Tactical",
    "Open World",
-   "Sandbox",
-   "Survival",
-   "FPS",
+   "Multiple Endings",
+   "Isometric",
    "Post-apocalyptic",
-   "Survival Horror"
+   "Tactical RPG",
+   "CRPG",
+   "Good Old Game"
   ],
   "developers": [
-   "Team FOLON®"
+   "Interplay"
   ],
   "publishers": [
-   "Team FOLON®"
+   "Bethesda Softworks LLC"
   ],
-  "releaseDate": "2024-07-25",
+  "releaseDate": "1997-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 38400,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/38400/header.jpg",
+  "steamName": "Fallout",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1440151285,
@@ -5155,7 +5547,11 @@
   "releaseDate": "1998-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 38410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/38410/header.jpg",
+  "steamName": "Fallout 2: A Post Nuclear Role Playing Game",
+  "steamMethod": "first-result"
  },
  {
   "id": 1454315831,
@@ -5193,7 +5589,11 @@
   "releaseDate": "2009-10-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 22370,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/22370/header.jpg",
+  "steamName": "Fallout 3: Game of the Year Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1440152063,
@@ -5240,7 +5640,11 @@
   "releaseDate": "2001-03-15",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 38420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/38420/header.jpg",
+  "steamName": "Fallout Tactics: Brotherhood of Steel",
+  "steamMethod": "first-result"
  },
  {
   "id": 1491728574,
@@ -5288,7 +5692,8 @@
   "releaseDate": "2024-07-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1454587428,
@@ -5339,7 +5744,11 @@
   "releaseDate": "2010-10-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 22380,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/22380/header.jpg",
+  "steamName": "Fallout: New Vegas",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 2037198195,
@@ -5385,7 +5794,11 @@
   "releaseDate": "1993-10-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350530,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350530/header.jpg",
+  "steamName": "Fantasy Empires",
+  "steamMethod": "exact"
  },
  {
   "id": 1430136345,
@@ -5426,7 +5839,11 @@
   "releaseDate": "1996-03-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1741120,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1741120/header.jpg",
+  "steamName": "Fantasy General",
+  "steamMethod": "exact"
  },
  {
   "id": 2050639399,
@@ -5472,7 +5889,8 @@
   "releaseDate": "2005-05-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1971113392,
@@ -5519,7 +5937,11 @@
   "releaseDate": "2014-11-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 303690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/303690/header.jpg",
+  "steamName": "FATE: The Cursed King",
+  "steamMethod": "exact"
  },
  {
   "id": 1595490147,
@@ -5565,7 +5987,11 @@
   "releaseDate": "2009-09-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 303680,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/303680/header.jpg",
+  "steamName": "FATE: The Traitor Soul",
+  "steamMethod": "exact"
  },
  {
   "id": 1128601888,
@@ -5612,7 +6038,11 @@
   "releaseDate": "2008-08-08",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 276890,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/276890/header.jpg",
+  "steamName": "FATE: Undiscovered Realms",
+  "steamMethod": "exact"
  },
  {
   "id": 1654462894,
@@ -5656,7 +6086,11 @@
   "releaseDate": "2020-07-27",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 1360980,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1360980/header.jpg",
+  "steamName": "Fetish Locator Week One",
+  "steamMethod": "exact"
  },
  {
   "id": 1090728382,
@@ -5702,7 +6136,11 @@
   "releaseDate": "2017-09-22",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 493540,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/493540/header.jpg",
+  "steamName": "Figment",
+  "steamMethod": "exact"
  },
  {
   "id": 1435848742,
@@ -5740,7 +6178,8 @@
   "releaseDate": "1996-05-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1486529526,
@@ -5781,7 +6220,11 @@
   "releaseDate": "2018-12-04",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1505700,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1505700/header.jpg",
+  "steamName": "Berzerk Flashback",
+  "steamMethod": "first-result"
  },
  {
   "id": 1207659723,
@@ -5824,7 +6267,11 @@
   "releaseDate": "1995-10-25",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1105460,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1105460/header.jpg",
+  "steamName": "Flight of the Amazon Queen: 25th Anniversary Edition",
+  "steamMethod": "first-result"
  },
  {
   "id": 2106942030,
@@ -5873,7 +6320,11 @@
   "releaseDate": "2019-04-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 751780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/751780/header.jpg",
+  "steamName": "Forager",
+  "steamMethod": "exact"
  },
  {
   "id": 1432650732,
@@ -5909,7 +6360,8 @@
   "releaseDate": "1993-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1654564600,
@@ -5955,7 +6407,11 @@
   "releaseDate": "2023-08-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1931730,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931730/header.jpg",
+  "steamName": "Fort Solis",
+  "steamMethod": "exact"
  },
  {
   "id": 1974250642,
@@ -5998,7 +6454,11 @@
   "releaseDate": "2018-05-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 322450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/322450/header.jpg",
+  "steamName": "FRAMED Collection",
+  "steamMethod": "exact"
  },
  {
   "id": 1648559910,
@@ -6047,7 +6507,11 @@
   "releaseDate": "2018-04-24",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 323190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/323190/header.jpg",
+  "steamName": "Frostpunk",
+  "steamMethod": "exact"
  },
  {
   "id": 1969775197,
@@ -6091,7 +6555,11 @@
   "releaseDate": "2024-10-08",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2484130,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2484130/header.jpg",
+  "steamName": "Fruitbus",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659102,
@@ -6140,22 +6608,23 @@
   "releaseDate": "2012-09-14",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
-  "id": 1435095696,
-  "title": "Gamedec - Definitive Edition - Free Characters Bundle",
+  "id": 1921398290,
+  "title": "Gamedec - Definitive Edition",
   "userTitle": "Gamedec - Definitive Edition",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/gamedec_definitive_edition_free_characters_bundle",
+  "storeUrl": "https://www.gog.com/en/game/gamedec_1671062352",
   "images": {
-   "cover": "https://images.gog-statics.com/8748a580e7a6b02240d39679a16165e7e1c3bcbb3b94223e28ee29c2d2c4f1b5.jpg",
-   "background": "https://images.gog-statics.com/8ab2758824d3ef10b1d0857633cc72c5b1f20cec1cb135114d24ebfdf8e3fe63.jpg",
-   "logo": "https://images.gog-statics.com/0b33e9fe6d86e67e22d4a3efcc2d2cc110cd2831783f2b6130fb7298a06fc000.png",
-   "icon": "https://images.gog-statics.com/1a37436c1baf291f2701462bc31b74049d80698a58c69e01767806c3684e04e8.png",
-   "tile": "https://images.gog-statics.com/25fcf635e8e6a6c2c54c2a493a0ac53b31ba6711b794be769deda9a12f408f06_196.webp"
+   "cover": "https://images.gog-statics.com/9caa6297a3e48c57495e7bd5f26b7c7990bbc13fb65216154cdc869e59aa4e59.jpg",
+   "background": "https://images.gog-statics.com/96530adc20f1014c2d5bdf40740a33b7f6526a0c535ba8fc29fe6c994dbc5a9a.jpg",
+   "logo": "https://images.gog-statics.com/5c0bb44c848ed7ea3cd2f94438e3ffd8bce87f7b0b861528ae238409d2074375.png",
+   "icon": "https://images.gog-statics.com/2f9aa5cc2840971685e4f1e25381bd5c0d99c704e08c49525663a5bc5956c490.png",
+   "tile": "https://images.gog-statics.com/409843a41bcb1ccaa7a6124299395526714aa598cd281e526fcdba0cfe0fb548_196.webp"
   },
   "genres": [
    "Role-playing",
@@ -6164,22 +6633,9 @@
   ],
   "features": [
    "Adventure",
-   "Story Rich",
-   "Atmospheric",
    "Role-playing",
-   "Exploration",
    "Sci-fi",
-   "Science",
-   "Choices Matter",
-   "Mystery",
-   "Multiple Endings",
-   "Isometric",
-   "Investigation",
-   "Choose Your Own Adventure",
-   "Cyberpunk",
-   "CRPG",
-   "Noir",
-   "Text-Based"
+   "Science"
   ],
   "developers": [
    "Anshar Studios"
@@ -6187,10 +6643,14 @@
   "publishers": [
    "Anshar Publishing"
   ],
-  "releaseDate": "2022-09-29",
+  "releaseDate": "2021-09-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 917720,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/917720/header.jpg",
+  "steamName": "Gamedec - Definitive Edition",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1432649588,
@@ -6226,7 +6686,11 @@
   "releaseDate": "1991-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904523,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904523/header.jpg",
+  "steamName": "Gateway to the Savage Frontier",
+  "steamMethod": "exact"
  },
  {
   "id": 1875167847,
@@ -6273,7 +6737,11 @@
   "releaseDate": "2018-03-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 417290,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/417290/header.jpg",
+  "steamName": "Ghost of a Tale",
+  "steamMethod": "exact"
  },
  {
   "id": 1305299338,
@@ -6319,7 +6787,11 @@
   "releaseDate": "2022-11-03",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 347800,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/347800/header.jpg",
+  "steamName": "Ghost Song",
+  "steamMethod": "exact"
  },
  {
   "id": 1957528513,
@@ -6368,7 +6840,11 @@
   "releaseDate": "2020-10-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1139900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1139900/header.jpg",
+  "steamName": "Ghostrunner",
+  "steamMethod": "exact"
  },
  {
   "id": 1150150052,
@@ -6417,7 +6893,11 @@
   "releaseDate": "2019-04-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 488730,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/488730/header.jpg",
+  "steamName": "God's Trigger",
+  "steamMethod": "exact"
  },
  {
   "id": 1265338731,
@@ -6463,7 +6943,11 @@
   "releaseDate": "2020-05-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 431240,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/431240/header.jpg",
+  "steamName": "Golf With Your Friends",
+  "steamMethod": "exact"
  },
  {
   "id": 1424453125,
@@ -6512,7 +6996,8 @@
   "releaseDate": "",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 2142923325,
@@ -6558,22 +7043,26 @@
   "releaseDate": "2021-08-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1311070,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1311070/header.jpg",
+  "steamName": "Greak: Memories of Azur",
+  "steamMethod": "exact"
  },
  {
-  "id": 2008928616,
-  "title": "GreedFall: The Dying World - Digital Artbook",
+  "id": 1635210189,
+  "title": "GreedFall",
   "userTitle": "GreedFall",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/greedfall_the_dying_world_digital_artbook",
+  "storeUrl": "https://www.gog.com/en/game/greedfall",
   "images": {
-   "cover": "https://images.gog-statics.com/acec18fd822d9c6a07caf6742c86e9191c21f9bd08b4e2b8388ae4b706025214.jpg",
-   "background": "https://images.gog-statics.com/3da3a303117c1734f065c7f62c703684acf7261710f4360a0726d414dd00daea.jpg",
-   "logo": "https://images.gog-statics.com/c90eca4b59232e46dc09f2b52e2f43adc62586e8fdd8275a41e8a450b6b3546f.png",
-   "icon": "",
-   "tile": "https://images.gog-statics.com/fe0c46af500c580f101b3185c36329a3f826710e8f139f247eb59a7b835bba04_196.webp"
+   "cover": "https://images.gog-statics.com/73d104f913c5eb37c09046f8ac9ff85074aad4b63b7034af0c9e6e07bd588bf1.jpg",
+   "background": "https://images.gog-statics.com/5581e3e5513b1c604d306d61bf660580245b9fd14ff0f5de68da0c05fe385c8f.jpg",
+   "logo": "https://images.gog-statics.com/6e36da960c022ae1fe984b4617a326a46d9567afba0b5e0f6046b0cc6c6991a2.png",
+   "icon": "https://images.gog-statics.com/23d8137a2d556093ca245718b60623b407118a85c6cee387b3542d45515510ae.png",
+   "tile": "https://images.gog-statics.com/c069ce7b58dd63d6fe363aca4efa7105b6c7b182015c2f01042b56ef504cf869_196.webp"
   },
   "genres": [
    "Role-playing",
@@ -6582,31 +7071,34 @@
   ],
   "features": [
    "Adventure",
-   "Action",
    "Fantasy",
    "Story Rich",
-   "Exploration",
-   "Female Protagonist",
+   "Atmospheric",
+   "Role-playing",
    "Choices Matter",
    "Third Person",
    "Open World",
-   "Artbook",
-   "Romance",
-   "Tactical RPG",
+   "Mature",
+   "Sexual Content",
+   "Nudity",
+   "Magic",
    "LGBTQ+",
-   "CRPG",
-   "Politics"
+   "Souls-like"
   ],
   "developers": [
    "Spiders"
   ],
   "publishers": [
-   "Nacon"
+   "Focus Home Interactive"
   ],
-  "releaseDate": "2026-03-10",
+  "releaseDate": "2019-09-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 606880,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/606880/header.jpg",
+  "steamName": "GreedFall",
+  "steamMethod": "exact"
  },
  {
   "id": 1207667183,
@@ -6653,7 +7145,11 @@
   "releaseDate": "2015-01-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 316790,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/316790/header.jpg",
+  "steamName": "Grim Fandango Remastered",
+  "steamMethod": "exact"
  },
  {
   "id": 1342466874,
@@ -6694,7 +7190,11 @@
   "releaseDate": "2018-11-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 396900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/396900/header.jpg",
+  "steamName": "GRIP: Combat Racing",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1709371377,
@@ -6747,7 +7247,11 @@
   "releaseDate": "2025-03-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 371890,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/371890/header.jpg",
+  "steamName": "Gunslugs",
+  "steamMethod": "exact"
  },
  {
   "id": 1679659438,
@@ -6797,7 +7301,11 @@
   "releaseDate": "2015-01-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 340750,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/340750/header.jpg",
+  "steamName": "Gunslugs 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1299228602,
@@ -6849,7 +7357,11 @@
   "releaseDate": "2019-08-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1012360,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1012360/header.jpg",
+  "steamName": "Gunslugs : Rogue Tactics",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1971477531,
@@ -6889,7 +7401,11 @@
   "releaseDate": "2018-10-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1284410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1284410/header.jpg",
+  "steamName": "GWENT: The Witcher Card Game",
+  "steamMethod": "exact"
  },
  {
   "id": 1444308510,
@@ -6933,7 +7449,11 @@
   "releaseDate": "2020-10-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 760650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/760650/header.jpg",
+  "steamName": "Hammerting",
+  "steamMethod": "exact"
  },
  {
   "id": 1345516108,
@@ -6971,7 +7491,11 @@
   "releaseDate": "2022-08-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1282410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1282410/header.jpg",
+  "steamName": "Hard West 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1490213242,
@@ -7021,7 +7545,11 @@
   "releaseDate": "2024-04-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 924750,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/924750/header.jpg",
+  "steamName": "Harold Halibut",
+  "steamMethod": "exact"
  },
  {
   "id": 1906330252,
@@ -7067,7 +7595,11 @@
   "releaseDate": "2021-08-05",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1549550,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1549550/header.jpg",
+  "steamName": "Haven Park",
+  "steamMethod": "exact"
  },
  {
   "id": 1156382433,
@@ -7114,7 +7646,11 @@
   "releaseDate": "2022-07-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 889910,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/889910/header.jpg",
+  "steamName": "Hell Pie",
+  "steamMethod": "exact"
  },
  {
   "id": 1863535689,
@@ -7165,7 +7701,8 @@
   "releaseDate": "2017-08-29",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1503950763,
@@ -7215,7 +7752,11 @@
   "releaseDate": "2020-07-30",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 628670,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/628670/header.jpg",
+  "steamName": "Hellpoint",
+  "steamMethod": "exact"
  },
  {
   "id": 1856724519,
@@ -7258,7 +7799,11 @@
   "releaseDate": "2022-05-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1608450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608450/header.jpg",
+  "steamName": "Hellslave",
+  "steamMethod": "exact"
  },
  {
   "id": 1237982317,
@@ -7308,7 +7853,11 @@
   "releaseDate": "2023-08-31",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1590730,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1590730/header.jpg",
+  "steamName": "Helping the Hotties",
+  "steamMethod": "exact"
  },
  {
   "id": 1547269859,
@@ -7355,7 +7904,11 @@
   "releaseDate": "2022-03-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1656780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1656780/header.jpg",
+  "steamName": "Hero's Hour",
+  "steamMethod": "exact"
  },
  {
   "id": 1303124319,
@@ -7406,7 +7959,11 @@
   "releaseDate": "2015-05-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 359280,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/359280/header.jpg",
+  "steamName": "Heroes of Loot",
+  "steamMethod": "exact"
  },
  {
   "id": 1310521702,
@@ -7454,7 +8011,11 @@
   "releaseDate": "2016-06-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 439880,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/439880/header.jpg",
+  "steamName": "Heroes of Loot 2",
+  "steamMethod": "exact"
  },
  {
   "id": 2125877931,
@@ -7490,7 +8051,11 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350511,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350511/header.jpg",
+  "steamName": "Heroes of the Lance",
+  "steamMethod": "exact"
  },
  {
   "id": 1532671653,
@@ -7538,7 +8103,8 @@
   "releaseDate": "2015-05-16",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1432640506,
@@ -7574,7 +8140,11 @@
   "releaseDate": "1989-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904525,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904525/header.jpg",
+  "steamName": "Hillsfar",
+  "steamMethod": "exact"
  },
  {
   "id": 1757179626,
@@ -7617,7 +8187,11 @@
   "releaseDate": "2012-11-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 203140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/203140/header.jpg",
+  "steamName": "Hitman: Absolution™",
+  "steamMethod": "first-result"
  },
  {
   "id": 1577460220,
@@ -7667,7 +8241,11 @@
   "releaseDate": "2024-09-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2545740,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2545740/header.jpg",
+  "steamName": "Hive Jump 2: Survivors",
+  "steamMethod": "exact"
  },
  {
   "id": 1766046223,
@@ -7712,7 +8290,11 @@
   "releaseDate": "2018-04-13",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 833040,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/833040/header.jpg",
+  "steamName": "Hiveswap Friendsim",
+  "steamMethod": "exact"
  },
  {
   "id": 1075439258,
@@ -7758,7 +8340,11 @@
   "releaseDate": "2021-02-26",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 892860,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/892860/header.jpg",
+  "steamName": "Hot Brass",
+  "steamMethod": "exact"
  },
  {
   "id": 2056019722,
@@ -7806,7 +8392,11 @@
   "releaseDate": "2022-07-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 611790,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/611790/header.jpg",
+  "steamName": "House Party",
+  "steamMethod": "exact"
  },
  {
   "id": 1443428641,
@@ -7855,7 +8445,11 @@
   "releaseDate": "2015-01-19",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 339800,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/339800/header.jpg",
+  "steamName": "HuniePop",
+  "steamMethod": "exact"
  },
  {
   "id": 1939715083,
@@ -7906,7 +8500,11 @@
   "releaseDate": "2019-03-12",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 844590,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/844590/header.jpg",
+  "steamName": "Hypnospace Outlaw",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659593,
@@ -7957,7 +8555,11 @@
   "releaseDate": "1995-10-31",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 245390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/245390/header.jpg",
+  "steamName": "I Have No Mouth, and I Must Scream",
+  "steamMethod": "exact"
  },
  {
   "id": 2089001920,
@@ -8002,7 +8604,11 @@
   "releaseDate": "2017-04-25",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 595140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/595140/header.jpg",
+  "steamName": "Immortal Redneck",
+  "steamMethod": "exact"
  },
  {
   "id": 1804122723,
@@ -8046,7 +8652,11 @@
   "releaseDate": "2021-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1172650,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172650/header.jpg",
+  "steamName": "INDUSTRIA",
+  "steamMethod": "exact"
  },
  {
   "id": 1447412730,
@@ -8092,7 +8702,11 @@
   "releaseDate": "2020-04-23",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 807120,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/807120/header.jpg",
+  "steamName": "Iratus: Lord of the Dead",
+  "steamMethod": "exact"
  },
  {
   "id": 1297646450,
@@ -8138,7 +8752,11 @@
   "releaseDate": "2020-02-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1127610,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1127610/header.jpg",
+  "steamName": "Iris and the Giant",
+  "steamMethod": "exact"
  },
  {
   "id": 1813565692,
@@ -8180,7 +8798,11 @@
   "releaseDate": "2020-09-25",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1412170,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1412170/header.jpg",
+  "steamName": "Janosik",
+  "steamMethod": "exact"
  },
  {
   "id": 1597842603,
@@ -8217,7 +8839,8 @@
   "releaseDate": "1998-04-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1351891846,
@@ -8254,7 +8877,8 @@
   "releaseDate": "1998-04-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1129701343,
@@ -8295,7 +8919,8 @@
   "releaseDate": "1992-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1519147341,
@@ -8337,7 +8962,11 @@
   "releaseDate": "2021-01-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 973810,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/973810/header.jpg",
+  "steamName": "Journey To The Savage Planet",
+  "steamMethod": "exact"
  },
  {
   "id": 1603513052,
@@ -8381,7 +9010,11 @@
   "releaseDate": "2019-08-01",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 811320,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/811320/header.jpg",
+  "steamName": "Jupiter Hell",
+  "steamMethod": "exact"
  },
  {
   "id": 1429864849,
@@ -8427,7 +9060,11 @@
   "releaseDate": "2015-04-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 220200,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/220200/header.jpg",
+  "steamName": "Kerbal Space Program",
+  "steamMethod": "exact"
  },
  {
   "id": 1863909997,
@@ -8472,7 +9109,11 @@
   "releaseDate": "2022-09-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 968250,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/968250/header.jpg",
+  "steamName": "King of Retail",
+  "steamMethod": "exact"
  },
  {
   "id": 1105915912,
@@ -8518,7 +9159,11 @@
   "releaseDate": "2021-05-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1209410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1209410/header.jpg",
+  "steamName": "King of Seas",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658867,
@@ -8561,7 +9206,11 @@
   "releaseDate": "2008-04-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 25900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/25900/header.jpg",
+  "steamName": "King's Bounty: The Legend",
+  "steamMethod": "exact"
  },
  {
   "id": 1139279216,
@@ -8609,7 +9258,8 @@
   "releaseDate": "2021-05-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1787109378,
@@ -8655,7 +9305,8 @@
   "releaseDate": "2022-02-11",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1111421371,
@@ -8702,7 +9353,11 @@
   "releaseDate": "2020-12-31",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1469300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1469300/header.jpg",
+  "steamName": "Leap of Love",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659101,
@@ -8741,7 +9396,11 @@
   "releaseDate": "2002-03-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 242960,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/242960/header.jpg",
+  "steamName": "Blood Omen 2: Legacy of Kain",
+  "steamMethod": "first-result"
  },
  {
   "id": 1207659088,
@@ -8786,7 +9445,11 @@
   "releaseDate": "2003-12-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 224300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/224300/header.jpg",
+  "steamName": "Legacy of Kain: Defiance (2003)",
+  "steamMethod": "exact"
  },
  {
   "id": 2020648154,
@@ -8832,7 +9495,11 @@
   "releaseDate": "2019-10-10",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1151080,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1151080/header.jpg",
+  "steamName": "Legend of Keepers: Prologue",
+  "steamMethod": "exact"
  },
  {
   "id": 1731318270,
@@ -8879,7 +9546,8 @@
   "releaseDate": "2009-11-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 2119193622,
@@ -8927,7 +9595,8 @@
   "releaseDate": "2011-03-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1753068551,
@@ -8974,7 +9643,11 @@
   "releaseDate": "2014-04-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 285160,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/285160/header.jpg",
+  "steamName": "LEGO® The Hobbit™",
+  "steamMethod": "exact"
  },
  {
   "id": 2095741221,
@@ -9024,7 +9697,11 @@
   "releaseDate": "2012-11-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 214510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/214510/header.jpg",
+  "steamName": "LEGO® The Lord of the Rings™",
+  "steamMethod": "exact"
  },
  {
   "id": 1604161214,
@@ -9070,7 +9747,11 @@
   "releaseDate": "2018-11-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 946660,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/946660/header.jpg",
+  "steamName": "Loria",
+  "steamMethod": "exact"
  },
  {
   "id": 1166021990,
@@ -9112,7 +9793,11 @@
   "releaseDate": "2021-05-13",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1306630,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1306630/header.jpg",
+  "steamName": "Lost Ruins",
+  "steamMethod": "exact"
  },
  {
   "id": 1674669448,
@@ -9160,7 +9845,11 @@
   "releaseDate": "2019-01-31",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 871420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/871420/header.jpg",
+  "steamName": "Lovecraft's Untold Stories",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658694,
@@ -9202,7 +9891,8 @@
   "releaseDate": "1992-04-12",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1582333296,
@@ -9247,7 +9937,8 @@
   "releaseDate": "2022-03-19",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1816059595,
@@ -9293,7 +9984,11 @@
   "releaseDate": "2011-03-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 50130,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/50130/header.jpg",
+  "steamName": "Mafia II (Classic)",
+  "steamMethod": "exact"
  },
  {
   "id": 1449710114,
@@ -9329,7 +10024,11 @@
   "releaseDate": "2020-05-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1030830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030830/header.jpg",
+  "steamName": "Mafia II: Definitive Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1578751750,
@@ -9377,7 +10076,11 @@
   "releaseDate": "2020-05-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 360430,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/360430/header.jpg",
+  "steamName": "Mafia III: Definitive Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1993581340,
@@ -9423,7 +10126,11 @@
   "releaseDate": "2020-09-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1030840,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030840/header.jpg",
+  "steamName": "Mafia: Definitive Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1409800471,
@@ -9467,7 +10174,11 @@
   "releaseDate": "2023-01-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1717640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1717640/header.jpg",
+  "steamName": "Mahokenshi - The Samurai Deckbuilder",
+  "steamMethod": "first-result"
  },
  {
   "id": 1937407919,
@@ -9511,7 +10222,11 @@
   "releaseDate": "2023-04-27",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1607240,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1607240/header.jpg",
+  "steamName": "Mail Time",
+  "steamMethod": "exact"
  },
  {
   "id": 1692939089,
@@ -9550,7 +10265,11 @@
   "releaseDate": "2021-12-23",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1712390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1712390/header.jpg",
+  "steamName": "Martial Law",
+  "steamMethod": "exact"
  },
  {
   "id": 1438861093,
@@ -9599,7 +10318,11 @@
   "releaseDate": "2017-03-29",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 606030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/606030/header.jpg",
+  "steamName": "Meganoid",
+  "steamMethod": "exact"
  },
  {
   "id": 1432578339,
@@ -9636,7 +10359,11 @@
   "releaseDate": "1994-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904550,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904550/header.jpg",
+  "steamName": "Menzoberranzan",
+  "steamMethod": "exact"
  },
  {
   "id": 1436434037,
@@ -9687,7 +10414,11 @@
   "releaseDate": "2014-08-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 286690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/286690/header.jpg",
+  "steamName": "Metro 2033 Redux",
+  "steamMethod": "exact"
  },
  {
   "id": 1213504814,
@@ -9734,7 +10465,8 @@
   "releaseDate": "2014-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1324471032,
@@ -9779,7 +10511,11 @@
   "releaseDate": "2017-10-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 356190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/356190/header.jpg",
+  "steamName": "Middle-earth™: Shadow of War™",
+  "steamMethod": "exact"
  },
  {
   "id": 2024445598,
@@ -9821,7 +10557,11 @@
   "releaseDate": "2022-08-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1390410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1390410/header.jpg",
+  "steamName": "Midnight Fight Express",
+  "steamMethod": "exact"
  },
  {
   "id": 1893001152,
@@ -9867,7 +10607,11 @@
   "releaseDate": "2009-01-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 17410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/17410/header.jpg",
+  "steamName": "Mirror's Edge™",
+  "steamMethod": "exact"
  },
  {
   "id": 1607286183,
@@ -9915,7 +10659,11 @@
   "releaseDate": "2020-10-23",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1140270,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1140270/header.jpg",
+  "steamName": "Monster Prom 2: Monster Camp",
+  "steamMethod": "exact"
  },
  {
   "id": 1304291300,
@@ -9958,7 +10706,11 @@
   "releaseDate": "2020-05-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1102190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1102190/header.jpg",
+  "steamName": "Monster Train",
+  "steamMethod": "exact"
  },
  {
   "id": 2147483047,
@@ -10005,7 +10757,11 @@
   "releaseDate": "2018-05-29",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 606150,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/606150/header.jpg",
+  "steamName": "Moonlighter",
+  "steamMethod": "exact"
  },
  {
   "id": 2106173825,
@@ -10048,7 +10804,11 @@
   "releaseDate": "2022-09-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1374970,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1374970/header.jpg",
+  "steamName": "Moonscars",
+  "steamMethod": "exact"
  },
  {
   "id": 1848744423,
@@ -10092,7 +10852,11 @@
   "releaseDate": "2015-11-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 276810,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/276810/header.jpg",
+  "steamName": "Mordheim: City of the Damned",
+  "steamMethod": "exact"
  },
  {
   "id": 1621558174,
@@ -10142,7 +10906,11 @@
   "releaseDate": "2019-09-19",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1080750,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1080750/header.jpg",
+  "steamName": "Mutazione",
+  "steamMethod": "exact"
  },
  {
   "id": 1100902638,
@@ -10187,7 +10955,11 @@
   "releaseDate": "2023-06-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1991980,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1991980/header.jpg",
+  "steamName": "Mystic Academy: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 1547541023,
@@ -10236,7 +11008,11 @@
   "releaseDate": "2024-09-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2852980,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2852980/header.jpg",
+  "steamName": "Necroking",
+  "steamMethod": "exact"
  },
  {
   "id": 1669531175,
@@ -10280,7 +11056,11 @@
   "releaseDate": "2019-10-03",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 794540,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/794540/header.jpg",
+  "steamName": "Neo Cab",
+  "steamMethod": "exact"
  },
  {
   "id": 1739122581,
@@ -10327,7 +11107,11 @@
   "releaseDate": "2021-03-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1253860,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1253860/header.jpg",
+  "steamName": "Neurodeck : Psychological Deckbuilder",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658890,
@@ -10363,22 +11147,23 @@
   "releaseDate": "2005-11-03",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
-  "id": 2013583144,
-  "title": "Neverwinter Nights: Enhanced Edition - Polish Extras",
+  "id": 1097893768,
+  "title": "Neverwinter Nights: Enhanced Edition",
   "userTitle": "Neverwinter Nights: Enhanced Edition",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/neverwinter_nights_enhanced_edition_polish_extras",
+  "storeUrl": "https://www.gog.com/en/game/neverwinter_nights_enhanced_edition_pack",
   "images": {
-   "cover": "https://images.gog-statics.com/f849b4ac89a6956cc3e543e44676ebc5789feff54e1a0fc39600a00f83a5de9e.jpg",
-   "background": "https://images.gog-statics.com/bfcaa37ba232facabd93f697c25a592fbf2cbbb5d8ada80980eaf316b4970cc5.jpg",
-   "logo": "https://images.gog-statics.com/c327cd049b564816e62fc636cba354015f1d5f7f7a23f07d37412bbe02104c7b.png",
-   "icon": "https://images.gog-statics.com/e70f6a437c8944b697aefe6ad40819c9b079169cc2c4688f8b71f3b9bd5dfc89.png",
-   "tile": "https://images.gog-statics.com/31fd3081b4fef48f2ee5163bc999a2044b042ea2def20a3b3b1b9a58a46307e5_196.webp"
+   "cover": "https://images.gog-statics.com/88a8a2da16721e4cc8d6f6d7d612a36fd4bb93c0f95819ee0ac2a2138a085db9.jpg",
+   "background": "https://images.gog-statics.com/8fa44008176322804de1d54a711e7fc53a46135dfc9494dbd6e8a87fa1d0842b.jpg",
+   "logo": "https://images.gog-statics.com/e94ca15e6fc365db0402221787e851f848af7f9424c15ee3922bdf411d8e7ec8.png",
+   "icon": "https://images.gog-statics.com/cbfc95fc9d75f47f3202a02cc452ed71c9475c7f4e9d4bb4d05c322cf9bddd3f.png",
+   "tile": "https://images.gog-statics.com/8706f7fb87a4a41bc34254f3b49f59f96cf13d067b2c8bbfd8d41c327392052a_196.webp"
   },
   "genres": [
    "Role-playing",
@@ -10393,8 +11178,6 @@
    "Role-playing",
    "Female Protagonist",
    "Multiplayer",
-   "Real-Time",
-   "Retro",
    "Magic",
    "CRPG"
   ],
@@ -10407,7 +11190,11 @@
   "releaseDate": "2018-03-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 704450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/704450/header.jpg",
+  "steamName": "Neverwinter Nights: Enhanced Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659080,
@@ -10450,7 +11237,11 @@
   "releaseDate": "2004-11-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 6420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/6420/header.jpg",
+  "steamName": "Nexus - The Jupiter Incident",
+  "steamMethod": "exact"
  },
  {
   "id": 1433027987,
@@ -10492,7 +11283,11 @@
   "releaseDate": "2020-12-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1400520,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1400520/header.jpg",
+  "steamName": "Nomads of Driftland",
+  "steamMethod": "exact"
  },
  {
   "id": 1669882559,
@@ -10537,7 +11332,11 @@
   "releaseDate": "2022-05-03",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1348690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1348690/header.jpg",
+  "steamName": "Oaken",
+  "steamMethod": "exact"
  },
  {
   "id": 1974801979,
@@ -10580,7 +11379,11 @@
   "releaseDate": "2022-11-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1668190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1668190/header.jpg",
+  "steamName": "Once Upon a Jester",
+  "steamMethod": "exact"
  },
  {
   "id": 1293297882,
@@ -10626,7 +11429,11 @@
   "releaseDate": "2004-03-14",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1536610,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1536610/header.jpg",
+  "steamName": "OpenTTD",
+  "steamMethod": "exact"
  },
  {
   "id": 1337063899,
@@ -10670,7 +11477,11 @@
   "releaseDate": "2020-11-16",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 1129190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1129190/header.jpg",
+  "steamName": "Our Life: Beginnings & Always",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658853,
@@ -10712,7 +11523,11 @@
   "releaseDate": "1999-07-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 336610,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/336610/header.jpg",
+  "steamName": "Outcast 1.1",
+  "steamMethod": "exact"
  },
  {
   "id": 1297999995,
@@ -10758,7 +11573,11 @@
   "releaseDate": "2018-08-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 728880,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
+  "steamName": "Overcooked! 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1223053864,
@@ -10804,7 +11623,11 @@
   "releaseDate": "2016-08-03",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 448510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/448510/header.jpg",
+  "steamName": "Overcooked",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1245077743,
@@ -10847,7 +11670,8 @@
   "releaseDate": "2016-03-08",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1457519353,
@@ -10900,7 +11724,11 @@
   "releaseDate": "2016-01-15",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 388880,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/388880/header.jpg",
+  "steamName": "Oxenfree",
+  "steamMethod": "exact"
  },
  {
   "id": 1166262945,
@@ -10945,7 +11773,11 @@
   "releaseDate": "2022-10-11",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1768280,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1768280/header.jpg",
+  "steamName": "Ozymandias: Bronze Age Empire Sim",
+  "steamMethod": "exact"
  },
  {
   "id": 1862671058,
@@ -10991,7 +11823,11 @@
   "releaseDate": "2020-10-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1374290,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1374290/header.jpg",
+  "steamName": "Palindrome Syndrome: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 2125225264,
@@ -11041,7 +11877,11 @@
   "releaseDate": "2020-09-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1160220,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1160220/header.jpg",
+  "steamName": "Paradise Killer",
+  "steamMethod": "exact"
  },
  {
   "id": 1919929332,
@@ -11085,7 +11925,11 @@
   "releaseDate": "2023-12-19",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2702050,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2702050/header.jpg",
+  "steamName": "Phantasie Memorial Set",
+  "steamMethod": "exact"
  },
  {
   "id": 2121320116,
@@ -11132,7 +11976,11 @@
   "releaseDate": "2024-10-02",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2601940,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2601940/header.jpg",
+  "steamName": "Pinball Spire",
+  "steamMethod": "exact"
  },
  {
   "id": 1812138501,
@@ -11178,7 +12026,11 @@
   "releaseDate": "2023-05-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1608230,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608230/header.jpg",
+  "steamName": "Planet of Lana",
+  "steamMethod": "exact"
  },
  {
   "id": 1405279681,
@@ -11219,7 +12071,8 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1432643408,
@@ -11255,7 +12108,11 @@
   "releaseDate": "1991-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904522,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904522/header.jpg",
+  "steamName": "Pools of Darkness",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658755,
@@ -11297,7 +12154,11 @@
   "releaseDate": "2003-04-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 223470,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/223470/header.jpg",
+  "steamName": "POSTAL 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658754,
@@ -11344,7 +12205,8 @@
   "releaseDate": "2003-08-29",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1158493447,
@@ -11392,7 +12254,11 @@
   "releaseDate": "2017-05-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 480490,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/480490/header.jpg",
+  "steamName": "Prey",
+  "steamMethod": "exact"
  },
  {
   "id": 1441974651,
@@ -11437,7 +12303,11 @@
   "releaseDate": "2015-10-06",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 233450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/233450/header.jpg",
+  "steamName": "Prison Architect",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658807,
@@ -11483,7 +12353,11 @@
   "releaseDate": "2005-04-19",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 3830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/3830/header.jpg",
+  "steamName": "Psychonauts",
+  "steamMethod": "exact"
  },
  {
   "id": 1097498205,
@@ -11524,7 +12398,11 @@
   "releaseDate": "2020-10-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1186640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1186640/header.jpg",
+  "steamName": "Pumpkin Jack",
+  "steamMethod": "exact"
  },
  {
   "id": 1872608764,
@@ -11567,7 +12445,11 @@
   "releaseDate": "2024-12-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2833640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2833640/header.jpg",
+  "steamName": "Pyramids and Aliens: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 1836059896,
@@ -11606,45 +12488,51 @@
   "releaseDate": "2005-10-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2210,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2210/header.jpg",
+  "steamName": "Quake 4",
+  "steamMethod": "exact"
  },
  {
-  "id": 1825786806,
-  "title": "Quake II RTX",
+  "id": 1947927225,
+  "title": "Quake II",
   "userTitle": "Quake II",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/quake_ii_rtx",
+  "storeUrl": "https://www.gog.com/en/game/quake_ii_quad_damage_1112936378",
   "images": {
-   "cover": "https://images.gog-statics.com/511845d9349641c264d4c6d058dcbb0d5792ac089db04c6275cd2d5d2f5ae4b4.jpg",
-   "background": "https://images.gog-statics.com/45ea4be2f358e519da20b1d953e46d07ccaa9966cf8500cee2e51dc882e96963.jpg",
-   "logo": "https://images.gog-statics.com/d11592dffcdcf5e1cc83861f9378f2ec23a7ec1a885af90e67a728d0b390d368.png",
-   "icon": "https://images.gog-statics.com/7c713ee5491bad446e211193bf1a05a96d45df99ad010d0fe570842f4114b019.png",
-   "tile": "https://images.gog-statics.com/c36ed20220e95cb260b5ecf8e68c94ad0135040092dbea1ca38f4c9b6ae3aafc_196.webp"
+   "cover": "https://images.gog-statics.com/b41f803cde9cc82f32b1543368af3f1a9d0b25ba2c7f6671fb16ff368eabb1a6.jpg",
+   "background": "https://images.gog-statics.com/7b40e6f1b5e6def354e0a9b6aededd73cd86f0350c1479179b69c02e1fe76589.jpg",
+   "logo": "https://images.gog-statics.com/e0916539b669b5bb0aad8f7519d6bdcd20d198f40bb680cee81910ec332000f0.png",
+   "icon": "https://images.gog-statics.com/60085fd65eb37dd19df999d96efce2829d5408a35d78b2f7f8c311ba2137706a.png",
+   "tile": "https://images.gog-statics.com/eaad37826db129a6477669a4fecae58e8507578eda7ede7c775622240f9146be_196.webp"
   },
   "genres": [
    "Shooter",
-   "FPP",
+   "Action",
    "Horror"
   ],
   "features": [
-   "First-Person",
-   "Dark",
+   "Action",
    "Horror",
-   "FPS",
    "Shooter"
   ],
   "developers": [
-   "Lightspeed Studios™"
+   "id Software"
   ],
   "publishers": [
-   "NVIDIA"
+   "Bethesda Softworks LLC"
   ],
-  "releaseDate": "2019-06-06",
+  "releaseDate": "1997-12-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2320,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2320/header.jpg",
+  "steamName": "Quake II",
+  "steamMethod": "exact"
  },
  {
   "id": 1441704824,
@@ -11682,7 +12570,8 @@
   "releaseDate": "1997-12-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1825786806,
@@ -11720,7 +12609,11 @@
   "releaseDate": "2019-06-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1089130,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1089130/header.jpg",
+  "steamName": "Quake II RTX",
+  "steamMethod": "exact"
  },
  {
   "id": 1432906190,
@@ -11756,7 +12649,11 @@
   "releaseDate": "1995-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904571,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904571/header.jpg",
+  "steamName": "Ravenloft: Stone Prophet",
+  "steamMethod": "exact"
  },
  {
   "id": 1432905053,
@@ -11792,7 +12689,11 @@
   "releaseDate": "1994-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904570,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904570/header.jpg",
+  "steamName": "Ravenloft: Strahd's Possession",
+  "steamMethod": "exact"
  },
  {
   "id": 1435582019,
@@ -11837,7 +12738,11 @@
   "releaseDate": "2015-10-20",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 290300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/290300/header.jpg",
+  "steamName": "Rebel Galaxy",
+  "steamMethod": "exact"
  },
  {
   "id": 1339695996,
@@ -11880,7 +12785,11 @@
   "releaseDate": "2020-09-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 910830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/910830/header.jpg",
+  "steamName": "Rebel Galaxy Outlaw",
+  "steamMethod": "exact"
  },
  {
   "id": 1481221108,
@@ -11925,7 +12834,11 @@
   "releaseDate": "2022-04-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1790490,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1790490/header.jpg",
+  "steamName": "Regular Factory: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 1449581489,
@@ -11964,7 +12877,11 @@
   "releaseDate": "1999-03-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 493310,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/493310/header.jpg",
+  "steamName": "Requiem: Avenging Angel",
+  "steamMethod": "exact"
  },
  {
   "id": 1688702977,
@@ -12007,7 +12924,11 @@
   "releaseDate": "2021-09-09",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 1290780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1290780/header.jpg",
+  "steamName": "Residual",
+  "steamMethod": "exact"
  },
  {
   "id": 1559996859,
@@ -12050,7 +12971,11 @@
   "releaseDate": "1993-09-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1299710,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1299710/header.jpg",
+  "steamName": "Return of the Phantom",
+  "steamMethod": "exact"
  },
  {
   "id": 1741027632,
@@ -12097,7 +13022,11 @@
   "releaseDate": "2022-10-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2008050,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2008050/header.jpg",
+  "steamName": "Right and Down",
+  "steamMethod": "exact"
  },
  {
   "id": 1989052770,
@@ -12141,7 +13070,8 @@
   "releaseDate": "2017-12-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1430740458,
@@ -12185,7 +13115,11 @@
   "releaseDate": "2009-01-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 9480,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/9480/header.jpg",
+  "steamName": "Saints Row 2",
+  "steamMethod": "exact"
  },
  {
   "id": 2037689757,
@@ -12222,7 +13156,11 @@
   "releaseDate": "2013-08-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 206420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/206420/header.jpg",
+  "steamName": "Saints Row IV: Re-Elected",
+  "steamMethod": "exact"
  },
  {
   "id": 1978178686,
@@ -12267,7 +13205,11 @@
   "releaseDate": "2015-01-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 301910,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/301910/header.jpg",
+  "steamName": "Saints Row: Gat out of Hell",
+  "steamMethod": "exact"
  },
  {
   "id": 1435738629,
@@ -12305,7 +13247,11 @@
   "releaseDate": "2021-05-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 978300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/978300/header.jpg",
+  "steamName": "Saints Row®: The Third™ Remastered",
+  "steamMethod": "exact"
  },
  {
   "id": 2006298293,
@@ -12349,7 +13295,11 @@
   "releaseDate": "2021-05-20",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1580970,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1580970/header.jpg",
+  "steamName": "Samorost 1",
+  "steamMethod": "exact"
  },
  {
   "id": 1207660203,
@@ -12394,7 +13344,11 @@
   "releaseDate": "2013-03-15",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 227220,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/227220/header.jpg",
+  "steamName": "Sang-Froid - Tales of Werewolves",
+  "steamMethod": "exact"
  },
  {
   "id": 1804860967,
@@ -12436,7 +13390,11 @@
   "releaseDate": "2023-10-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1526900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1526900/header.jpg",
+  "steamName": "Sapphire Safari",
+  "steamMethod": "exact"
  },
  {
   "id": 1620735257,
@@ -12486,7 +13444,11 @@
   "releaseDate": "2022-10-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 698670,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/698670/header.jpg",
+  "steamName": "Scorn",
+  "steamMethod": "exact"
  },
  {
   "id": 1432641528,
@@ -12522,7 +13484,11 @@
   "releaseDate": "1990-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904521,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904521/header.jpg",
+  "steamName": "Secret of the Silver Blades",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658876,
@@ -12570,7 +13536,8 @@
   "releaseDate": "2001-03-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1276856962,
@@ -12616,7 +13583,11 @@
   "releaseDate": "2017-12-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 471010,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/471010/header.jpg",
+  "steamName": "Seven: Enhanced Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 1779703219,
@@ -12652,7 +13623,11 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350510/header.jpg",
+  "steamName": "Shadow Sorcerer",
+  "steamMethod": "exact"
  },
  {
   "id": 1601442230,
@@ -12702,7 +13677,11 @@
   "releaseDate": "2016-12-06",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 418240,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/418240/header.jpg",
+  "steamName": "Shadow Tactics: Blades of the Shogun",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659142,
@@ -12746,7 +13725,11 @@
   "releaseDate": "1997-05-13",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 233130,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/233130/header.jpg",
+  "steamName": "Shadow Warrior",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1442285576,
@@ -12782,7 +13765,11 @@
   "releaseDate": "2018-08-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 585450,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/585450/header.jpg",
+  "steamName": "Shadows: Awakening",
+  "steamMethod": "exact"
  },
  {
   "id": 1456141287,
@@ -12827,7 +13814,11 @@
   "releaseDate": "2015-04-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 345820,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/345820/header.jpg",
+  "steamName": "Shantae and the Pirate's Curse",
+  "steamMethod": "exact"
  },
  {
   "id": 1104084973,
@@ -12869,7 +13860,11 @@
   "releaseDate": "2024-09-05",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 2084000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2084000/header.jpg",
+  "steamName": "Shogun Showdown",
+  "steamMethod": "exact"
  },
  {
   "id": 1689019552,
@@ -12907,7 +13902,8 @@
   "releaseDate": "2021-03-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1511366207,
@@ -12949,7 +13945,11 @@
   "releaseDate": "2023-05-02",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1155330,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1155330/header.jpg",
+  "steamName": "Showgunners",
+  "steamMethod": "exact"
  },
  {
   "id": 1760534591,
@@ -12986,7 +13986,8 @@
   "releaseDate": "2005-10-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1471405734,
@@ -13032,7 +14033,11 @@
   "releaseDate": "2001-10-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 3910,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/3910/header.jpg",
+  "steamName": "Sid Meier's Civilization® III Complete",
+  "steamMethod": "exact"
  },
  {
   "id": 2085372274,
@@ -13078,7 +14083,11 @@
   "releaseDate": "2001-09-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1558990,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1558990/header.jpg",
+  "steamName": "Siege of Avalon: Anthology",
+  "steamMethod": "exact"
  },
  {
   "id": 1986246769,
@@ -13125,7 +14134,11 @@
   "releaseDate": "2019-11-21",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 716640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/716640/header.jpg",
+  "steamName": "Sigma Theory: Global Cold War",
+  "steamMethod": "exact"
  },
  {
   "id": 2081337550,
@@ -13170,7 +14183,11 @@
   "releaseDate": "2024-11-25",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 2790000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2790000/header.jpg",
+  "steamName": "Sin Slayers: Reign of The 8th",
+  "steamMethod": "exact"
  },
  {
   "id": 1603656118,
@@ -13206,7 +14223,8 @@
   "releaseDate": "2019-04-11",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1900796646,
@@ -13259,7 +14277,11 @@
   "releaseDate": "2022-12-08",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2124790,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2124790/header.jpg",
+  "steamName": "Sir Questionnaire",
+  "steamMethod": "exact"
  },
  {
   "id": 1542885660,
@@ -13303,7 +14325,11 @@
   "releaseDate": "2022-08-18",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1240590,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1240590/header.jpg",
+  "steamName": "Sir Whoopass™: Immortal Death",
+  "steamMethod": "exact"
  },
  {
   "id": 1276268370,
@@ -13350,7 +14376,11 @@
   "releaseDate": "2020-04-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1262770,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1262770/header.jpg",
+  "steamName": "Snake Core",
+  "steamMethod": "exact"
  },
  {
   "id": 1179524912,
@@ -13395,47 +14425,47 @@
   "releaseDate": "2022-12-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1124260,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1124260/header.jpg",
+  "steamName": "Snowtopia: Ski Resort Builder",
+  "steamMethod": "exact"
  },
  {
-  "id": 1947376582,
-  "title": "Circles EP: South of the Circle Edition",
+  "id": 1787058795,
+  "title": "South of the Circle",
   "userTitle": "South of the Circle",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/circles_ep_south_of_the_circle_edition",
+  "storeUrl": "https://www.gog.com/en/game/south_of_the_circle",
   "images": {
-   "cover": "https://images.gog-statics.com/f753c26efe160cf3488267af8ecd8ad7465dbd8672e7d4523fc7f917f1a6d042.jpg",
-   "background": "https://images.gog-statics.com/5553a1219e898175ab40e3e0c6a7ce8ff122b3ebf1f686786ed215aa60b9aa5c.jpg",
-   "logo": "https://images.gog-statics.com/a9244becfa68bb1a1721159682ca7cd6ea66ff8be8f0e7962acabf8b38ff3e48.png",
-   "icon": "https://images.gog-statics.com/46e70c23004ee842ab6bc100a2e2086899f632dc3a178c69663760a61db5f99a.png",
-   "tile": "https://images.gog-statics.com/479decece3465e27505f4934f47c2d7bc1349a252c047c83a636f4b1e8cd6133_196.webp"
+   "cover": "https://images.gog-statics.com/79f0524369a164169e265ed860b395b5189f77fd5be37deba4c2b7b6d3162f76.jpg",
+   "background": "https://images.gog-statics.com/720c71aaf45a2452adbcbd5076b05f959d4cd8bedb676026ba7a37e3d19c4d93.jpg",
+   "logo": "https://images.gog-statics.com/de7f7204dba42be0dcfecc3be17a283ba8ad947ef72722d60e9ec720163cf276.png",
+   "icon": "https://images.gog-statics.com/8663b2c5924a1dea33a87fc946e5e64f9f70d2154cba503df903bb674ff36f52.png",
+   "tile": "https://images.gog-statics.com/cabb893540e2c31c08fcfd1c3df0b92edfa675f73506aeeb604ba615820c11bf_196.webp"
   },
-  "genres": [
-   "Adventure",
-   "Point-and-click",
-   "Narrative"
-  ],
+  "genres": [],
   "features": [
-   "Adventure",
    "Story Rich",
-   "OST",
-   "Point&Click",
    "Historical",
-   "Narrative",
    "Emotional"
   ],
   "developers": [
-   "State of Play Games"
+   "TEST DEVELOPER"
   ],
   "publishers": [
-   "11 bit studios"
+   "TEST PUBLISHER"
   ],
-  "releaseDate": "2022-07-14",
+  "releaseDate": "2022-08-03",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1811040,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1811040/header.jpg",
+  "steamName": "South of the Circle",
+  "steamMethod": "exact"
  },
  {
   "id": 1538951699,
@@ -13483,7 +14513,11 @@
   "releaseDate": "2016-01-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 371430,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/371430/header.jpg",
+  "steamName": "Space Grunts",
+  "steamMethod": "exact"
  },
  {
   "id": 1682258648,
@@ -13532,7 +14566,11 @@
   "releaseDate": "2020-05-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1125370,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1125370/header.jpg",
+  "steamName": "Space Grunts 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1896039326,
@@ -13580,7 +14618,8 @@
   "releaseDate": "2018-05-22",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1582445378,
@@ -13625,7 +14664,11 @@
   "releaseDate": "1992-01-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350550,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350550/header.jpg",
+  "steamName": "Spelljammer: Pirates of Realmspace",
+  "steamMethod": "exact"
  },
  {
   "id": 1377413834,
@@ -13671,7 +14714,11 @@
   "releaseDate": "2023-11-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1518220,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1518220/header.jpg",
+  "steamName": "Spells & Secrets",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659257,
@@ -13718,7 +14765,11 @@
   "releaseDate": "2013-08-08",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 239350,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/239350/header.jpg",
+  "steamName": "Spelunky",
+  "steamMethod": "exact"
  },
  {
   "id": 1908018720,
@@ -13756,7 +14807,11 @@
   "releaseDate": "2020-08-18",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1202910,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1202910/header.jpg",
+  "steamName": "Spiritfarer Demo",
+  "steamMethod": "exact"
  },
  {
   "id": 1421404701,
@@ -13801,7 +14856,11 @@
   "releaseDate": "2005-10-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 6060,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/6060/header.jpg",
+  "steamName": "STAR WARS™ Battlefront II (Classic, 2005)",
+  "steamMethod": "first-result"
  },
  {
   "id": 1421404646,
@@ -13844,7 +14903,11 @@
   "releaseDate": "2001-11-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 356500,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/356500/header.jpg",
+  "steamName": "STAR WARS™ Galactic Battlegrounds Saga",
+  "steamMethod": "exact"
  },
  {
   "id": 1422286819,
@@ -13872,7 +14935,11 @@
   "releaseDate": "1997-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 32380,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/32380/header.jpg",
+  "steamName": "STAR WARS™ Jedi Knight: Dark Forces II",
+  "steamMethod": "exact"
  },
  {
   "id": 1422285784,
@@ -13900,7 +14967,8 @@
   "releaseDate": "1997-09-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1421404828,
@@ -13943,7 +15011,8 @@
   "releaseDate": "1998-02-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1158717618,
@@ -13983,7 +15052,11 @@
   "releaseDate": "2024-08-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2419090,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2419090/header.jpg",
+  "steamName": "STAR WARS™: Bounty Hunter™",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659693,
@@ -14024,7 +15097,11 @@
   "releaseDate": "1996-11-19",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 358390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/358390/header.jpg",
+  "steamName": "Stargunner",
+  "steamMethod": "exact"
  },
  {
   "id": 1663581818,
@@ -14073,7 +15150,11 @@
   "releaseDate": "2018-08-15",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 437630,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/437630/header.jpg",
+  "steamName": "State of Mind",
+  "steamMethod": "exact"
  },
  {
   "id": 1668986402,
@@ -14119,7 +15200,11 @@
   "releaseDate": "2016-06-07",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 322190,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/322190/header.jpg",
+  "steamName": "SteamWorld Heist",
+  "steamMethod": "exact"
  },
  {
   "id": 1941294775,
@@ -14166,7 +15251,11 @@
   "releaseDate": "2019-05-31",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 804010,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/804010/header.jpg",
+  "steamName": "SteamWorld Quest: Hand of Gilgamech",
+  "steamMethod": "exact"
  },
  {
   "id": 1508702879,
@@ -14215,7 +15304,11 @@
   "releaseDate": "2016-05-09",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 281990,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg",
+  "steamName": "Stellaris",
+  "steamMethod": "exact"
  },
  {
   "id": 1215985085,
@@ -14263,7 +15356,11 @@
   "releaseDate": "2019-11-20",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1063490,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1063490/header.jpg",
+  "steamName": "Still There",
+  "steamMethod": "exact"
  },
  {
   "id": 1624007757,
@@ -14311,7 +15408,11 @@
   "releaseDate": "2023-08-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1920780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1920780/header.jpg",
+  "steamName": "Stray Gods: The Roleplaying Musical",
+  "steamMethod": "exact"
  },
  {
   "id": 2038001955,
@@ -14359,7 +15460,11 @@
   "releaseDate": "2014-10-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 242640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/242640/header.jpg",
+  "steamName": "Styx: Master of Shadows",
+  "steamMethod": "exact"
  },
  {
   "id": 1549126051,
@@ -14403,7 +15508,11 @@
   "releaseDate": "2025-03-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2711030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2711030/header.jpg",
+  "steamName": "Sugardew Island - Your cozy farm shop",
+  "steamMethod": "first-result"
  },
  {
   "id": 1384091612,
@@ -14453,7 +15562,8 @@
   "releaseDate": "2024-05-10",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1748855533,
@@ -14498,7 +15608,11 @@
   "releaseDate": "2014-07-02",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 313730,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/313730/header.jpg",
+  "steamName": "Sunrider: Mask of Arcadius",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658848,
@@ -14549,7 +15663,11 @@
   "releaseDate": "2002-06-18",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 46500,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/46500/header.jpg",
+  "steamName": "Syberia",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658849,
@@ -14599,22 +15717,26 @@
   "releaseDate": "2004-03-29",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 46510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/46510/header.jpg",
+  "steamName": "Syberia II",
+  "steamMethod": "exact"
  },
  {
-  "id": 1766004216,
-  "title": "Syberia: The World Before Demo",
+  "id": 1731334260,
+  "title": "Syberia: The World Before",
   "userTitle": "Syberia: The World Before",
   "slug": "",
   "unlisted": false,
   "kind": "Game",
-  "storeUrl": "https://www.gog.com/en/game/syberia_the_world_before_demo",
+  "storeUrl": "https://www.gog.com/en/game/syberia_the_world_before_1592941638",
   "images": {
-   "cover": "https://images.gog-statics.com/4129489b650d9e94a5c693e1ef7f129f0c5beddd892d000342f494419bad8398.jpg",
-   "background": "https://images.gog-statics.com/e04276547ef773c040f3c2a74c2ba7ca6e58288be1ed0306ea8175eaedbbb85f.jpg",
-   "logo": "https://images.gog-statics.com/738f0c2216ce2891b8fbb875a98ccb382fdfbece0afc26292848eb1f6fe555ec.png",
-   "icon": "https://images.gog-statics.com/2eea7401e0830bc529e472d6a279c181f4c8928e99d800570efc58ef3b253ee8.png",
-   "tile": "https://images.gog-statics.com/1e6544832c40f0df8bee3099846f5ae5fd8576b593a79c98d02d04ad7d77c88f_196.webp"
+   "cover": "https://images.gog-statics.com/57f84bee49a946c5675e4189ecafc69ad5d5f4d980059c6547c4ea12dd29df3e.jpg",
+   "background": "https://images.gog-statics.com/c2c5a17cf51daaa04fb6b1145a27df19f071b298e902fa3c20a71fc3ae9b766c.jpg",
+   "logo": "https://images.gog-statics.com/e0dafe68c213d0b30cda77908e68cbbbe0cb718eccaae7d88a522deaf52ab918.png",
+   "icon": "https://images.gog-statics.com/229a7c6da40211928d82f7eadc8b1786a56d7353b58b7c98860481ec4a8173ee.png",
+   "tile": "https://images.gog-statics.com/2f47f4c85b8b4e33615e560f35c3e47372cf9e4e12d624982091dc5bccaa05f6_196.webp"
   },
   "genres": [
    "Adventure",
@@ -14623,17 +15745,9 @@
   ],
   "features": [
    "Adventure",
-   "Story Rich",
-   "Atmospheric",
    "Exploration",
    "Puzzle",
-   "Female Protagonist",
-   "Mystery",
-   "Point&Click",
-   "Logic",
-   "Emotional",
-   "Investigation",
-   "Demo"
+   "Logic"
   ],
   "developers": [
    "Microids Studio Paris"
@@ -14641,10 +15755,14 @@
   "publishers": [
    "Microids"
   ],
-  "releaseDate": "2022-04-28",
+  "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1410640,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1410640/header.jpg",
+  "steamName": "Syberia: The World Before",
+  "steamMethod": "exact"
  },
  {
   "id": 1440133968,
@@ -14680,7 +15798,11 @@
   "releaseDate": "2018-02-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 537520,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/537520/header.jpg",
+  "steamName": "SYMMETRY",
+  "steamMethod": "exact"
  },
  {
   "id": 2069516170,
@@ -14721,7 +15843,8 @@
   "releaseDate": "2020-05-30",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207658992,
@@ -14759,7 +15882,8 @@
   "releaseDate": "1993-06-06",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659193,
@@ -14797,7 +15921,8 @@
   "releaseDate": "1996-10-31",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 2116300560,
@@ -14837,7 +15962,11 @@
   "releaseDate": "2020-05-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 487390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/487390/header.jpg",
+  "steamName": "System Shock Demo",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658753,
@@ -14877,7 +16006,8 @@
   "releaseDate": "1994-02-26",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1339662209,
@@ -14923,7 +16053,11 @@
   "releaseDate": "2021-02-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1483780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1483780/header.jpg",
+  "steamName": "Tested on Humans: Escape Room",
+  "steamMethod": "exact"
  },
  {
   "id": 1341028548,
@@ -14975,7 +16109,11 @@
   "releaseDate": "2019-10-17",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 792300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/792300/header.jpg",
+  "steamName": "The Beast Inside",
+  "steamMethod": "exact"
  },
  {
   "id": 1854689188,
@@ -15024,7 +16162,11 @@
   "releaseDate": "2020-01-28",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1045720,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1045720/header.jpg",
+  "steamName": "The Coma 2: Vicious Sisters",
+  "steamMethod": "exact"
  },
  {
   "id": 1163487128,
@@ -15073,7 +16215,11 @@
   "releaseDate": "2017-09-22",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 600090,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/600090/header.jpg",
+  "steamName": "The Coma: Recut",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659133,
@@ -15115,7 +16261,11 @@
   "releaseDate": "2012-06-22",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 203830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/203830/header.jpg",
+  "steamName": "The Dark Eye: Chains of Satinav",
+  "steamMethod": "exact"
  },
  {
   "id": 1432722998,
@@ -15152,7 +16302,11 @@
   "releaseDate": "1992-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904622,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904622/header.jpg",
+  "steamName": "The Dark Queen of Krynn",
+  "steamMethod": "exact"
  },
  {
   "id": 1358213898,
@@ -15189,7 +16343,8 @@
   "releaseDate": "2021-10-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1435829353,
@@ -15228,7 +16383,11 @@
   "releaseDate": "1996-08-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1812390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1812390/header.jpg",
+  "steamName": "The Elder Scrolls II: Daggerfall",
+  "steamMethod": "exact"
  },
  {
   "id": 1435828767,
@@ -15265,7 +16424,8 @@
   "releaseDate": "2003-11-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1458058109,
@@ -15301,7 +16461,8 @@
   "releaseDate": "2007-09-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1435828982,
@@ -15339,7 +16500,11 @@
   "releaseDate": "1994-03-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1812290,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1812290/header.jpg",
+  "steamName": "The Elder Scrolls: Arena",
+  "steamMethod": "exact"
  },
  {
   "id": 1083619800,
@@ -15384,7 +16549,11 @@
   "releaseDate": "2017-10-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 601430,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/601430/header.jpg",
+  "steamName": "The Evil Within 2",
+  "steamMethod": "exact"
  },
  {
   "id": 2147483137,
@@ -15429,7 +16598,11 @@
   "releaseDate": "2020-11-10",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1135260,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1135260/header.jpg",
+  "steamName": "The Falconeer: Revolution Remaster",
+  "steamMethod": "first-result"
  },
  {
   "id": 1669367757,
@@ -15472,7 +16645,8 @@
   "releaseDate": "2011-05-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1198537397,
@@ -15518,7 +16692,11 @@
   "releaseDate": "2022-04-29",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1087760,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1087760/header.jpg",
+  "steamName": "The Gunk",
+  "steamMethod": "exact"
  },
  {
   "id": 2114035213,
@@ -15555,7 +16733,8 @@
   "releaseDate": "2002-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 2081410845,
@@ -15607,7 +16786,11 @@
   "releaseDate": "2023-03-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1105670,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1105670/header.jpg",
+  "steamName": "The Last Spell",
+  "steamMethod": "exact"
  },
  {
   "id": 1656945959,
@@ -15652,7 +16835,8 @@
   "releaseDate": "2020-12-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659333,
@@ -15691,7 +16875,8 @@
   "releaseDate": "2013-07-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1213371691,
@@ -15731,7 +16916,11 @@
   "releaseDate": "2024-04-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2493180,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2493180/header.jpg",
+  "steamName": "The Lullaby of Life",
+  "steamMethod": "exact"
  },
  {
   "id": 1242541569,
@@ -15776,7 +16965,11 @@
   "releaseDate": "2020-10-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1920490,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1920490/header.jpg",
+  "steamName": "The Outer Worlds: Spacer's Choice Edition",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1986509485,
@@ -15822,7 +17015,11 @@
   "releaseDate": "2023-03-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1920490,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1920490/header.jpg",
+  "steamName": "The Outer Worlds: Spacer's Choice Edition",
+  "steamMethod": "first-result"
  },
  {
   "id": 1254359050,
@@ -15866,7 +17063,11 @@
   "releaseDate": "2023-02-24",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1266030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1266030/header.jpg",
+  "steamName": "The Pale Beyond",
+  "steamMethod": "exact"
  },
  {
   "id": 1906012961,
@@ -15908,7 +17109,11 @@
   "releaseDate": "2023-11-02",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2397500,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2397500/header.jpg",
+  "steamName": "The Smurfs 2 - The Prisoner of the Green Stone",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1577265251,
@@ -15948,7 +17153,11 @@
   "releaseDate": "2014-12-11",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 257510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/257510/header.jpg",
+  "steamName": "The Talos Principle",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1591938132,
@@ -15994,7 +17203,11 @@
   "releaseDate": "2019-02-14",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 940680,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/940680/header.jpg",
+  "steamName": "The Textorcist: The Story of Ray Bibbia",
+  "steamMethod": "exact"
  },
  {
   "id": 1655492231,
@@ -16045,7 +17258,11 @@
   "releaseDate": "2016-02-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 433100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/433100/header.jpg",
+  "steamName": "The Town of Light",
+  "steamMethod": "exact"
  },
  {
   "id": 1435827232,
@@ -16082,7 +17299,8 @@
   "releaseDate": "1995-04-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659019,
@@ -16124,7 +17342,11 @@
   "releaseDate": "2014-05-06",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 268540,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/268540/header.jpg",
+  "steamName": "The Whispered World Special Edition",
+  "steamMethod": "exact"
  },
  {
   "id": 2044656083,
@@ -16174,7 +17396,11 @@
   "releaseDate": "2022-11-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1512390,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1512390/header.jpg",
+  "steamName": "The Whispering Valley",
+  "steamMethod": "exact"
  },
  {
   "id": 1495134320,
@@ -16227,7 +17453,11 @@
   "releaseDate": "2016-08-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 292030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
+  "steamName": "The Witcher 3: Wild Hunt - Complete Edition",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1980301910,
@@ -16248,7 +17478,8 @@
   "win": false,
   "mac": false,
   "linux": false,
-  "noMetadata": true
+  "noMetadata": true,
+  "steamChecked": true
  },
  {
   "id": 1207658924,
@@ -16297,7 +17528,11 @@
   "releaseDate": "2007-10-26",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 20900,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/20900/header.jpg",
+  "steamName": "The Witcher: Enhanced Edition Director's Cut",
+  "steamMethod": "first-result"
  },
  {
   "id": 1582025844,
@@ -16342,7 +17577,11 @@
   "releaseDate": "2019-05-13",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 606230,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/606230/header.jpg",
+  "steamName": "Thea 2: The Shattering",
+  "steamMethod": "exact"
  },
  {
   "id": 1446830366,
@@ -16379,7 +17618,8 @@
   "releaseDate": "2014-02-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659001,
@@ -16426,7 +17666,11 @@
   "releaseDate": "2000-03-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 211740,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/211740/header.jpg",
+  "steamName": "Thief II: The Metal Age",
+  "steamMethod": "first-result"
  },
  {
   "id": 1207659036,
@@ -16474,7 +17718,8 @@
   "releaseDate": "2004-05-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207658997,
@@ -16521,7 +17766,11 @@
   "releaseDate": "1998-11-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 211600,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/211600/header.jpg",
+  "steamName": "Thief Gold (1999)",
+  "steamMethod": "first-result"
  },
  {
   "id": 1297352383,
@@ -16571,7 +17820,11 @@
   "releaseDate": "2018-10-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 973760,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/973760/header.jpg",
+  "steamName": "Thronebreaker: The Witcher Tales",
+  "steamMethod": "exact"
  },
  {
   "id": 1318552817,
@@ -16610,7 +17863,11 @@
   "releaseDate": "2023-05-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1831700,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1831700/header.jpg",
+  "steamName": "Tin Hearts",
+  "steamMethod": "exact"
  },
  {
   "id": 1436499377,
@@ -16647,7 +17904,11 @@
   "releaseDate": "2021-09-17",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 1307580,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1307580/header.jpg",
+  "steamName": "TOEM: A Photo Adventure",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1207663513,
@@ -16675,7 +17936,8 @@
   "releaseDate": "1999-11-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207663523,
@@ -16703,7 +17965,11 @@
   "releaseDate": "1999-11-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 225000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/225000/header.jpg",
+  "steamName": "Tomb Raider V: Chronicles (2000)",
+  "steamMethod": "first-result"
  },
  {
   "id": 1724969043,
@@ -16742,7 +18008,8 @@
   "releaseDate": "2013-03-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1407750955,
@@ -16785,7 +18052,11 @@
   "releaseDate": "2024-02-14",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2478970,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2478970/header.jpg",
+  "steamName": "Tomb Raider I-III Remastered Starring Lara Croft",
+  "steamMethod": "exact"
  },
  {
   "id": 1202885143,
@@ -16824,7 +18095,11 @@
   "releaseDate": "2007-06-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 8000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/8000/header.jpg",
+  "steamName": "Tomb Raider: Anniversary",
+  "steamMethod": "exact"
  },
  {
   "id": 1810841502,
@@ -16862,7 +18137,11 @@
   "releaseDate": "2006-04-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 7000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/7000/header.jpg",
+  "steamName": "Tomb Raider: Legend",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659089,
@@ -16900,7 +18179,11 @@
   "releaseDate": "2003-06-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 225020,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/225020/header.jpg",
+  "steamName": "Tomb Raider VI: The Angel of Darkness (2003)",
+  "steamMethod": "first-result"
  },
  {
   "id": 1900745791,
@@ -16939,7 +18222,11 @@
   "releaseDate": "2008-11-21",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 8140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/8140/header.jpg",
+  "steamName": "Tomb Raider: Underworld",
+  "steamMethod": "exact"
  },
  {
   "id": 1207666633,
@@ -16986,7 +18273,11 @@
   "releaseDate": "1996-11-04",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 369830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/369830/header.jpg",
+  "steamName": "Toonstruck",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658880,
@@ -17032,7 +18323,11 @@
   "releaseDate": "1997-10-30",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 298030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/298030/header.jpg",
+  "steamName": "Total Annihilation",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1207659179,
@@ -17069,7 +18364,8 @@
   "releaseDate": "2005-09-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1411626324,
@@ -17115,7 +18411,11 @@
   "releaseDate": "2018-04-12",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 617480,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/617480/header.jpg",
+  "steamName": "Tower of Time",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659013,
@@ -17160,7 +18460,11 @@
   "releaseDate": "2011-11-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 863940,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/863940/header.jpg",
+  "steamName": "Treasure Adventure Game",
+  "steamMethod": "exact"
  },
  {
   "id": 1592693763,
@@ -17206,7 +18510,11 @@
   "releaseDate": "2022-02-16",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1737100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1737100/header.jpg",
+  "steamName": "Treasure of Nadia",
+  "steamMethod": "exact"
  },
  {
   "id": 1432641771,
@@ -17242,7 +18550,11 @@
   "releaseDate": "1992-01-01",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1904524,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904524/header.jpg",
+  "steamName": "Treasures of the Savage Frontier",
+  "steamMethod": "exact"
  },
  {
   "id": 1435068351,
@@ -17288,7 +18600,11 @@
   "releaseDate": "2011-09-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 57690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/57690/header.jpg",
+  "steamName": "Tropico 4",
+  "steamMethod": "exact"
  },
  {
   "id": 1719675091,
@@ -17337,7 +18653,11 @@
   "releaseDate": "2016-10-19",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 440420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/440420/header.jpg",
+  "steamName": "True Fear: Forsaken Souls Part 1",
+  "steamMethod": "exact"
  },
  {
   "id": 1365195229,
@@ -17378,7 +18698,11 @@
   "releaseDate": "2018-11-02",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamId": 935580,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/935580/header.jpg",
+  "steamName": "True Fear: Forsaken Souls Part 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1289701346,
@@ -17423,7 +18747,11 @@
   "releaseDate": "2019-03-12",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 757300,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/757300/header.jpg",
+  "steamName": "Truberbrook / Trüberbrook",
+  "steamMethod": "first-result"
  },
  {
   "id": 1207658901,
@@ -17463,7 +18791,8 @@
   "releaseDate": "1999-11-30",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207662463,
@@ -17501,7 +18830,8 @@
   "releaseDate": "1992-03-01",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207662473,
@@ -17539,7 +18869,8 @@
   "releaseDate": "1992-03-01",
   "win": true,
   "mac": true,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207658962,
@@ -17578,7 +18909,8 @@
   "releaseDate": "1985-09-16",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659062,
@@ -17619,7 +18951,8 @@
   "releaseDate": "1991-12-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1386468605,
@@ -17664,7 +18997,11 @@
   "releaseDate": "2022-08-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1945780,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1945780/header.jpg",
+  "steamName": "Under The Moon",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658679,
@@ -17710,7 +19047,8 @@
   "releaseDate": "1998-04-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1381758449,
@@ -17752,7 +19090,8 @@
   "releaseDate": "2020-05-27",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1075740587,
@@ -17800,7 +19139,11 @@
   "releaseDate": "2019-05-28",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 904380,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/904380/header.jpg",
+  "steamName": "Vambrace: Cold Soul",
+  "steamMethod": "exact"
  },
  {
   "id": 2105995113,
@@ -17846,7 +19189,11 @@
   "releaseDate": "1993-03-01",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2414320,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2414320/header.jpg",
+  "steamName": "Veil of Darkness",
+  "steamMethod": "exact"
  },
  {
   "id": 1925770843,
@@ -17895,7 +19242,11 @@
   "releaseDate": "2023-07-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1491670,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1491670/header.jpg",
+  "steamName": "Venba",
+  "steamMethod": "exact"
  },
  {
   "id": 1345182195,
@@ -17934,7 +19285,11 @@
   "releaseDate": "2009-09-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 338140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/338140/header.jpg",
+  "steamName": "Venetica - Gold Edition",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 2116968103,
@@ -17982,7 +19337,11 @@
   "releaseDate": "2020-05-12",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 1019310,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1019310/header.jpg",
+  "steamName": "VirtuaVerse",
+  "steamMethod": "exact"
  },
  {
   "id": 1485235422,
@@ -18018,7 +19377,11 @@
   "releaseDate": "",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 2350513,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/2350513/header.jpg",
+  "steamName": "War of the Lance",
+  "steamMethod": "exact"
  },
  {
   "id": 1455545518,
@@ -18061,7 +19424,11 @@
   "releaseDate": "1996-09-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1741140,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1741140/header.jpg",
+  "steamName": "War Wind",
+  "steamMethod": "exact"
  },
  {
   "id": 1180139263,
@@ -18104,7 +19471,8 @@
   "releaseDate": "1996-08-26",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1443606025,
@@ -18147,7 +19515,8 @@
   "releaseDate": "1999-07-23",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1207659121,
@@ -18186,7 +19555,8 @@
   "releaseDate": "2012-10-08",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamChecked": true
  },
  {
   "id": 1993411830,
@@ -18229,7 +19599,11 @@
   "releaseDate": "2020-03-04",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1072620,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1072620/header.jpg",
+  "steamName": "Weakless",
+  "steamMethod": "exact"
  },
  {
   "id": 1340051324,
@@ -18272,7 +19646,11 @@
   "releaseDate": "2014-07-09",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 288060,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/288060/header.jpg",
+  "steamName": "Whispering Willows",
+  "steamMethod": "exact"
  },
  {
   "id": 1929718166,
@@ -18324,7 +19702,11 @@
   "releaseDate": "2024-11-25",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1515000,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1515000/header.jpg",
+  "steamName": "Wild Country",
+  "steamMethod": "exact"
  },
  {
   "id": 1126166849,
@@ -18370,7 +19752,11 @@
   "releaseDate": "2003-05-28",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1873030,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1873030/header.jpg",
+  "steamName": "Wolfenstein: Enemy Territory",
+  "steamMethod": "exact"
  },
  {
   "id": 1943729964,
@@ -18410,7 +19796,11 @@
   "releaseDate": "2014-05-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 201810,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/201810/header.jpg",
+  "steamName": "Wolfenstein: The New Order",
+  "steamMethod": "exact"
  },
  {
   "id": 1207659061,
@@ -18450,7 +19840,8 @@
   "releaseDate": "1990-12-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamChecked": true
  },
  {
   "id": 1421309312,
@@ -18491,7 +19882,11 @@
   "releaseDate": "2012-10-12",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 200170,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/200170/header.jpg",
+  "steamName": "Worms Revolution",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1135975449,
@@ -18530,7 +19925,11 @@
   "releaseDate": "2017-08-30",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 408410,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/408410/header.jpg",
+  "steamName": "X-Morph: Defense",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1558688142,
@@ -18568,7 +19967,11 @@
   "releaseDate": "2014-03-07",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 200510,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/200510/header.jpg",
+  "steamName": "XCOM: Enemy Unknown",
+  "steamMethod": "variant-exact"
  },
  {
   "id": 1482002159,
@@ -18608,7 +20011,11 @@
   "releaseDate": "2016-02-05",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 268500,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/268500/header.jpg",
+  "steamName": "XCOM® 2",
+  "steamMethod": "exact"
  },
  {
   "id": 1914671919,
@@ -18645,7 +20052,11 @@
   "releaseDate": "2020-04-24",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 882100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/882100/header.jpg",
+  "steamName": "XCOM®: Chimera Squad",
+  "steamMethod": "exact"
  },
  {
   "id": 1207664803,
@@ -18692,7 +20103,11 @@
   "releaseDate": "2014-06-16",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 223830,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/223830/header.jpg",
+  "steamName": "Xenonauts",
+  "steamMethod": "exact"
  },
  {
   "id": 1207658920,
@@ -18733,7 +20148,11 @@
   "releaseDate": "2003-10-09",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1170760,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1170760/header.jpg",
+  "steamName": "XIII - Classic",
+  "steamMethod": "manual-fix"
  },
  {
   "id": 1482195316,
@@ -18783,7 +20202,11 @@
   "releaseDate": "2020-03-06",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1115690,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1115690/header.jpg",
+  "steamName": "Yes, Your Grace",
+  "steamMethod": "exact"
  },
  {
   "id": 1309239762,
@@ -18828,7 +20251,11 @@
   "releaseDate": "2023-10-31",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1446350,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1446350/header.jpg",
+  "steamName": "You Will Die Here Tonight",
+  "steamMethod": "exact"
  },
  {
   "id": 1437564865,
@@ -18873,7 +20300,11 @@
   "releaseDate": "2014-10-23",
   "win": true,
   "mac": true,
-  "linux": true
+  "linux": true,
+  "steamId": 308420,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/308420/header.jpg",
+  "steamName": "Ziggurat",
+  "steamMethod": "exact"
  },
  {
   "id": 1887022535,
@@ -18916,7 +20347,11 @@
   "releaseDate": "2023-04-20",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1434540,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1434540/header.jpg",
+  "steamName": "Zoeti",
+  "steamMethod": "exact"
  },
  {
   "id": 1976780992,
@@ -18959,7 +20394,11 @@
   "releaseDate": "2024-03-07",
   "win": true,
   "mac": false,
-  "linux": true
+  "linux": true,
+  "steamId": 1159090,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1159090/header.jpg",
+  "steamName": "Zoria: Age of Shattering",
+  "steamMethod": "exact"
  },
  {
   "id": 1924100006,
@@ -19006,7 +20445,11 @@
   "releaseDate": "2020-05-27",
   "win": true,
   "mac": false,
-  "linux": false
+  "linux": false,
+  "steamId": 1297100,
+  "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1297100/header.jpg",
+  "steamName": "Destroy All Humans! Demo",
+  "steamMethod": "exact"
  },
  {
   "id": 0,
@@ -19025,6 +20468,7 @@
   "win": false,
   "mac": false,
   "linux": false,
-  "noMetadata": true
+  "noMetadata": true,
+  "steamChecked": true
  }
 ]

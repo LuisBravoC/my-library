@@ -165,6 +165,7 @@ interface GogEntry {
   title: string;
   slug: string;
   storeUrl: string;
+  steamHeader?: string;
   images?: { cover?: string; background?: string; logo?: string; icon?: string; tile?: string };
   genres?: string[];
   features?: string[];
@@ -200,8 +201,15 @@ export async function loadGogLibrary(signal?: AbortSignal): Promise<Game[]> {
     linux: !!e.linux,
     tags: e.genres || [],
     features: e.features || [],
+    // Portada GOG: tile nativo 392x220, con fallback al header cruzado
+    // de Steam y al resto de arte oficial de GOG. Steam no se toca.
     coverUrl:
-      e.images?.background || e.images?.tile || e.images?.cover || e.images?.logo || '',
+      e.images?.tile ||
+      e.steamHeader ||
+      e.images?.background ||
+      e.images?.cover ||
+      e.images?.logo ||
+      '',
     storeUrl: e.storeUrl || undefined,
     developers: e.developers || [],
     publishers: e.publishers || [],
