@@ -28,6 +28,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+          # Sin esto NO se suben dotfiles (.nojekyll) y Pages aplica Jekyll,
+          # lo que rompía el despliegue de data/.
+          include-hidden-files: true
 
   deploy:
     needs: build
