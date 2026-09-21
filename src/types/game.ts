@@ -22,7 +22,12 @@ export interface Game {
   tags: string[];
   /** Características */
   features: string[];
-  /** Portada (GOG). Steam usa la CDN por app id. */
+  /** Soporte VR */
+  vr: string[];
+  /** Opciones de accesibilidad */
+  accessibility: string[];
+  /** Idiomas con 'x' */
+  languages: string[];  /** Portada (GOG). Steam usa la CDN por app id. */
   coverUrl?: string;
   /** Enlace a la tienda (GOG). Steam se construye por app id. */
   storeUrl?: string;

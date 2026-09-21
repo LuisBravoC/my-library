@@ -2,6 +2,8 @@ import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import {
   ArrowDownWideNarrow,
   Building2,
+  ChevronDown,
+  ChevronUp,
   Clock3,
   Gamepad2,
   LibraryBig,
@@ -54,6 +56,54 @@ function compareBy(sort: SortKey) {
 const selectCls =
   'rounded-lg bg-[#0e141b] px-3 py-2 text-sm text-[#c7d5e0] ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60';
 
+type SectionId = 'tags' | 'features' | 'vr' | 'accessibility' | 'languages';
+
+const SECTIONS: { id: SectionId; label: string }[] = [
+  { id: 'tags', label: 'Tags' },
+  { id: 'features', label: 'Características' },
+  { id: 'vr', label: 'Realidad virtual' },
+  { id: 'accessibility', label: 'Accesibilidad' },
+  { id: 'languages', label: 'Idiomas' },
+];
+
+function hasLabel(g: Game, t: string): boolean {
+  return (
+    g.tags.includes(t) ||
+    g.features.includes(t) ||
+    g.vr.includes(t) ||
+    g.accessibility.includes(t) ||
+    g.languages.includes(t)
+  );
+}
+
+function TagPill({
+  tag,
+  count,
+  active,
+  onClick,
+}: {
+  tag: string;
+  count?: number;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      className={`shrink-0 rounded-full px-3 py-1 text-xs ring-1 transition ${
+        active
+          ? 'bg-[#66c0f4] font-semibold text-[#171a21] ring-[#66c0f4]'
+          : 'bg-white/5 text-[#c7d5e0] ring-white/10 hover:ring-[#66c0f4]/50'
+      }`}
+    >
+      {tag}
+      {count !== undefined && <span className="opacity-60"> {count}</span>}
+    </button>
+  );
+}
+
 export default function App() {
   const { steamGames, gogGames, loading, error, parseMs } = useLibrary();
 
@@ -65,6 +115,16 @@ export default function App() {
   const [played, setPlayed] = useState<PlayedFilter>('all');
   const [minScore, setMinScore] = useState(0);
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [tagsExpanded, setTagsExpanded] = useState(false);
+  const [advanced, setAdvanced] = useState(false);
+  const [tagSearch, setTagSearch] = useState('');
+  const [openSections, setOpenSections] = useState<Record<SectionId, boolean>>({
+    tags: true,
+    features: false,
+    vr: false,
+    accessibility: false,
+    languages: false,
+  });
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [selected, setSelected] = useState<Game | null>(null);
 
@@ -82,7 +142,10 @@ export default function App() {
     setPlayed('all');
     setMinScore(0);
     setActiveTag(null);
+    setTagsExpanded(false);
   }, [isGog]);
+
+  const VISIBLE_TAGS = 8;
 
   const stats = useMemo(() => {
     if (!isGog) {
@@ -126,9 +189,39 @@ export default function App() {
   const popularTags = useMemo(() => {
     const counts = new Map<string, number>();
     for (const g of sourceGames) {
-      for (const t of g.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
+      // Géneros + características (sin duplicar si una etiqueta está en ambas)
+      for (const t of new Set([...g.tags, ...g.features])) counts.set(t, (counts.get(t) ?? 0) + 1);
     }
     return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 14);
+  }, [sourceGames]);
+
+  /** Conteos completos por sección para el modo avanzado */
+  const sectionCounts = useMemo(() => {
+    const maps: Record<SectionId, Map<string, number>> = {
+      tags: new Map(),
+      features: new Map(),
+      vr: new Map(),
+      accessibility: new Map(),
+      languages: new Map(),
+    };
+    for (const g of sourceGames) {
+      const lists: [SectionId, string[]][] = [
+        ['tags', g.tags],
+        ['features', g.features],
+        ['vr', g.vr],
+        ['accessibility', g.accessibility],
+        ['languages', g.languages],
+      ];
+      for (const [id, arr] of lists) {
+        const m = maps[id];
+        for (const t of arr) m.set(t, (m.get(t) ?? 0) + 1);
+      }
+    }
+    const out = {} as Record<SectionId, [string, number][]>;
+    (Object.keys(maps) as SectionId[]).forEach((id) => {
+      out[id] = [...maps[id].entries()].sort((a, b) => b[1] - a[1]);
+    });
+    return out;
   }, [sourceGames]);
 
   const filtered = useMemo(() => {
@@ -142,9 +235,10 @@ export default function App() {
         if (played === 'unplayed' && g.hours > 0) return false;
         if (minScore > 0 && (g.metascore ?? -1) < minScore) return false;
       }
-      if (activeTag && !g.tags.includes(activeTag)) return false;
+      if (activeTag && !hasLabel(g, activeTag)) return false;
       if (q) {
-        const hay = `${g.title} ${g.tags.join(' ')}`.toLowerCase();
+        const hay =
+          `${g.title} ${g.tags.join(' ')} ${g.features.join(' ')} ${g.vr.join(' ')} ${g.accessibility.join(' ')} ${g.languages.join(' ')}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
@@ -267,9 +361,31 @@ export default function App() {
 
         {/* Toolbar */}
         <section className="space-y-3 rounded-xl bg-[#1b2838]/60 p-3.5 ring-1 ring-white/10 sm:p-4">
-          <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
-            <SlidersHorizontal size={14} /> Filtros
-          </p>
+          <div className="flex items-center justify-between gap-2">
+            <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
+              <SlidersHorizontal size={14} /> Filtros
+            </p>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={advanced}
+              onClick={() => setAdvanced((v) => !v)}
+              className="inline-flex items-center gap-2 text-xs text-[#8f98a0] transition hover:text-white"
+            >
+              Avanzados
+              <span
+                className={`relative h-5 w-9 rounded-full transition ${
+                  advanced ? 'bg-[#66c0f4]' : 'bg-white/10 ring-1 ring-white/10'
+                }`}
+              >
+                <span
+                  className={`absolute top-0.5 h-4 w-4 rounded-full bg-white transition-all ${
+                    advanced ? 'left-[18px]' : 'left-0.5'
+                  }`}
+                />
+              </span>
+            </button>
+          </div>
           <div className={`grid grid-cols-2 gap-2 ${isGog ? 'sm:grid-cols-2' : 'sm:grid-cols-4'}`}>
             <label className="space-y-1 text-xs text-[#8f98a0]">
               <span className="flex items-center gap-1"><ArrowDownWideNarrow size={12} /> Ordenar</span>
@@ -310,23 +426,87 @@ export default function App() {
               </label>
             )}
           </div>
-          {popularTags.length > 0 && (
-            <div className="flex gap-1.5 overflow-x-auto pb-1">
-              {popularTags.map(([tag, count]) => {
-                const active = activeTag === tag;
+          {!advanced && popularTags.length > 0 && (
+            <div className={tagsExpanded ? 'flex flex-wrap gap-1.5' : 'flex gap-1.5 overflow-x-auto pb-1'}>
+              {(tagsExpanded ? popularTags : popularTags.slice(0, VISIBLE_TAGS)).map(([tag, count]) => (
+                <TagPill
+                  key={tag}
+                  tag={tag}
+                  count={count}
+                  active={activeTag === tag}
+                  onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                />
+              ))}
+              {popularTags.length > VISIBLE_TAGS && (
+                <button
+                  type="button"
+                  onClick={() => setTagsExpanded((v) => !v)}
+                  aria-expanded={tagsExpanded}
+                  className="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#66c0f4]/10 px-3 py-1 text-xs font-semibold text-[#66c0f4] ring-1 ring-[#66c0f4]/30 transition hover:bg-[#66c0f4]/20"
+                >
+                  {tagsExpanded ? (
+                    <>Ver menos <ChevronUp size={13} /></>
+                  ) : (
+                    <>+{popularTags.length - VISIBLE_TAGS} más <ChevronDown size={13} /></>
+                  )}
+                </button>
+              )}
+            </div>
+          )}
+
+          {advanced && (
+            <div className="space-y-2">
+              <div className="relative">
+                <Search
+                  size={14}
+                  className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#8f98a0]"
+                />
+                <input
+                  value={tagSearch}
+                  onChange={(e) => setTagSearch(e.target.value)}
+                  placeholder="Buscar etiqueta… (p. ej. zombies, vr, español)"
+                  className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-3 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60"
+                />
+              </div>
+              {SECTIONS.map((s) => {
+                const entries = sectionCounts[s.id];
+                if (entries.length === 0) return null;
+                const q = tagSearch.trim().toLowerCase();
+                const shown = q ? entries.filter(([t]) => t.toLowerCase().includes(q)) : entries;
+                const open = openSections[s.id];
                 return (
-                  <button
-                    key={tag}
-                    type="button"
-                    onClick={() => setActiveTag(active ? null : tag)}
-                    className={`shrink-0 rounded-full px-3 py-1 text-xs ring-1 transition ${
-                      active
-                        ? 'bg-[#66c0f4] font-semibold text-[#171a21] ring-[#66c0f4]'
-                        : 'bg-white/5 text-[#c7d5e0] ring-white/10 hover:ring-[#66c0f4]/50'
-                    }`}
-                  >
-                    {tag} <span className="opacity-60">{count}</span>
-                  </button>
+                  <div key={s.id} className="overflow-hidden rounded-lg bg-black/20 ring-1 ring-white/10">
+                    <button
+                      type="button"
+                      onClick={() => setOpenSections((o) => ({ ...o, [s.id]: !o[s.id] }))}
+                      aria-expanded={open}
+                      className="flex w-full items-center justify-between px-3 py-2 text-left text-xs font-semibold uppercase tracking-wider text-[#c7d5e0] transition hover:bg-white/5"
+                    >
+                      <span>
+                        {s.label}{' '}
+                        <span className="ml-1 rounded-full bg-white/10 px-2 py-0.5 font-medium normal-case text-[#8f98a0]">
+                          {entries.length}
+                        </span>
+                      </span>
+                      {open ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                    </button>
+                    {open && (
+                      <div className="flex max-h-48 flex-wrap gap-1.5 overflow-y-auto border-t border-white/5 p-3">
+                        {shown.length === 0 && (
+                          <p className="text-xs text-[#8f98a0]">Sin coincidencias.</p>
+                        )}
+                        {shown.map(([tag, count]) => (
+                          <TagPill
+                            key={tag}
+                            tag={tag}
+                            count={count}
+                            active={activeTag === tag}
+                            onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 );
               })}
             </div>

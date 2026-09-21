@@ -25,6 +25,32 @@ const CORE_FIELDS = new Set([
 
 const PLATFORM_FIELDS = new Set(['win', 'mac', 'linux']);
 
+/** Columnas de VR (sección propia en modo avanzado) */
+const VR_FIELDS = new Set(['vr any', 'vr only', 'vr supported', 'vr', 'asymmetric vr']);
+
+/** Columnas de accesibilidad (bloque contiguo del CSV) */
+const A11Y_FIELDS = new Set([
+  'adjustable difficulty',
+  'adjustable text size',
+  'camera comfort',
+  'chat speech-to-text',
+  'chat text-to-speech',
+  'color alternatives',
+  'contrast controls',
+  'custom volume controls',
+  'keyboard only option',
+  'mouse only option',
+  'narrated game menus',
+  'playable at your own pace',
+  'playable without quick time events',
+  'playable without vision',
+  'save anytime',
+  'stereo sound',
+  'subtitle options',
+  'surround sound',
+  'touch only option',
+]);
+
 function toNumberOrNull(v: unknown): number | null {
   if (v === null || v === undefined) return null;
   const s = String(v).trim();
@@ -110,6 +136,9 @@ export function parseLibrary(csvText: string): ParseResult {
 
     const tagSet = new Set<string>();
     const featureSet = new Set<string>();
+    const vrSet = new Set<string>();
+    const a11ySet = new Set<string>();
+    const langSet = new Set<string>();
 
     for (let i = 0; i < fields.length; i++) {
       const key = fields[i];
@@ -118,12 +147,16 @@ export function parseLibrary(csvText: string): ParseResult {
       // Papa renombra cabeceras duplicadas como "co-op_1": mostramos el nombre base
       const label = key.replace(/_\d+$/, '');
       if (i >= genreStart) {
-        if (tagSet.size < 60) tagSet.add(label);
+        if (VR_FIELDS.has(key)) vrSet.add(label);
+        else if (tagSet.size < 500) tagSet.add(label);
       } else if (i >= langStart) {
-        // idiomas → los ignoramos para la UI
-        continue;
+        if (langSet.size < 150) langSet.add(label);
+      } else if (VR_FIELDS.has(key)) {
+        vrSet.add(label);
+      } else if (A11Y_FIELDS.has(key)) {
+        a11ySet.add(label);
       } else {
-        if (featureSet.size < 60) featureSet.add(label);
+        if (featureSet.size < 120) featureSet.add(label);
       }
     }
 
@@ -147,6 +180,9 @@ export function parseLibrary(csvText: string): ParseResult {
       linux: row['linux'] === 'x',
       tags: [...tagSet],
       features: [...featureSet],
+      vr: [...vrSet],
+      accessibility: [...a11ySet],
+      languages: [...langSet],
     });
   }
 
@@ -201,6 +237,9 @@ export async function loadGogLibrary(signal?: AbortSignal): Promise<Game[]> {
     linux: !!e.linux,
     tags: e.genres || [],
     features: e.features || [],
+    vr: [],
+    accessibility: [],
+    languages: [],
     // Portada GOG: tile nativo 392x220, con fallback al header cruzado
     // de Steam y al resto de arte oficial de GOG. Steam no se toca.
     coverUrl:
