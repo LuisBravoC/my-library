@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Carpeta de trabajo con los CSV/JSON originales e intermedios.
+# La app carga datos desde public/data, no desde aquí.
+/data/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

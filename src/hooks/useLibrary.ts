@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
-import { loadLibrary } from '../lib/steam';
+import { loadGogLibrary, loadLibrary } from '../lib/steam';
 import type { Game } from '../types/game';
 
 export interface LibraryState {
-  games: Game[];
+  steamGames: Game[];
+  gogGames: Game[];
   loading: boolean;
   error: string | null;
   parseMs: number;
 }
 
 export function useLibrary(): LibraryState {
-  const [games, setGames] = useState<Game[]>([]);
+  const [steamGames, setSteamGames] = useState<Game[]>([]);
+  const [gogGames, setGogGames] = useState<Game[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [parseMs, setParseMs] = useState(0);
@@ -19,10 +21,11 @@ export function useLibrary(): LibraryState {
     const controller = new AbortController();
     let cancelled = false;
 
-    loadLibrary(controller.signal)
-      .then(({ games, parseMs }) => {
+    Promise.all([loadLibrary(controller.signal), loadGogLibrary(controller.signal)])
+      .then(([{ games, parseMs }, gog]) => {
         if (cancelled) return;
-        setGames(games);
+        setSteamGames(games);
+        setGogGames(gog);
         setParseMs(parseMs);
         setLoading(false);
       })
@@ -39,5 +42,5 @@ export function useLibrary(): LibraryState {
     };
   }, []);
 
-  return { games, loading, error, parseMs };
+  return { steamGames, gogGames, loading, error, parseMs };
 }

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { Calendar, Clock3, ExternalLink, Star, Trophy, X } from 'lucide-react';
-import { formatHours, scoreColor, steamImageUrl, storeUrl } from '../lib/steam';
+import { Building2, Calendar, Clock3, ExternalLink, Star, Trophy, X } from 'lucide-react';
+import { formatHours, gameImageUrl, gameStoreUrl, scoreColor } from '../lib/steam';
 import type { Game } from '../types/game';
 
 interface Props {
@@ -24,6 +24,9 @@ export default function GameModal({ game, onClose }: Props) {
 
   if (!game) return null;
 
+  const isGog = game.store === 'gog';
+  const storeName = isGog ? 'GOG' : 'Steam';
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
@@ -37,14 +40,17 @@ export default function GameModal({ game, onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
-          <img
-            src={steamImageUrl(game.id, 'capsule')}
-            alt={game.title}
-            className="aspect-[616/353] w-full bg-[#0e141b] object-cover"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = steamImageUrl(game.id);
-            }}
-          />
+          {gameImageUrl(game) ? (
+            <img
+              src={gameImageUrl(game)}
+              alt={game.title}
+              className="aspect-[616/353] w-full bg-[#0e141b] object-cover"
+            />
+          ) : (
+            <div className="flex aspect-[616/353] w-full items-center justify-center bg-gradient-to-br from-[#2a475e] to-[#0e141b] p-8 text-center">
+              <span className="text-xl font-bold text-white">{game.title}</span>
+            </div>
+          )}
           <button
             type="button"
             onClick={onClose}
@@ -53,42 +59,62 @@ export default function GameModal({ game, onClose }: Props) {
           >
             <X size={18} />
           </button>
+          <span className="absolute left-3 top-3 rounded-md bg-black/70 px-2 py-0.5 text-[11px] font-bold text-[#66c0f4]">
+            {storeName}
+          </span>
         </div>
 
         <div className="space-y-4 p-5 sm:p-6">
           <div>
             <h2 className="text-xl font-bold text-white">{game.title}</h2>
             <p className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[#8f98a0]">
-              <span className="inline-flex items-center gap-1.5">
-                <Clock3 size={14} /> {formatHours(game.hours)}
-              </span>
+              {!isGog && (
+                <span className="inline-flex items-center gap-1.5">
+                  <Clock3 size={14} /> {formatHours(game.hours)}
+                </span>
+              )}
               {game.releaseDate && (
                 <span className="inline-flex items-center gap-1.5">
                   <Calendar size={14} /> {game.releaseDate}
                 </span>
               )}
-              {game.lastPlayed && <span>Última sesión: {game.lastPlayed}</span>}
+              {!isGog && game.lastPlayed && <span>Última sesión: {game.lastPlayed}</span>}
+              {isGog && game.developers && game.developers.length > 0 && (
+                <span className="inline-flex items-center gap-1.5">
+                  <Building2 size={14} /> {game.developers.slice(0, 2).join(', ')}
+                </span>
+              )}
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 text-center">
-            <div className="rounded-lg bg-black/30 p-3">
-              <p className="mb-1 flex items-center justify-center gap-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">
-                <Trophy size={12} /> Metascore
-              </p>
-              <span className={`inline-block rounded-md px-2.5 py-1 text-lg font-bold ring-1 ${scoreColor(game.metascore)}`}>
-                {game.metascore ?? '—'}
-              </span>
-            </div>
-            <div className="rounded-lg bg-black/30 p-3">
-              <p className="mb-1 flex items-center justify-center gap-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">
-                <Star size={12} /> Usuarios
-              </p>
-              <span className="text-lg font-bold text-white">{game.userscore !== null ? `${game.userscore}%` : '—'}</span>
-              {game.userscoreCount ? (
-                <p className="text-[11px] text-[#8f98a0]">{game.userscoreCount.toLocaleString('es-ES')} votos</p>
-              ) : null}
-            </div>
+          <div className={`grid gap-2 text-center ${isGog ? 'grid-cols-2' : 'grid-cols-3'}`}>
+            {!isGog && (
+              <div className="rounded-lg bg-black/30 p-3">
+                <p className="mb-1 flex items-center justify-center gap-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">
+                  <Trophy size={12} /> Metascore
+                </p>
+                <span className={`inline-block rounded-md px-2.5 py-1 text-lg font-bold ring-1 ${scoreColor(game.metascore)}`}>
+                  {game.metascore ?? '—'}
+                </span>
+              </div>
+            )}
+            {!isGog && (
+              <div className="rounded-lg bg-black/30 p-3">
+                <p className="mb-1 flex items-center justify-center gap-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">
+                  <Star size={12} /> Usuarios
+                </p>
+                <span className="text-lg font-bold text-white">{game.userscore !== null ? `${game.userscore}%` : '—'}</span>
+                {game.userscoreCount ? (
+                  <p className="text-[11px] text-[#8f98a0]">{game.userscoreCount.toLocaleString('es-ES')} votos</p>
+                ) : null}
+              </div>
+            )}
+            {isGog && game.publishers && game.publishers.length > 0 && (
+              <div className="rounded-lg bg-black/30 p-3">
+                <p className="mb-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">Editora</p>
+                <p className="text-sm font-bold text-white">{game.publishers.slice(0, 2).join(', ')}</p>
+              </div>
+            )}
             <div className="rounded-lg bg-black/30 p-3">
               <p className="mb-1 text-[11px] uppercase tracking-wide text-[#8f98a0]">Plataformas</p>
               <p className="flex justify-center gap-1 text-[11px] font-bold">
@@ -97,7 +123,7 @@ export default function GameModal({ game, onClose }: Props) {
                 {game.linux && <span className="rounded bg-white/10 px-1.5 py-0.5">LIN</span>}
                 {!game.win && !game.mac && !game.linux && <span className="text-[#8f98a0]">—</span>}
               </p>
-              {game.deck && game.deck !== 'unknown' && (
+              {!isGog && game.deck && game.deck !== 'unknown' && (
                 <p className="mt-1 text-[11px] capitalize text-[#66c0f4]">Deck: {game.deck}</p>
               )}
             </div>
@@ -129,14 +155,16 @@ export default function GameModal({ game, onClose }: Props) {
             </div>
           )}
 
-          <a
-            href={storeUrl(game.id)}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#06bfff] to-[#2d73ff] px-4 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
-          >
-            Ver en Steam <ExternalLink size={15} />
-          </a>
+          {gameStoreUrl(game) && (
+            <a
+              href={gameStoreUrl(game)}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#06bfff] to-[#2d73ff] px-4 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+            >
+              Ver en {storeName} <ExternalLink size={15} />
+            </a>
+          )}
         </div>
       </div>
     </div>

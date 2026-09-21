@@ -1,6 +1,6 @@
 import { memo, useState } from 'react';
 import { Clock3, Star } from 'lucide-react';
-import { formatHours, scoreColor, steamImageUrl } from '../lib/steam';
+import { formatHours, gameImageUrl, scoreColor } from '../lib/steam';
 import type { Game } from '../types/game';
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 
 function GameCardInner({ game, onSelect }: Props) {
   const [imgOk, setImgOk] = useState(true);
-  const src = steamImageUrl(game.id);
+  const src = gameImageUrl(game);
 
   return (
     <button
@@ -33,6 +33,11 @@ function GameCardInner({ game, onSelect }: Props) {
             <span className="line-clamp-2 text-sm font-semibold text-[#c7d5e0]/80">{game.title}</span>
           </div>
         )}
+        {game.store === 'gog' && (
+          <span className="absolute left-2 top-2 rounded-md bg-[#7b1fa2]/90 px-2 py-0.5 text-[11px] font-bold text-white">
+            GOG
+          </span>
+        )}
         {game.hours > 0 && (
           <span className="absolute left-2 top-2 inline-flex items-center gap-1 rounded-md bg-black/70 px-2 py-0.5 text-[11px] font-medium text-[#c7d5e0]">
             <Clock3 size={12} />
@@ -53,13 +58,17 @@ function GameCardInner({ game, onSelect }: Props) {
           {game.title}
         </h3>
         <div className="flex items-center justify-between text-[11px] text-[#8f98a0]">
-          <span className="inline-flex items-center gap-1">
-            <Star size={12} className="text-yellow-400/80" />
-            {game.userscore !== null ? `${game.userscore}%` : '—'}
-            {game.userscoreCount ? (
-              <span className="text-[#8f98a0]/70">({game.userscoreCount.toLocaleString('es-ES')})</span>
-            ) : null}
-          </span>
+          {game.userscore !== null ? (
+            <span className="inline-flex items-center gap-1">
+              <Star size={12} className="text-yellow-400/80" />
+              {game.userscore}%
+              {game.userscoreCount ? (
+                <span className="text-[#8f98a0]/70">({game.userscoreCount.toLocaleString('es-ES')})</span>
+              ) : null}
+            </span>
+          ) : (
+            <span>{game.releaseDate ? game.releaseDate.slice(0, 4) : '—'}</span>
+          )}
           <span className="flex gap-1 font-bold">
             {game.win && <span className="rounded bg-white/10 px-1">WIN</span>}
             {game.mac && <span className="rounded bg-white/10 px-1">MAC</span>}
