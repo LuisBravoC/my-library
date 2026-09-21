@@ -1,32 +1,29 @@
-# React + TypeScript + Vite
+# MySteamLibrary
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Bibliotecas de Steam y GOG: grid con buscador, filtros por tags, características,
+plataformas y modo avanzado (VR, accesibilidad, idiomas).
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```powershell
+npm install
+npm run dev     # http://localhost:5173
+npm run build   # genera dist/
+npm run lint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Despliegue en GitHub Pages
+
+La app usa `base: './'`, así que funciona en `usuario.github.io/repo/` y en
+dominios propios sin cambios. Incluye `public/404.html` (las URLs desconocidas
+vuelven a la app) y `public/.nojekyll`.
+
+- **Automático:** al hacer push a `main`, el workflow `.github/workflows/deploy.yml`
+  publica `dist/` (activa Pages con origen *GitHub Actions* en los ajustes del repo).
+- **Manual:** `npm run deploy` (publica `dist/` en la rama `gh-pages`).
+
+## Datos
+
+La app carga `public/data/steam-library.csv` y `public/data/gog-library.json`.
+Los CSV/JSON originales e intermedios viven en `data/` (ignorada por git) y los
+scripts de generación en `scripts/` (también ignorados).

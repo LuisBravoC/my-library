@@ -14,27 +14,108 @@ html {
 }
 
 body {
-  background-color: #171a21;
+  background-color: var(--t-bg);
   color: #c7d5e0;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar estilo Steam */
+/* ===== Temas por tienda (Steam por defecto, GOG con data-store="gog") ===== */
+:root {
+  --t-bg: #171a21;
+  --t-panel: #1b2838;
+  --t-panel-solid: #1b2838;
+  --t-accent: #66c0f4;
+  --t-accent-deep: #2d73ff;
+  --t-soft: rgba(102, 192, 244, 0.12);
+  --t-ink: #171a21;
+  --t-ring: rgba(102, 192, 244, 0.5);
+  --t-tag: rgba(102, 192, 244, 0.8);
+  --t-scroll: #2a475e;
+}
+:root[data-store='gog'] {
+  --t-bg: #151217;
+  --t-panel: #251f2b;
+  --t-panel-solid: #241f29;
+  --t-accent: #c07ff0;
+  --t-accent-deep: #7e22ce;
+  --t-soft: rgba(192, 127, 240, 0.12);
+  --t-ink: #ffffff;
+  --t-ring: rgba(192, 127, 240, 0.55);
+  --t-tag: rgba(216, 170, 250, 0.9);
+  --t-scroll: #4a3a52;
+}
+
+.th-bg {
+  background-color: var(--t-bg);
+}
+.th-header {
+  background-color: color-mix(in srgb, var(--t-bg) 90%, transparent);
+}
+.th-panel {
+  background-color: color-mix(in srgb, var(--t-panel) 80%, transparent);
+}
+.th-panel-soft {
+  background-color: color-mix(in srgb, var(--t-panel) 60%, transparent);
+}
+.th-modal {
+  background-color: var(--t-panel-solid);
+}
+.th-logo {
+  background-image: linear-gradient(to bottom right, var(--t-accent), var(--t-accent-deep));
+  color: var(--t-ink);
+}
+.th-btn {
+  background-image: linear-gradient(to right, var(--t-accent), var(--t-accent-deep));
+  color: #fff;
+}
+.th-pill-active {
+  background-color: var(--t-accent);
+  color: var(--t-ink);
+}
+.th-soft {
+  background-color: var(--t-soft);
+  color: var(--t-accent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--t-accent) 25%, transparent);
+}
+.th-soft-btn:hover {
+  background-color: color-mix(in srgb, var(--t-accent) 22%, transparent);
+}
+.th-card-tag {
+  color: var(--t-tag);
+}
+.th-switch-on {
+  background-color: var(--t-accent);
+}
+.th-imgph {
+  background-image: linear-gradient(to bottom right, var(--t-scroll), var(--t-bg));
+}
+.th-ring-hover:hover {
+  --tw-ring-color: var(--t-ring);
+}
+.th-focus:focus {
+  --tw-ring-color: var(--t-ring);
+}
+
+/* Scrollbar con acento de la tienda activa */
+::-webkit-scrollbar-track {
+  background: var(--t-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--t-scroll);
+  border: 3px solid var(--t-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--t-accent);
+}
+
+/* Scrollbar: tamaño base (los colores van con el tema de la tienda) */
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
 }
-::-webkit-scrollbar-track {
-  background: #171a21;
-}
 ::-webkit-scrollbar-thumb {
-  background: #2a475e;
   border-radius: 6px;
-  border: 3px solid #171a21;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #66c0f4;
 }
 
 /* Animación sutil de entrada para las cards */

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySteamLibrary</title>
+    <style>
+      body {
+        margin: 0;
+        background: #171a21;
+        color: #c7d5e0;
+        font-family: system-ui, sans-serif;
+        display: grid;
+        place-items: center;
+        min-height: 100svh;
+      }
+      a {
+        color: #66c0f4;
+      }
+    </style>
+    <script>
+      // GitHub Pages no resuelve rutas de SPA: cualquier URL desconocida
+      // (/repo/steam, /repo/gog...) cae aquí. Volvemos a la raíz conservando
+      // la ruta como hash (#/steam) para que la app seleccione el tab.
+      // - Project pages (usuario.github.io/repo/...): raíz = /repo/
+      // - Dominio propio o user page: raíz = /
+      (function () {
+        var parts = location.pathname.split('/').filter(Boolean);
+        var isProjectPage = location.hostname.endsWith('.github.io') && parts.length > 0;
+        var root = isProjectPage ? '/' + parts[0] + '/' : '/';
+        var rest = isProjectPage ? parts.slice(1) : parts;
+        location.replace(root + (rest.length ? '#/' + rest.join('/') : ''));
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirigiendo a <a href="./">MySteamLibrary</a>…</p>
+  </body>
+</html>

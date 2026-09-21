@@ -1315,7 +1315,8 @@
   "win": true,
   "mac": false,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 1207658695,
@@ -1554,7 +1555,8 @@
   "win": true,
   "mac": true,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 1449569170,
@@ -6090,7 +6092,8 @@
   "steamId": 1360980,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1360980/header.jpg",
   "steamName": "Fetish Locator Week One",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1090728382,
@@ -6997,7 +7000,8 @@
   "win": true,
   "mac": true,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 2142923325,
@@ -7857,7 +7861,8 @@
   "steamId": 1590730,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1590730/header.jpg",
   "steamName": "Helping the Hotties",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1547269859,
@@ -8396,7 +8401,8 @@
   "steamId": 611790,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/611790/header.jpg",
   "steamName": "House Party",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1443428641,
@@ -8449,7 +8455,8 @@
   "steamId": 339800,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/339800/header.jpg",
   "steamName": "HuniePop",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1939715083,
@@ -9306,7 +9313,8 @@
   "win": true,
   "mac": false,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 1111421371,
@@ -9357,7 +9365,8 @@
   "steamId": 1469300,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1469300/header.jpg",
   "steamName": "Leap of Love",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1207659101,
@@ -9938,7 +9947,8 @@
   "win": true,
   "mac": true,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 1816059595,
@@ -13394,7 +13404,8 @@
   "steamId": 1526900,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1526900/header.jpg",
   "steamName": "Sapphire Safari",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1620735257,
@@ -15563,7 +15574,8 @@
   "win": true,
   "mac": true,
   "linux": true,
-  "steamChecked": true
+  "steamChecked": true,
+  "hidden": true
  },
  {
   "id": 1748855533,
@@ -18514,7 +18526,8 @@
   "steamId": 1737100,
   "steamHeader": "https://cdn.cloudflare.steamstatic.com/steam/apps/1737100/header.jpg",
   "steamName": "Treasure of Nadia",
-  "steamMethod": "exact"
+  "steamMethod": "exact",
+  "hidden": true
  },
  {
   "id": 1432641771,

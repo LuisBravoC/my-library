@@ -44,7 +44,7 @@ export default function GameModal({ game, onClose }: Props) {
       <div
         ref={dialogRef}
         tabIndex={-1}
-        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-[#1b2838] ring-1 ring-white/10 outline-none sm:rounded-2xl"
+        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-2xl th-modal ring-1 ring-white/10 outline-none sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
@@ -55,7 +55,7 @@ export default function GameModal({ game, onClose }: Props) {
               className="aspect-[616/353] w-full bg-[#0e141b] object-cover"
             />
           ) : (
-            <div className="flex aspect-[616/353] w-full items-center justify-center bg-gradient-to-br from-[#2a475e] to-[#0e141b] p-8 text-center">
+            <div className="flex aspect-[616/353] w-full items-center justify-center th-imgph p-8 text-center">
               <span className="text-xl font-bold text-white">{game.title}</span>
             </div>
           )}
@@ -67,7 +67,7 @@ export default function GameModal({ game, onClose }: Props) {
           >
             <X size={18} />
           </button>
-          <span className="absolute left-3 top-3 rounded-md bg-black/70 px-2 py-0.5 text-[11px] font-bold text-[#66c0f4]">
+          <span className="absolute left-3 top-3 rounded-md bg-black/70 px-2 py-0.5 text-[11px] font-bold th-card-tag">
             {storeName}
           </span>
         </div>
@@ -132,7 +132,7 @@ export default function GameModal({ game, onClose }: Props) {
                 {!game.win && !game.mac && !game.linux && <span className="text-[#8f98a0]">—</span>}
               </p>
               {!isGog && game.deck && game.deck !== 'unknown' && (
-                <p className="mt-1 text-[11px] capitalize text-[#66c0f4]">Deck: {game.deck}</p>
+                <p className="mt-1 text-[11px] capitalize th-card-tag">Deck: {game.deck}</p>
               )}
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function GameModal({ game, onClose }: Props) {
               <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">Etiquetas</h3>
               <div className="flex flex-wrap gap-1.5">
                 {game.tags.map((t) => (
-                  <span key={t} className="rounded-full bg-[#66c0f4]/10 px-2.5 py-1 text-xs text-[#66c0f4] ring-1 ring-[#66c0f4]/20">
+                  <span key={t} className="rounded-full th-soft px-2.5 py-1 text-xs">
                     {formatLabel(t)}
                   </span>
                 ))}
@@ -168,7 +168,7 @@ export default function GameModal({ game, onClose }: Props) {
               href={gameStoreUrl(game)}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#06bfff] to-[#2d73ff] px-4 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-lg th-btn px-4 py-2.5 text-sm font-semibold transition hover:brightness-110"
             >
               Ver en {storeName} <ExternalLink size={15} />
             </a>

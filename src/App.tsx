@@ -1,4 +1,4 @@
-import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowDownWideNarrow,
   Building2,
@@ -17,7 +17,10 @@ import {
 } from 'lucide-react';
 import GameCard from './components/GameCard';
 import ErrorBoundary from './components/ErrorBoundary';
+import Logo from './components/Logo';
+import StoreIcon from './components/StoreIcon';
 import { formatLabel } from './lib/labels';
+import { parseStoreFromUrl, storeHref } from './lib/store-route';
 import { useLibrary } from './hooks/useLibrary';
 import type { Game, PlatformFilter, PlayedFilter, SortKey, StoreFilter } from './types/game';
 
@@ -58,7 +61,10 @@ function compareBy(sort: SortKey) {
 }
 
 const selectCls =
-  'rounded-lg bg-[#0e141b] px-3 py-2 text-sm text-[#c7d5e0] ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60';
+  'rounded-lg bg-[#0e141b] px-3 py-2 text-sm text-[#c7d5e0] ring-1 ring-white/10 focus:outline-none th-focus';
+
+// Tienda mostrada por defecto al abrir la app. Cambiar a 'steam' para volver.
+const DEFAULT_STORE: StoreFilter = 'gog';
 
 type SectionId = 'tags' | 'features' | 'vr' | 'accessibility' | 'languages';
 
@@ -97,9 +103,7 @@ function TagPill({
       onClick={onClick}
       aria-pressed={active}
       className={`shrink-0 rounded-full px-3 py-1 text-xs ring-1 transition ${
-        active
-          ? 'bg-[#66c0f4] font-semibold text-[#171a21] ring-[#66c0f4]'
-          : 'bg-white/5 text-[#c7d5e0] ring-white/10 hover:ring-[#66c0f4]/50'
+        active ? 'th-pill-active font-semibold ring-transparent' : 'bg-white/5 text-[#c7d5e0] ring-white/10 th-ring-hover'
       }`}
     >
       {formatLabel(tag)}
@@ -111,7 +115,9 @@ function TagPill({
 export default function App() {
   const { steamGames, gogGames, loading, error, parseMs } = useLibrary();
 
-  const [store, setStore] = useState<StoreFilter>('steam');
+  const [store, setStore] = useState<StoreFilter>(
+    () => parseStoreFromUrl(window.location.href) ?? DEFAULT_STORE,
+  );
   const [query, setQuery] = useState('');
   const deferredQuery = useDeferredValue(query);
   const [sort, setSort] = useState<SortKey>('hours');
@@ -148,6 +154,33 @@ export default function App() {
     setActiveTag(null);
     setTagsExpanded(false);
   }, [isGog]);
+
+  // Tema visual por tienda (variables CSS en :root).
+  // EXPERIMENTO APARCADO: tema propio de GOG listo pero desactivado.
+  // Para reactivarlo, usar `store` en lugar de 'steam'.
+  useEffect(() => {
+    document.documentElement.dataset.store = 'steam';
+  }, []);
+
+  // Deep links: la URL refleja la tienda (/steam, /gog, #/steam o ?store=).
+  // Al cargar se normaliza a la ruta canónica; atrás/adelante sincronizan el tab.
+  // Solo al montar (ref para no depender del estado): los clics empujan su entrada.
+  const initialStoreRef = useRef(store);
+  useEffect(() => {
+    window.history.replaceState(null, '', storeHref(initialStoreRef.current, window.location.href));
+    const onPopState = () => {
+      const s = parseStoreFromUrl(window.location.href);
+      if (s) setStore(s);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  const selectStore = (s: StoreFilter) => {
+    if (s === store) return;
+    setStore(s);
+    window.history.pushState(null, '', storeHref(s, window.location.href));
+  };
 
   const VISIBLE_TAGS = 8;
 
@@ -263,16 +296,16 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#171a21] text-[#c7d5e0]">
+    <div className="min-h-screen th-bg text-[#c7d5e0]">
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-white/5 bg-[#171a21]/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-white/5 th-header backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#66c0f4] to-[#2d73ff] text-[#171a21]">
-            <Gamepad2 size={20} />
+          <span className="h-9 w-9 overflow-hidden rounded-lg ring-1 ring-white/10">
+            <Logo size={36} />
           </span>
           <div className="min-w-0">
             <h1 className="truncate text-base font-bold leading-tight text-white sm:text-lg">
-              MySteamLibrary
+              Mi Libreria
             </h1>
             <p className="text-[11px] text-[#8f98a0] sm:text-xs">
               {loading ? 'Cargando…' : `${steamGames.length.toLocaleString('es-ES')} Steam · ${gogGames.length.toLocaleString('es-ES')} GOG`}
@@ -284,7 +317,7 @@ export default function App() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Buscar por título o etiqueta…"
-              className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-8 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60"
+              className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-8 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none th-focus"
             />
             {query && (
               <button
@@ -305,7 +338,7 @@ export default function App() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Buscar por título o etiqueta…"
-              className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-8 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60"
+              className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-8 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none th-focus"
             />
             {query && (
               <button
@@ -335,13 +368,14 @@ export default function App() {
               <button
                 key={t.value}
                 type="button"
-                onClick={() => setStore(t.value)}
-                className={`flex-1 rounded-xl px-4 py-2.5 text-sm font-bold ring-1 transition sm:flex-none sm:px-8 ${
+                onClick={() => selectStore(t.value)}
+                className={`inline-flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold ring-1 transition sm:flex-none sm:px-8 ${
                   active
-                    ? 'bg-gradient-to-r from-[#06bfff] to-[#2d73ff] text-white ring-transparent'
-                    : 'bg-[#1b2838]/80 text-[#8f98a0] ring-white/10 hover:text-white hover:ring-[#66c0f4]/40'
+                    ? 'th-btn ring-transparent'
+                    : 'th-panel text-[#8f98a0] ring-white/10 hover:text-white th-ring-hover'
                 }`}
               >
+                <StoreIcon store={t.value} />
                 {t.label}{' '}
                 <span className={`ml-1 font-medium ${active ? 'text-white/80' : 'text-[#8f98a0]/70'}`}>
                   {loading ? '…' : t.count.toLocaleString('es-ES')}
@@ -354,7 +388,7 @@ export default function App() {
         {/* Stats */}
         <section className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
           {stats.map((s) => (
-            <div key={s.label} className="rounded-xl bg-[#1b2838]/80 p-3.5 ring-1 ring-white/10 sm:p-4">
+            <div key={s.label} className="rounded-xl th-panel p-3.5 ring-1 ring-white/10 sm:p-4">
               <p className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-[#8f98a0]">
                 {s.icon} {s.label}
               </p>
@@ -364,7 +398,7 @@ export default function App() {
         </section>
 
         {/* Toolbar */}
-        <section className="space-y-3 rounded-xl bg-[#1b2838]/60 p-3.5 ring-1 ring-white/10 sm:p-4">
+        <section className="space-y-3 rounded-xl th-panel-soft p-3.5 ring-1 ring-white/10 sm:p-4">
           <div className="flex items-center justify-between gap-2">
             <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
               <SlidersHorizontal size={14} /> Filtros
@@ -379,7 +413,7 @@ export default function App() {
               Avanzados
               <span
                 className={`relative h-5 w-9 rounded-full transition ${
-                  advanced ? 'bg-[#66c0f4]' : 'bg-white/10 ring-1 ring-white/10'
+                  advanced ? 'th-switch-on' : 'bg-white/10 ring-1 ring-white/10'
                 }`}
               >
                 <span
@@ -446,7 +480,7 @@ export default function App() {
                   type="button"
                   onClick={() => setTagsExpanded((v) => !v)}
                   aria-expanded={tagsExpanded}
-                  className="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#66c0f4]/10 px-3 py-1 text-xs font-semibold text-[#66c0f4] ring-1 ring-[#66c0f4]/30 transition hover:bg-[#66c0f4]/20"
+                  className="inline-flex shrink-0 items-center gap-1 rounded-full th-soft th-soft-btn px-3 py-1 text-xs font-semibold transition"
                 >
                   {tagsExpanded ? (
                     <>Ver menos <ChevronUp size={13} /></>
@@ -469,7 +503,7 @@ export default function App() {
                   value={tagSearch}
                   onChange={(e) => setTagSearch(e.target.value)}
                   placeholder="Buscar etiqueta… (p. ej. zombies, vr, español)"
-                  className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-3 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none focus:ring-[#66c0f4]/60"
+                  className="w-full rounded-lg bg-[#0e141b] py-2 pl-9 pr-3 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none th-focus"
                 />
               </div>
               {SECTIONS.map((s) => {
@@ -529,7 +563,7 @@ export default function App() {
                   <span className="font-semibold text-white">{filtered.length.toLocaleString('es-ES')}</span>{' '}
                   {filtered.length === 1 ? 'juego' : 'juegos'}
                   {!loading && !isGog && parseMs > 0 && (
-                    <span className="ml-2 hidden text-xs sm:inline">· CSV parseado en {Math.round(parseMs)} ms</span>
+                    <span className="ml-2 hidden text-xs sm:inline">· resuelto en {Math.round(parseMs)} ms</span>
                   )}
                 </>
               )}
@@ -538,7 +572,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={clearFilters}
-                className="inline-flex items-center gap-1 rounded-lg bg-white/5 px-3 py-1.5 text-xs text-[#c7d5e0] ring-1 ring-white/10 hover:ring-[#66c0f4]/50"
+                className="inline-flex items-center gap-1 rounded-lg bg-white/5 px-3 py-1.5 text-xs text-[#c7d5e0] ring-1 ring-white/10 th-ring-hover"
               >
                 <X size={13} /> Limpiar filtros
               </button>
@@ -548,7 +582,7 @@ export default function App() {
           {loading && (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {Array.from({ length: 15 }).map((_, i) => (
-                <div key={i} className="animate-pulse overflow-hidden rounded-xl bg-[#1b2838]/80 ring-1 ring-white/10">
+                <div key={i} className="animate-pulse overflow-hidden rounded-xl th-panel ring-1 ring-white/10">
                   <div className="aspect-[460/215] bg-white/5" />
                   <div className="space-y-2 p-3">
                     <div className="h-3.5 w-3/4 rounded bg-white/10" />
@@ -568,14 +602,14 @@ export default function App() {
           )}
 
           {!loading && !error && filtered.length === 0 && (
-            <div className="rounded-xl bg-[#1b2838]/60 p-10 text-center ring-1 ring-white/10">
+            <div className="rounded-xl th-panel-soft p-10 text-center ring-1 ring-white/10">
               <Gamepad2 size={32} className="mx-auto text-[#8f98a0]" />
               <p className="mt-3 font-semibold text-white">Sin resultados</p>
               <p className="mt-1 text-sm text-[#8f98a0]">Prueba con otra búsqueda o limpia los filtros.</p>
               <button
                 type="button"
                 onClick={clearFilters}
-                className="mt-4 rounded-lg bg-[#66c0f4]/15 px-4 py-2 text-sm font-semibold text-[#66c0f4] ring-1 ring-[#66c0f4]/30 hover:bg-[#66c0f4]/25"
+                className="mt-4 rounded-lg th-soft th-soft-btn px-4 py-2 text-sm font-semibold"
               >
                 Limpiar filtros
               </button>
@@ -598,7 +632,7 @@ export default function App() {
                   <button
                     type="button"
                     onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                    className="rounded-lg bg-gradient-to-r from-[#06bfff] to-[#2d73ff] px-6 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+                    className="rounded-lg th-btn px-6 py-2.5 text-sm font-semibold transition hover:brightness-110"
                   >
                     Cargar más
                   </button>
@@ -611,7 +645,7 @@ export default function App() {
       </main>
 
       <footer className="border-t border-white/5 py-5 text-center text-xs text-[#8f98a0]">
-        MySteamLibrary · datos locales de tus CSV/JSON · imágenes de Steam y GOG CDN
+        Mi Librería · datos locales · imágenes de Steam y GOG CDN
       </footer>
 
       <Suspense fallback={null}>

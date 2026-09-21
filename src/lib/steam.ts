@@ -3,6 +3,7 @@ import { canonicalRaw } from './labels';
 import type { Game } from '../types/game';
 
 export const CSV_URL = `${import.meta.env.BASE_URL}data/steam-library.csv`;
+export const STEAM_HIDDEN_URL = `${import.meta.env.BASE_URL}data/steam-hidden.json`;
 export const GOG_URL = `${import.meta.env.BASE_URL}data/gog-library.json`;
 
 /** Columnas núcleo que nunca son tags */
@@ -107,8 +108,9 @@ export interface ParseResult {
   parseMs: number;
 }
 
-/** Parsea el CSV de la librería a un array ligero de Game. */
-export function parseLibrary(csvText: string): ParseResult {
+/** Parsea el CSV de la librería a un array ligero de Game.
+ * `hiddenIds`: app IDs a excluir (de `steam-hidden.json`). */
+export function parseLibrary(csvText: string, hiddenIds: number[] = []): ParseResult {
   const t0 = performance.now();
   const parsed = Papa.parse<Record<string, string>>(csvText, {
     header: true,
@@ -126,6 +128,7 @@ export function parseLibrary(csvText: string): ParseResult {
   if (langStart === -1 || langStart > genreStart) langStart = genreStart;
 
   const games: Game[] = [];
+  const hiddenSet = new Set(hiddenIds);
 
   for (const row of parsed.data) {
     if (!row) continue;
@@ -134,6 +137,7 @@ export function parseLibrary(csvText: string): ParseResult {
     if (!rawId && !rawTitle) continue;
     const id = Number(rawId);
     if (!Number.isFinite(id) || id <= 0) continue;
+    if (hiddenSet.has(id)) continue;
 
     const tagSet = new Set<string>();
     const featureSet = new Set<string>();
@@ -192,10 +196,22 @@ export function parseLibrary(csvText: string): ParseResult {
 }
 
 export async function loadLibrary(signal?: AbortSignal): Promise<ParseResult> {
-  const res = await fetch(CSV_URL, { signal });
-  if (!res.ok) throw new Error(`No se pudo cargar el CSV (${res.status})`);
-  const text = await res.text();
-  return parseLibrary(text);
+  const [csvRes, hiddenRes] = await Promise.all([
+    fetch(CSV_URL, { signal }),
+    fetch(STEAM_HIDDEN_URL, { signal }),
+  ]);
+  if (!csvRes.ok) throw new Error(`No se pudo cargar el CSV (${csvRes.status})`);
+  const text = await csvRes.text();
+  // La lista de ocultos es opcional: si falta, se incluyen todos.
+  let hiddenIds: number[] = [];
+  if (hiddenRes.ok) {
+    try {
+      hiddenIds = (await hiddenRes.json()) as number[];
+    } catch {
+      hiddenIds = [];
+    }
+  }
+  return parseLibrary(text, hiddenIds);
 }
 
 interface GogEntry {
@@ -203,6 +219,7 @@ interface GogEntry {
   title: string;
   slug: string;
   storeUrl: string;
+  hidden?: boolean;
   steamHeader?: string;
   images?: { cover?: string; background?: string; logo?: string; icon?: string; tile?: string };
   genres?: string[];
@@ -219,7 +236,7 @@ interface GogEntry {
 export async function loadGogLibrary(signal?: AbortSignal): Promise<Game[]> {
   const res = await fetch(GOG_URL, { signal });
   if (!res.ok) throw new Error(`No se pudo cargar GOG (${res.status})`);
-  const entries = (await res.json()) as GogEntry[];
+  const entries = ((await res.json()) as GogEntry[]).filter((e) => !e.hidden);
   return entries.map((e, i) => ({
     key: `gog:${e.id || 'x'}:${i}`,
     store: 'gog' as const,
