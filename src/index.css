@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-steam-dark: #171a21;
+  --color-steam: #1b2838;
+  --color-steam-light: #2a475e;
+  --color-steam-accent: #66c0f4;
+  --color-steam-text: #c7d5e0;
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #171a21;
+  color: #c7d5e0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar estilo Steam */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #171a21;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a475e;
+  border-radius: 6px;
+  border: 3px solid #171a21;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #66c0f4;
+}
+
+/* Animación sutil de entrada para las cards */
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-in {
+  animation: card-in 0.3s ease both;
+}
