@@ -16,6 +16,10 @@ dist-ssr
 # La app carga datos desde public/data, no desde aquí.
 /data/
 
+# Scripts Python de generación/enriquecimiento de datos.
+# No los usa la app en runtime ni en build.
+/scripts/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
