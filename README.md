@@ -27,3 +27,21 @@ vuelven a la app) y `public/.nojekyll`.
 La app carga `public/data/steam-library.csv` y `public/data/gog-library.json`.
 Los CSV/JSON originales e intermedios viven en `data/` (ignorada por git) y los
 scripts de generación en `scripts/` (también ignorados).
+
+## Listas personales (Supabase, opcional)
+
+Lectura pública, escritura solo del dueño. Sin las env vars la sección queda
+desactivada y la app funciona igual.
+
+1. Crea un proyecto en Supabase y ejecuta `supabase/schema.sql` en el SQL Editor
+   (pon tu email en las políticas `solo dueno`).
+2. En Authentication → URL Configuration añade tu dominio publicado y
+   `http://localhost:5173` como Redirect URLs (para el enlace mágico).
+3. Copia `.env.example` a `.env.local` con `VITE_SUPABASE_URL`,
+   `VITE_SUPABASE_ANON_KEY` y `VITE_OWNER_EMAIL`.
+4. Para producción, añade esos tres como Secrets del repo (Settings → Secrets →
+   Actions); el workflow ya los inyecta en el build.
+
+Las listas tienen URLs compartibles (`/lista/mi-top-rpg`, slug inmutable generado
+al crear) con botón de copiar enlace; funcionan con el `404.html` igual que
+`/steam` y `/login`.

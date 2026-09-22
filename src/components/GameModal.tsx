@@ -1,16 +1,25 @@
-import { useEffect, useRef } from 'react';
-import { Building2, Calendar, Clock3, ExternalLink, Star, Trophy, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Building2, Calendar, Clock3, ExternalLink, ListPlus, Star, Trophy, X } from 'lucide-react';
 import { formatHours, gameImageUrl, gameStoreUrl, scoreColor } from '../lib/steam';
 import { formatLabel } from '../lib/labels';
 import type { Game } from '../types/game';
+import type { List } from '../types/lists';
 
 interface Props {
   game: Game | null;
   onClose: () => void;
+  /** Solo el dueño: añadir el juego a una de sus listas. */
+  listPicker?: {
+    lists: List[];
+    onAdd: (listId: string, note: string) => Promise<void>;
+  } | null;
 }
 
-export default function GameModal({ game, onClose }: Props) {
+export default function GameModal({ game, onClose, listPicker }: Props) {
   const dialogRef = useRef<HTMLDivElement>(null);
+  const [pickList, setPickList] = useState('');
+  const [pickNote, setPickNote] = useState('');
+  const [pickState, setPickState] = useState<'idle' | 'saving' | 'done'>('idle');
 
   useEffect(() => {
     if (!game) return;
@@ -159,6 +168,52 @@ export default function GameModal({ game, onClose }: Props) {
                     {formatLabel(f)}
                   </span>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {listPicker && listPicker.lists.length > 0 && (
+            <div className="rounded-lg bg-black/20 p-3 ring-1 ring-white/10">
+              <h3 className="mb-2 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
+                <ListPlus size={13} /> Añadir a lista
+              </h3>
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <select
+                  value={pickList || listPicker.lists[0].id}
+                  onChange={(e) => setPickList(e.target.value)}
+                  className="flex-1 rounded-lg bg-[#0e141b] px-3 py-2 text-sm text-[#c7d5e0] ring-1 ring-white/10 focus:outline-none th-focus"
+                >
+                  {listPicker.lists.map((l) => (
+                    <option key={l.id} value={l.id}>
+                      {l.title}
+                    </option>
+                  ))}
+                </select>
+                <input
+                  value={pickNote}
+                  onChange={(e) => setPickNote(e.target.value)}
+                  placeholder="Nota (opcional)"
+                  className="flex-1 rounded-lg bg-[#0e141b] px-3 py-2 text-sm text-white placeholder:text-[#8f98a0]/70 ring-1 ring-white/10 focus:outline-none th-focus"
+                />
+                <button
+                  type="button"
+                  disabled={pickState === 'saving'}
+                  onClick={() => {
+                    const id = pickList || listPicker.lists[0].id;
+                    setPickState('saving');
+                    listPicker
+                      .onAdd(id, pickNote.trim())
+                      .then(() => {
+                        setPickState('done');
+                        setPickNote('');
+                        window.setTimeout(() => setPickState('idle'), 2000);
+                      })
+                      .catch(() => setPickState('idle'));
+                  }}
+                  className="rounded-lg th-btn px-4 py-2 text-sm font-semibold transition hover:brightness-110 disabled:opacity-50"
+                >
+                  {pickState === 'done' ? 'Añadido ✓' : pickState === 'saving' ? '…' : 'Añadir'}
+                </button>
               </div>
             </div>
           )}

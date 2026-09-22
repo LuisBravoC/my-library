@@ -25,6 +25,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Secrets del repo (Settings → Secrets → Actions). Si faltan,
+          # la app compila igual con las listas desactivadas.
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_OWNER_EMAIL: ${{ secrets.VITE_OWNER_EMAIL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

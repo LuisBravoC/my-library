@@ -1,4 +1,4 @@
-import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import {
   ArrowDownWideNarrow,
   Building2,
@@ -17,11 +17,16 @@ import {
 } from 'lucide-react';
 import GameCard from './components/GameCard';
 import ErrorBoundary from './components/ErrorBoundary';
+import AuthButton from './components/AuthButton';
+import ListsView from './components/ListsView';
 import Logo from './components/Logo';
 import StoreIcon from './components/StoreIcon';
 import { formatLabel } from './lib/labels';
-import { parseStoreFromUrl, storeHref } from './lib/store-route';
+import { parseRoute, parseStoreFromUrl, routeHref, storeHref } from './lib/store-route';
+import LoginView from './components/LoginView';
 import { useLibrary } from './hooks/useLibrary';
+import { useLists, useSession } from './hooks/useLists';
+import { SUPABASE_CONFIGURED } from './lib/supabase';
 import type { Game, PlatformFilter, PlayedFilter, SortKey, StoreFilter } from './types/game';
 
 // El modal solo se necesita al hacer clic: fuera del bundle inicial.
@@ -114,6 +119,16 @@ function TagPill({
 
 export default function App() {
   const { steamGames, gogGames, loading, error, parseMs } = useLibrary();
+  const [view, setView] = useState<'lib' | 'lists' | 'login'>(() => {
+    const r = parseRoute(window.location.href);
+    return r?.kind === 'login' ? 'login' : r?.kind === 'list' ? 'lists' : 'lib';
+  });
+  const [sharedSlug, setSharedSlug] = useState<string | null>(() => {
+    const r = parseRoute(window.location.href);
+    return r?.kind === 'list' ? r.slug : null;
+  });
+  const { session, checking, isOwner } = useSession();
+  const listsState = useLists(view === 'lists' && SUPABASE_CONFIGURED);
 
   const [store, setStore] = useState<StoreFilter>(
     () => parseStoreFromUrl(window.location.href) ?? DEFAULT_STORE,
@@ -169,27 +184,62 @@ export default function App() {
     document.documentElement.dataset.store = 'steam';
   }, []);
 
-  // Deep links: la URL refleja la tienda (/steam, /gog, #/steam o ?store=).
-  // Al cargar se normaliza a la ruta canónica; atrás/adelante sincronizan el tab.
-  // Solo al montar (ref para no depender del estado): los clics empujan su entrada.
-  const initialStoreRef = useRef(store);
+  // Deep links: la URL refleja la tienda (/steam, /gog, #/steam, ?store=) o /login.
+  // Al cargar se normaliza a la ruta canónica; atrás/adelante sincronizan la vista.
+  // Solo al montar (sin dependencias reactivas): la navegación la empujan los clics.
   useEffect(() => {
-    window.history.replaceState(null, '', storeHref(initialStoreRef.current, window.location.href));
+    const r = parseRoute(window.location.href);
+    if (r?.kind === 'store') {
+      window.history.replaceState(null, '', storeHref(r.store, window.location.href));
+    }
     const onPopState = () => {
-      const s = parseStoreFromUrl(window.location.href);
-      if (s) setStore(s);
+      const rr = parseRoute(window.location.href);
+      if (!rr) {
+        setView('lib');
+        setSharedSlug(null);
+      } else if (rr.kind === 'login') {
+        setView('login');
+      } else if (rr.kind === 'list') {
+        setView('lists');
+        setSharedSlug(rr.slug);
+      } else {
+        setStore(rr.store);
+        setView('lib');
+        setSharedSlug(null);
+      }
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
   const selectStore = (s: StoreFilter) => {
-    if (s === store) return;
+    if (s === store && view === 'lib') return;
     setStore(s);
+    setView('lib');
     window.history.pushState(null, '', storeHref(s, window.location.href));
   };
 
+  const goLogin = () => {
+    setView('login');
+    window.history.pushState(null, '', routeHref({ kind: 'login' }, window.location.href));
+  };
+
+  const backToLibrary = () => {
+    setView('lib');
+    window.history.replaceState(null, '', storeHref(store, window.location.href));
+  };
+
   const VISIBLE_TAGS = 8;
+
+  const gameByKey = useMemo(() => {
+    const m = new Map<string, Game>();
+    for (const g of steamGames) m.set(`steam:${g.id}`, g);
+    for (const g of gogGames) {
+      const k = `gog:${g.id}`;
+      if (!m.has(k)) m.set(k, g);
+    }
+    return m;
+  }, [steamGames, gogGames]);
 
   const stats = useMemo(() => {
     if (!isGog) {
@@ -312,13 +362,16 @@ export default function App() {
           </span>
           <div className="min-w-0">
             <h1 className="truncate text-base font-bold leading-tight text-white sm:text-lg">
-              Mi Libreria
+              MySteamLibrary
             </h1>
             <p className="text-[11px] text-[#8f98a0] sm:text-xs">
               {loading ? 'Cargando…' : `${steamGames.length.toLocaleString('es-ES')} Steam · ${gogGames.length.toLocaleString('es-ES')} GOG`}
             </p>
           </div>
-          <div className="relative ml-auto hidden w-72 md:block">
+          <div className="ml-auto flex items-center gap-2">
+            <AuthButton session={session} checking={checking} isOwner={isOwner} onLogin={goLogin} />
+          </div>
+          <div className="relative hidden w-72 md:block">
             <Search size={16} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#8f98a0]" />
             <input
               value={query}
@@ -362,6 +415,56 @@ export default function App() {
       </header>
 
       <main className="mx-auto max-w-7xl space-y-6 px-4 py-6">
+        {/* Biblioteca / Listas */}
+        {SUPABASE_CONFIGURED && (
+          <div className="flex gap-2">
+            {(
+              [
+                { value: 'lib', label: 'Biblioteca' },
+                { value: 'lists', label: 'Listas' },
+              ] as const
+            ).map((t) => (
+              <button
+                key={t.value}
+                type="button"
+                onClick={() => setView(t.value)}
+                className={`flex-1 rounded-xl px-4 py-2.5 text-sm font-bold ring-1 transition sm:flex-none sm:px-8 ${
+                  view === t.value
+                    ? 'th-btn ring-transparent'
+                    : 'th-panel text-[#8f98a0] ring-white/10 hover:text-white th-ring-hover'
+                }`}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {view === 'login' ? (
+          <LoginView
+            session={session}
+            onDone={() => {
+              setView('lists');
+              window.history.replaceState(null, '', storeHref(store, window.location.href));
+            }}
+            onBack={backToLibrary}
+          />
+        ) : view === 'lists' ? (
+          <ListsView
+            gameByKey={gameByKey}
+            lists={listsState}
+            isOwner={isOwner}
+            onSelectGame={setSelected}
+            sharedSlug={sharedSlug}
+            onShareUrl={(slug) => {
+              if (slug) {
+                setSharedSlug(slug);
+                window.history.pushState(null, '', routeHref({ kind: 'list', slug }, window.location.href));
+              }
+            }}
+          />
+        ) : (
+          <>
         {/* Pestañas de tienda */}
         <div className="flex gap-2">
           {(
@@ -649,6 +752,8 @@ export default function App() {
           )}
         </section>
         </ErrorBoundary>
+          </>
+        )}
       </main>
 
       <footer className="border-t border-white/5 py-5 text-center text-xs text-[#8f98a0]">
@@ -656,7 +761,23 @@ export default function App() {
       </footer>
 
       <Suspense fallback={null}>
-        <GameModal game={selected} onClose={() => setSelected(null)} />
+        <GameModal
+          game={selected}
+          onClose={() => setSelected(null)}
+          listPicker={
+            isOwner && selected
+              ? {
+                  lists: listsState.lists,
+                  onAdd: (listId, note) =>
+                    listsState.addGame(
+                      listId,
+                      { store: selected.store, id: selected.id, title: selected.title },
+                      note,
+                    ),
+                }
+              : null
+          }
+        />
       </Suspense>
     </div>
   );
