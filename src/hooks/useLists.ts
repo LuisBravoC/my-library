@@ -4,35 +4,75 @@ import { OWNER_EMAIL, SUPABASE_CONFIGURED, getSupabase } from '../lib/supabase';
 import type { List, ListItem } from '../types/lists';
 
 // Sesión como store externo: sin setState en efectos (lint limpio).
-// undefined = aún sin cargar; null = sin sesión.
-let cachedSession: Session | null | undefined;
+// session undefined = aún sin cargar; failed = rendirse y seguir como logged-out.
+interface AuthSnap {
+  session: Session | null | undefined;
+  failed: boolean;
+}
+
+let authSnap: AuthSnap = { session: undefined, failed: false };
+const SESSION_TIMEOUT_MS = 5000;
 
 function subscribeSession(callback: () => void): () => void {
   let unsub = () => {};
   let cancelled = false;
-  void getSupabase().then((sb) => {
-    if (cancelled || !sb) return;
-    sb.auth.getSession().then(({ data }) => {
+  const timer = window.setTimeout(() => {
+    if (!cancelled && authSnap.session === undefined && !authSnap.failed) {
+      console.warn('[auth] session check timed out, continuing as logged out');
+      authSnap = { session: authSnap.session, failed: true };
+      callback();
+    }
+  }, SESSION_TIMEOUT_MS);
+  const finish = () => {
+    if (!cancelled) window.clearTimeout(timer);
+  };
+  void getSupabase()
+    .then((sb) => {
+      if (cancelled || !sb) {
+        if (!sb) {
+          authSnap = { session: null, failed: false };
+          callback();
+        }
+        finish();
+        return;
+      }
+      sb.auth
+        .getSession()
+        .then(({ data }) => {
+          if (cancelled) return;
+          authSnap = { session: data.session, failed: false };
+          callback();
+          finish();
+        })
+        .catch(() => {
+          if (cancelled) return;
+          authSnap = { session: authSnap.session, failed: true };
+          callback();
+          finish();
+        });
+      const { data: sub } = sb.auth.onAuthStateChange((_event, s) => {
+        authSnap = { session: s, failed: false };
+        callback();
+      });
+      unsub = () => sub.subscription.unsubscribe();
+    })
+    .catch(() => {
       if (cancelled) return;
-      cachedSession = data.session;
+      authSnap = { session: authSnap.session, failed: true };
       callback();
+      finish();
     });
-    const { data: sub } = sb.auth.onAuthStateChange((_event, s) => {
-      cachedSession = s;
-      callback();
-    });
-    unsub = () => sub.subscription.unsubscribe();
-  });
   return () => {
     cancelled = true;
+    window.clearTimeout(timer);
     unsub();
   };
 }
 
 export function useSession() {
-  useSyncExternalStore(subscribeSession, () => cachedSession ?? null, () => null);
-  const session = cachedSession ?? null;
-  const checking = SUPABASE_CONFIGURED && cachedSession === undefined;
+  useSyncExternalStore(subscribeSession, () => authSnap, () => authSnap);
+  const checking = SUPABASE_CONFIGURED && authSnap.session === undefined && !authSnap.failed;
+  const session = authSnap.session ?? null;
   const isOwner =
     !!session?.user?.email && session.user.email.toLowerCase() === OWNER_EMAIL && OWNER_EMAIL !== '';
 

@@ -35,8 +35,8 @@ desactivada y la app funciona igual.
 
 1. Crea un proyecto en Supabase y ejecuta `supabase/schema.sql` en el SQL Editor
    (pon tu email en las políticas `solo dueno`).
-2. En Authentication → URL Configuration añade tu dominio publicado y
-   `http://localhost:5173` como Redirect URLs (para el enlace mágico).
+2. Crea tu usuario en Authentication → Users → **Add user** (email + contraseña
+   robusta, marca auto-confirm) y desactiva *Allow new users to sign up*.
 3. Copia `.env.example` a `.env.local` con `VITE_SUPABASE_URL`,
    `VITE_SUPABASE_ANON_KEY` y `VITE_OWNER_EMAIL`.
 4. Para producción, añade esos tres como Secrets del repo (Settings → Secrets →

@@ -23,14 +23,11 @@ export function getSupabase(): Promise<SupabaseClient | null> {
   return clientPromise;
 }
 
-/** Envía el enlace mágico de acceso al email indicado. */
-export async function sendMagicLink(email: string): Promise<void> {
+/** Acceso con email + contraseña (único método; sin OTP por los rate limits). */
+export async function signInWithPassword(email: string, password: string): Promise<void> {
   const sb = await getSupabase();
   if (!sb) throw new Error('Supabase no configurado');
-  const { error } = await sb.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: window.location.origin + window.location.pathname },
-  });
+  const { error } = await sb.auth.signInWithPassword({ email, password });
   if (error) throw error;
 }
 
