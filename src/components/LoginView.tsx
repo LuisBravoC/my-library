@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowLeft, KeyRound, MailCheck } from 'lucide-react';
 import type { Session } from '@supabase/supabase-js';
 import { sendMagicLink } from '../lib/supabase';
@@ -12,7 +12,14 @@ interface Props {
 /** Página de acceso del dueño: email + enlace mágico, nada más. */
 export default function LoginView({ session, onDone, onBack }: Props) {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'limited' | 'error'>('idle');
+  const [cooldown, setCooldown] = useState(0);
+
+  useEffect(() => {
+    if (cooldown <= 0) return;
+    const t = window.setTimeout(() => setCooldown((c) => c - 1), 1000);
+    return () => window.clearTimeout(t);
+  }, [cooldown]);
 
   return (
     <section className="mx-auto w-full max-w-md space-y-4 rounded-2xl bg-black/20 p-6 text-center ring-1 ring-white/10 sm:p-8">
@@ -41,11 +48,18 @@ export default function LoginView({ session, onDone, onBack }: Props) {
             className="space-y-2 text-left"
             onSubmit={(e) => {
               e.preventDefault();
-              if (!email.trim()) return;
+              if (!email.trim() || cooldown > 0) return;
               setStatus('sending');
               sendMagicLink(email.trim())
-                .then(() => setStatus('sent'))
-                .catch(() => setStatus('error'));
+                .then(() => {
+                  setStatus('sent');
+                  setCooldown(60);
+                })
+                .catch((err: unknown) => {
+                  const code = (err as { status?: number })?.status;
+                  setStatus(code === 429 ? 'limited' : 'error');
+                  if (code === 429) setCooldown(60);
+                });
             }}
           >
             <input
@@ -59,10 +73,14 @@ export default function LoginView({ session, onDone, onBack }: Props) {
             />
             <button
               type="submit"
-              disabled={status === 'sending'}
+              disabled={status === 'sending' || cooldown > 0}
               className="w-full rounded-lg th-btn px-4 py-2.5 text-sm font-semibold transition hover:brightness-110 disabled:opacity-50"
             >
-              {status === 'sending' ? 'Enviando…' : 'Enviar enlace'}
+              {status === 'sending'
+                ? 'Enviando…'
+                : cooldown > 0
+                  ? `Espera ${cooldown}s para reenviar`
+                  : 'Enviar enlace'}
             </button>
           </form>
           {status === 'sent' && (
@@ -71,6 +89,11 @@ export default function LoginView({ session, onDone, onBack }: Props) {
             </p>
           )}
           {status === 'error' && <p className="text-sm text-red-300">No se pudo enviar. Prueba de nuevo.</p>}
+          {status === 'limited' && (
+            <p className="text-sm text-yellow-300">
+              Demasiados intentos seguidos: Supabase limita los envíos. Espera unos minutos y prueba de nuevo.
+            </p>
+          )}
         </>
       )}
       <button
