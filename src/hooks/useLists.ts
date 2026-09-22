@@ -86,7 +86,7 @@ export interface ListsState {
   error: string | null;
   refresh: () => void;
   createList: (title: string, description: string, slug: string) => Promise<void>;
-  renameList: (id: string, title: string, description: string) => Promise<void>;
+  updateList: (id: string, patch: { title?: string; description?: string; notesStyle?: 'sutil' | 'destacado' }) => Promise<void>;
   deleteList: (id: string) => Promise<void>;
   addGame: (listId: string, game: { store: 'steam' | 'gog'; id: number; title: string }, note?: string) => Promise<void>;
   removeItem: (itemId: string) => Promise<void>;
@@ -118,7 +118,7 @@ export function useLists(enabled: boolean): ListsState {
       if (!sb || cancelled) return;
       const { data: lrows, error: lerr } = await sb
         .from('msl_lists')
-        .select('id,title,slug,description')
+        .select('id,title,slug,description,notes_style')
         .order('created_at', { ascending: true });
       if (lerr) throw lerr;
       const { data: irows, error: ierr } = await sb
@@ -128,12 +128,15 @@ export function useLists(enabled: boolean): ListsState {
       if (ierr) throw ierr;
       if (cancelled) return;
       setLists(
-        (lrows ?? []).map((r: { id: string; title: string; slug: string; description: string }) => ({
-          id: r.id,
-          title: r.title,
-          slug: r.slug ?? '',
-          description: r.description ?? '',
-        })),
+        (lrows ?? []).map(
+          (r: { id: string; title: string; slug: string; description: string; notes_style?: string }) => ({
+            id: r.id,
+            title: r.title,
+            slug: r.slug ?? '',
+            description: r.description ?? '',
+            notesStyle: r.notes_style === 'destacado' ? 'destacado' : 'sutil',
+          }),
+        ),
       );
       const grouped: Record<string, ListItem[]> = {};
       for (const r of irows ?? []) {
@@ -180,12 +183,16 @@ export function useLists(enabled: boolean): ListsState {
     [mutate],
   );
 
-  const renameList = useCallback(
-    (id: string, title: string, description: string) =>
+  const updateList = useCallback(
+    (id: string, patch: { title?: string; description?: string; notesStyle?: 'sutil' | 'destacado' }) =>
       mutate(async () => {
         const sb = await getSupabase();
         if (!sb) throw new Error('Supabase no configurado');
-        return sb.from('msl_lists').update({ title, description }).eq('id', id);
+        const row: Record<string, string> = {};
+        if (patch.title !== undefined) row.title = patch.title;
+        if (patch.description !== undefined) row.description = patch.description;
+        if (patch.notesStyle !== undefined) row.notes_style = patch.notesStyle;
+        return sb.from('msl_lists').update(row).eq('id', id);
       }),
     [mutate],
   );
@@ -234,5 +241,5 @@ export function useLists(enabled: boolean): ListsState {
     [mutate],
   );
 
-  return { lists, items, loading, error, refresh, createList, renameList, deleteList, addGame, removeItem };
+  return { lists, items, loading, error, refresh, createList, updateList, deleteList, addGame, removeItem };
 }

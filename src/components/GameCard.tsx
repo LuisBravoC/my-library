@@ -88,8 +88,10 @@ function GameCardInner({ game, onSelect }: Props) {
             {game.linux && <span className="rounded bg-white/10 px-1">LIN</span>}
           </span>
         </div>
-        {game.tags.length > 0 && (
+        {game.tags.length > 0 ? (
           <p className="line-clamp-1 text-[11px] th-card-tag">{game.tags.slice(0, 3).map(formatLabel).join(' · ')}</p>
+        ) : (
+          <p className="line-clamp-1 text-[11px] th-card-tag"> </p>
         )}
       </div>
     </button>

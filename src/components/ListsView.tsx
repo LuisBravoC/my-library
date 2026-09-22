@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link2, ListOrdered, Pencil, Plus, Trash2, X } from 'lucide-react';
+import { Link2, ListOrdered, Pencil, Pin, Plus, Trash2, X } from 'lucide-react';
 import GameCard from './GameCard';
 import { makeSlug, routeHref } from '../lib/store-route';
 import type { Game } from '../types/game';
@@ -31,6 +31,7 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
   // Deep link /lista/:slug → preseleccionar al cargar o navegar (sin efectos).
   const [pendingSlug, setPendingSlug] = useState<string | null>(null);
   const [prevSlugKey, setPrevSlugKey] = useState('');
+  const [styleOverride, setStyleOverride] = useState<'sutil' | 'destacado' | null>(null);
   const wantSlug = pendingSlug ?? sharedSlug;
   const slugKey = `${wantSlug ?? ''}|${all.map((l) => l.id).join(',')}`;
   if (slugKey !== prevSlugKey) {
@@ -56,6 +57,12 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
 
   const active = all.find((l) => l.id === (activeId ?? all[0]?.id)) ?? null;
   const activeItems = active ? (items[active.id] ?? []) : [];
+  // Si algún juego tiene nota, se reserva el hueco en todas las tarjetas
+  // para que la retícula quede uniforme.
+  const hasNotes = activeItems.some((it) => it.note.trim() !== '');
+  // Vista efectiva: el dueño fija el default en BD; cualquiera puede
+  // cambiarlo localmente sin persistir (override efímero por lista).
+  const destacado = (styleOverride ?? active?.notesStyle ?? 'sutil') === 'destacado';
 
   const submitCreate = async () => {
     if (!title.trim() || busy) return;
@@ -77,7 +84,7 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
     if (!active || !title.trim() || busy) return;
     setBusy(true);
     try {
-      await lists.renameList(active.id, title.trim(), description.trim());
+      await lists.updateList(active.id, { title: title.trim(), description: description.trim() });
       setEditing(false);
     } finally {
       setBusy(false);
@@ -93,6 +100,7 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
             type="button"
             onClick={() => {
               setActiveId(l.id);
+              setStyleOverride(null);
               onShareUrl(l.slug);
             }}
             className={`shrink-0 rounded-full px-3 py-1 text-xs ring-1 transition ${
@@ -184,8 +192,52 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
                 <Link2 size={12} /> {copied ? '¡Copiado!' : 'Compartir lista'}
               </button>
             </div>
-            {isOwner && (
-              <div className="flex shrink-0 gap-1.5">
+              <div className="flex shrink-0 items-center gap-1.5">
+                <div
+                  className="flex rounded-lg bg-black/20 p-0.5 ring-1 ring-white/10"
+                  role="group"
+                  aria-label="Estilo de notas"
+                  title="Cómo se muestran los comentarios"
+                >
+                  {(
+                    [
+                      { value: 'sutil', label: 'Sutiles' },
+                      { value: 'destacado', label: 'Destacadas' },
+                    ] as const
+                  ).map((m) => (
+                    <button
+                      key={m.value}
+                      type="button"
+                      onClick={() => setStyleOverride((cur) => (cur === m.value ? null : m.value))}
+                      aria-pressed={destacado === (m.value === 'destacado')}
+                      title={isOwner ? 'Vista local (fijar con la chincheta)' : 'Vista local'}
+                      className={`rounded-md px-2.5 py-1 text-[11px] transition ${
+                        destacado === (m.value === 'destacado')
+                          ? 'bg-[#66c0f4]/20 font-semibold text-[#66c0f4]'
+                          : 'text-[#8f98a0] hover:text-white'
+                      }`}
+                    >
+                      {m.label}
+                    </button>
+                  ))}
+                </div>
+                {isOwner && styleOverride && styleOverride !== (active.notesStyle ?? 'sutil') && (
+                  <button
+                    type="button"
+                    title="Guardar como vista por defecto de la lista"
+                    aria-label="Guardar como vista por defecto"
+                    onClick={() => {
+                      void lists
+                        .updateList(active.id, { notesStyle: styleOverride })
+                        .then(() => setStyleOverride(null));
+                    }}
+                    className="rounded-lg bg-[#66c0f4]/15 p-2 text-[#66c0f4] ring-1 ring-[#66c0f4]/30 transition hover:bg-[#66c0f4]/25"
+                  >
+                    <Pin size={14} />
+                  </button>
+                )}
+                {isOwner && (
+                  <>
                 <button
                   type="button"
                   title="Renombrar"
@@ -213,8 +265,9 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
                 >
                   <Trash2 size={14} />
                 </button>
+                  </>
+                )}
               </div>
-            )}
           </div>
 
           {isOwner && editing && (
@@ -260,7 +313,22 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
                         <p className="mt-1 text-[11px] uppercase text-[#8f98a0]">{it.store}</p>
                       </div>
                     )}
-                    {it.note && <p className="mt-1 line-clamp-2 text-xs italic text-[#8f98a0]">“{it.note}”</p>}
+                    {hasNotes &&
+                      (destacado ? (
+                        <p
+                          title={it.note || undefined}
+                          className="mt-1.5 min-h-12 line-clamp-3 rounded-r-md border-l-2 border-[var(--t-accent)] bg-white/5 px-2 py-1 text-xs italic text-white/85"
+                        >
+                          {it.note ? `“${it.note}”` : ' '}
+                        </p>
+                      ) : (
+                        <p
+                          title={it.note || undefined}
+                          className="mt-1 min-h-8 line-clamp-2 text-xs italic text-[#8f98a0]"
+                        >
+                          {it.note ? `“${it.note}”` : ' '}
+                        </p>
+                      ))}
                     {isOwner && (
                       <button
                         type="button"

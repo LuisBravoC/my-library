@@ -24,6 +24,33 @@ create table if not exists msl_list_items (
 
 create index if not exists msl_list_items_list_id_idx on msl_list_items (list_id);
 
+-- Migraciones idempotentes para tablas creadas con versiones anteriores:
+-- slug (si la tabla nació sin él) y estilo de notas por lista.
+alter table msl_lists add column if not exists slug text;
+
+update msl_lists
+set slug =
+  trim(both '-' from left(
+    regexp_replace(
+      translate(lower(title),
+        'áéíóúüñçàèìòùäëïöü',
+        'aeiouuncaeioeaeiou'),
+      '[^a-z0-9]+', '-', 'g'),
+    40))
+  || '-' || left(replace(id::text, '-', ''), 6)
+where slug is null or slug = '';
+
+do $$
+begin
+  if not exists (select 1 from pg_constraint where conname = 'msl_lists_slug_key') then
+    alter table msl_lists add constraint msl_lists_slug_key unique (slug);
+  end if;
+end $$;
+
+alter table msl_lists alter column slug set not null;
+
+alter table msl_lists add column if not exists notes_style text not null default 'sutil';
+
 alter table msl_lists enable row level security;
 alter table msl_list_items enable row level security;
 
@@ -39,11 +66,11 @@ create policy "msl lectura publica" on msl_list_items
 drop policy if exists "msl solo dueno" on msl_lists;
 create policy "msl solo dueno" on msl_lists
   for all
-  using ((auth.jwt() ->> 'email') = 'TU_EMAIL_AQUI')
-  with check ((auth.jwt() ->> 'email') = 'TU_EMAIL_AQUI');
+  using ((auth.jwt() ->> 'email') = 'luismanuelbravocazares@hotmail.com')
+  with check ((auth.jwt() ->> 'email') = 'luismanuelbravocazares@hotmail.com');
 
 drop policy if exists "msl solo dueno" on msl_list_items;
 create policy "msl solo dueno" on msl_list_items
   for all
-  using ((auth.jwt() ->> 'email') = 'TU_EMAIL_AQUI')
-  with check ((auth.jwt() ->> 'email') = 'TU_EMAIL_AQUI');
+  using ((auth.jwt() ->> 'email') = 'luismanuelbravocazares@hotmail.com')
+  with check ((auth.jwt() ->> 'email') = 'luismanuelbravocazares@hotmail.com');

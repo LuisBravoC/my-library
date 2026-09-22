@@ -4,6 +4,8 @@ export interface List {
   /** Identificador público para URLs (/lista/mi-top-rpg). Inmutable. */
   slug: string;
   description: string;
+  /** Estilo de notas de la lista: 'sutil' | 'destacado'. */
+  notesStyle: 'sutil' | 'destacado';
 }
 
 export interface ListItem {
