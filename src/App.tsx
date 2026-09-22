@@ -152,6 +152,16 @@ export default function App() {
   });
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [selected, setSelected] = useState<Game | null>(null);
+  const [selectedNote, setSelectedNote] = useState<string | null>(null);
+
+  const openGame = (g: Game, note: string | null = null) => {
+    setSelected(g);
+    setSelectedNote(note);
+  };
+  const closeModal = () => {
+    setSelected(null);
+    setSelectedNote(null);
+  };
 
   const isGog = store === 'gog';
   const sourceGames = isGog ? gogGames : steamGames;
@@ -454,7 +464,7 @@ export default function App() {
             gameByKey={gameByKey}
             lists={listsState}
             isOwner={isOwner}
-            onSelectGame={setSelected}
+            onSelectGame={openGame}
             sharedSlug={sharedSlug}
             onShareUrl={(slug) => {
               if (slug) {
@@ -730,7 +740,7 @@ export default function App() {
             <>
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {filtered.slice(0, visible).map((g) => (
-                  <GameCard key={g.key} game={g} onSelect={setSelected} />
+                  <GameCard key={g.key} game={g} onSelect={openGame} />
                 ))}
               </div>
               <div className="mt-6 text-center">
@@ -763,7 +773,8 @@ export default function App() {
       <Suspense fallback={null}>
         <GameModal
           game={selected}
-          onClose={() => setSelected(null)}
+          onClose={closeModal}
+          note={selectedNote}
           listPicker={
             isOwner && selected
               ? {

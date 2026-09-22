@@ -8,6 +8,8 @@ import type { List } from '../types/lists';
 interface Props {
   game: Game | null;
   onClose: () => void;
+  /** Comentario de la lista (solo vista Listas). */
+  note?: string | null;
   /** Solo el dueño: añadir el juego a una de sus listas. */
   listPicker?: {
     lists: List[];
@@ -15,7 +17,7 @@ interface Props {
   } | null;
 }
 
-export default function GameModal({ game, onClose, listPicker }: Props) {
+export default function GameModal({ game, onClose, note, listPicker }: Props) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const [pickList, setPickList] = useState('');
   const [pickNote, setPickNote] = useState('');
@@ -172,8 +174,7 @@ export default function GameModal({ game, onClose, listPicker }: Props) {
             </div>
           )}
 
-          {listPicker && listPicker.lists.length > 0 && (
-            <div className="rounded-lg bg-black/20 p-3 ring-1 ring-white/10">
+          {listPicker && listPicker.lists.length > 0 && (            <div className="rounded-lg bg-black/20 p-3 ring-1 ring-white/10">
               <h3 className="mb-2 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
                 <ListPlus size={13} /> Añadir a lista
               </h3>
@@ -215,6 +216,17 @@ export default function GameModal({ game, onClose, listPicker }: Props) {
                   {pickState === 'done' ? 'Añadido ✓' : pickState === 'saving' ? '…' : 'Añadir'}
                 </button>
               </div>
+            </div>
+          )}
+
+          {note && (
+            <div>
+              <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#8f98a0]">
+                Comentario de la lista
+              </h3>
+              <blockquote className="rounded-lg border-l-2 border-[var(--t-accent)] bg-white/5 px-3 py-2 text-sm italic text-white/90">
+                “{note}”
+              </blockquote>
             </div>
           )}
 

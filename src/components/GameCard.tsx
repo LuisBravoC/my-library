@@ -29,7 +29,7 @@ function GameCardInner({ game, onSelect }: Props) {
       onClick={() => onSelect(game)}
       onMouseEnter={() => preloadModalImage(game)}
       onFocus={() => preloadModalImage(game)}
-      className="card-in group overflow-hidden rounded-xl th-panel text-left ring-1 ring-white/10 transition hover:-translate-y-0.5 th-ring-hover hover:shadow-[0_8px_30px_rgba(102,192,244,0.15)] focus:outline-none focus-visible:ring-2 th-focus"
+      className="card-in group block w-full overflow-hidden rounded-xl th-panel text-left ring-1 ring-white/10 transition hover:-translate-y-0.5 th-ring-hover hover:shadow-[0_8px_30px_rgba(102,192,244,0.15)] focus:outline-none focus-visible:ring-2 th-focus"
     >
       <div className="relative aspect-[460/215] w-full overflow-hidden th-imgph">
         {imgOk && src ? (

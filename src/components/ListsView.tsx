@@ -10,7 +10,7 @@ interface Props {
   gameByKey: Map<string, Game>;
   lists: ListsState;
   isOwner: boolean;
-  onSelectGame: (g: Game) => void;
+  onSelectGame: (g: Game, note: string | null) => void;
   /** Slug de la URL para preseleccionar (/lista/:slug). */
   sharedSlug: string | null;
   /** La app actualiza la URL al elegir lista (deep link compartible). */
@@ -306,7 +306,7 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
                 return (
                   <div key={it.id} className="relative">
                     {g ? (
-                      <GameCard game={g} onSelect={onSelectGame} />
+                      <GameCard game={g} onSelect={(game) => onSelectGame(game, it.note || null)} />
                     ) : (
                       <div className="overflow-hidden rounded-xl bg-[#1b2838]/80 p-4 ring-1 ring-white/10">
                         <p className="line-clamp-2 text-sm font-semibold text-white">{it.title || 'Juego'}</p>
@@ -315,19 +315,23 @@ export default function ListsView({ gameByKey, lists, isOwner, onSelectGame, sha
                     )}
                     {hasNotes &&
                       (destacado ? (
-                        <p
-                          title={it.note || undefined}
-                          className="mt-1.5 min-h-12 line-clamp-3 rounded-r-md border-l-2 border-[var(--t-accent)] bg-white/5 px-2 py-1 text-xs italic text-white/85"
-                        >
-                          {it.note ? `“${it.note}”` : ' '}
-                        </p>
+                        <div className="mt-1.5 flex h-14 items-center overflow-hidden rounded-r-md border-l-2 border-[var(--t-accent)] bg-white/5 px-2 py-1">
+                          <span
+                            title={it.note || undefined}
+                            className="line-clamp-3 block w-full text-xs italic text-white/85"
+                          >
+                            {it.note ? `“${it.note}”` : ' '}
+                          </span>
+                        </div>
                       ) : (
-                        <p
-                          title={it.note || undefined}
-                          className="mt-1 min-h-8 line-clamp-2 text-xs italic text-[#8f98a0]"
-                        >
-                          {it.note ? `“${it.note}”` : ' '}
-                        </p>
+                        <div className="mt-1 flex h-8 items-center overflow-hidden">
+                          <span
+                            title={it.note || undefined}
+                            className="line-clamp-2 block w-full text-xs italic text-[#8f98a0]"
+                          >
+                            {it.note ? `“${it.note}”` : ' '}
+                          </span>
+                        </div>
                       ))}
                     {isOwner && (
                       <button
